@@ -23,10 +23,6 @@ You can now read more about the running your experiment, the structure of an Emp
 [quick-test.md](quick-test.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 {% content-ref url="../guides/tutorial-your-first-experiment/" %}
 [tutorial-your-first-experiment](../guides/tutorial-your-first-experiment/)
 {% endcontent-ref %}
