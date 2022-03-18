@@ -18,21 +18,15 @@
   * [Part 3: Adding Social Information and New Factors](guides/tutorial-your-first-experiment/part-3-adding-social-information-and-new-factors.md)
   * [Part 4: Adding Chats](guides/tutorial-your-first-experiment/part-2-adding-chats.md)
   * [Part 5: Adding Bots](guides/tutorial-your-first-experiment/part-3-adding-bots.md)
-* [The Settings File](guides/the-settings-file/README.md)
-  * [Specifying Login Details](guides/the-settings-file/specifying-login-details.md)
-  * [Setting player ids via URL queries](guides/the-settings-file/id-url-queries.md)
-  * [Connecting Locally to MongoDB](guides/the-settings-file/connecting-locally-to-mongodb.md)
 * [The Admin Panel](guides/the-admin-panel.md)
 * [Special Empirica Elements (and how to modify them)](guides/special-empirica-elements-and-how-to-modify-them.md)
 * [Deploying Your Experiment](guides/deploying-my-experiment/README.md)
   * [Database](guides/deploying-my-experiment/database.md)
   * [Hosting](guides/deploying-my-experiment/hosting.md)
 * [Managing the Data](guides/managing-the-data.md)
-* [Using Custom Collections](guides/using-custom-collections.md)
 
 ## Conceptual Overview <a href="#overview" id="overview"></a>
 
-* [Structure](overview/structure.md)
 * [Game Life Cycle](overview/lifecycle/README.md)
   * [Customising when players submit stages](overview/lifecycle/customising-when-players-submit-stages.md)
 * [Concepts](overview/concepts.md)

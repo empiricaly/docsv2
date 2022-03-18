@@ -1,6 +1,6 @@
 # Game Life Cycle
 
-_Elements on this page refer to the f_[_ile structure_](../structure.md)_,_ [_concepts_](../concepts.md)_, and_ [_API_ ](../api.md)_of an Empirica experiment._
+_Elements on this page refer to the f_[_ile structure_](broken-reference)_,_ [_concepts_](../concepts.md)_, and_ [_API_ ](../api.md)_of an Empirica experiment._
 
 Empirica experiments are event driven. The image below summarizes the lifecycle from the beginning of a game through exit steps.
 
@@ -10,11 +10,9 @@ Empirica experiments are event driven. The image below summarizes the lifecycle 
 
 In the admin panel, you would create a Batch of games for players to join. Players enter the game where they go through a consent form (optional), they provide an identifier (which can be set via URL queries), and they do the intro steps (the instructions and other components you have set in the intro steps. All of these are set by you in the `./client` . During these steps, players are **asynchronous**; namely, they complete these steps at their own pace until they have finished them, independent from the pace of other players.
 
-### gameInit
+### gameStart
 
-Once players finish the intro steps they are sent to a lobby where they wait until every player has joined. When every player has joined, the Game object is created based on what is set in `./server/main.js` in the  `Empirica.gameInit()` . This is where certain parameters are set, and where the Rounds and their Stages are created.
-
-In the `./server/callbacks.js`, `Empirica.onGameStart()` is also triggered at the same time as `Empirica.gameInit()`. Any pre-game preparations can be done in either `gameInit` or `onGameStart` interchangeably. It might make sense to the Game designer to split the overall **mandatory** Game configuration (Rounds and Stages) in `gameInit`, from data initialization (using `set` on Game, Players, Rounds and Stages objects) in `onGameStart`, but it is not required.
+Once players finish the intro steps they are sent to a lobby where they wait until every player has joined. When every player has joined, the Game object is created based on what is set in `./server/main.js` in the  `Empirica.gameStart()`. This is where certain parameters are set, and where the Rounds and their Stages are created.
 
 ### Rounds and Stages
 
@@ -45,8 +43,7 @@ After which, the players goes through the exit steps. During these steps, player
 
 The list of callbacks goes as follows in order:
 
-* `gameInit` Required
-* `onGameStart`
+* `gameStart` Required
 * `onRoundStart` Repeated for each Round
 * `onStageStart` Repeated for each Stage
 * `onStageEnd` Repeated for each Stage

@@ -7,28 +7,28 @@ Instead of having players wait until the end of the stage, you can have them sub
 To set the stage to submitted you need to run this method from the `player` prop:
 
 ```
-player.stage.submit()
+player.stage.set("submit", true);
 ```
 
 This will change this property, that you can use to see if the stage has been submitted (it is a Boolean, true or false):
 
 ```
-player.stage.submitted
+player.stage.get("submit");
 ```
 
-For example, you could create a button, that has a handle method for `onClick` that will do the necessary with the player's answer and call `player.stage.submit()`.
+For example, you could create a button, that has a handle method for `onClick` that will do the necessary with the player's answer and call `player.stage.set("submit", true)`.
 
 ## What players see when they have submitted a stage
 
 Once a player submits for the stage, you might want to show something different on the screen. For example, instead of showing the stage's question/task (and avoiding players submitting multiple responses), you could show a message thanking the player for submitting the stage and telling them that they will have to wait for all players to submit the stage before they can move on to the next one.
 
-You can do this by setting a **conditional** that renders different elements depending on what `player.stage.submitted` returns.
+You can do this by setting a **conditional** that renders different elements depending on what `player.stage.get("submit")` returns.
 
 For example:
 
 ```jsx
 {
-player.stage.submitted
+player.stage.get("submit")
     ? <div> Thank you for your answer. The next stage will start when all the other 
     players have submitted their answer. </div>
     : <div><Question player={player} /></div>

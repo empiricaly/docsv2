@@ -9,7 +9,7 @@ empirica create my-experiment
 ```
 
 It will create a directory called `my-experiment` inside the current folder.\
-Inside that directory, it will generate the initial [structure ](../overview/structure.md)and install the transitive dependencies.
+Inside that directory, it will generate the initial [structure ](broken-reference)and install the transitive dependencies.
 
 Once the installation is done, open your project folder:
 
@@ -23,8 +23,8 @@ You can now read more about the running your experiment, the structure of an Emp
 [quick-test.md](quick-test.md)
 {% endcontent-ref %}
 
-{% content-ref url="../overview/structure.md" %}
-[structure.md](../overview/structure.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="../guides/tutorial-your-first-experiment/" %}

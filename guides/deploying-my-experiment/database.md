@@ -42,7 +42,7 @@ You need the `?retryWrites=true&w=majority` part for the [resilience of your app
 
 The important part that this URI provides you is the part between the `@` and the `<dbname>`, it is the **connection**.
 
-In your [settings file](../the-settings-file/), you will have to add this JSON object:
+In your [settings file](broken-reference), you will have to add this JSON object:
 
 ```
     "galaxy.meteor.com": {
@@ -55,7 +55,7 @@ In your [settings file](../the-settings-file/), you will have to add this JSON o
 
 Fill in the <> parts with the appropriate elements from when you created the users and the database. The connection is mentioned above.
 
-Now, when you [deploy your app with the settings file](hosting.md#deploying) or when you [launch it locally with the settings file](../the-settings-file/connecting-locally-to-mongodb.md), you will be connected to the database. Once you start using your app connected to the database, your should be able to verify that everything worked by refreshing your page on your cluster's database: You will see all the collections relevant to an Empirica app appear (games, players, treatments, etc.).
+Now, when you [deploy your app with the settings file](hosting.md#deploying) or when you [launch it locally with the settings file](broken-reference), you will be connected to the database. Once you start using your app connected to the database, your should be able to verify that everything worked by refreshing your page on your cluster's database: You will see all the collections relevant to an Empirica app appear (games, players, treatments, etc.).
 
 ### MongoDB Atlas sent me an email about Query Targeting, should I be worried?
 

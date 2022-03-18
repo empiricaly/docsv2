@@ -1,5 +1,9 @@
 # The Admin Panel
 
+{% hint style="warning" %}
+We are currently updating documentation for Empirica v2. The information here is incorrect.
+{% endhint %}
+
 ## Structure
 
 The Admin Panel, that you can access at `<url>/admin` is made of two parts:

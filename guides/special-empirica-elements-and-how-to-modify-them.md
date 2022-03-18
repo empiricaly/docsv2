@@ -1,5 +1,9 @@
 # Special Empirica Elements (and how to modify them)
 
+{% hint style="warning" %}
+We are currently updating documentation for Empirica v2. The information here is incorrect.
+{% endhint %}
+
 ## Centered
 
 The **Centered component** is a custom element from Empirica that you can use to surround other elements of your components. This will make them centered on the page.

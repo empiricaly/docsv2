@@ -1,5 +1,9 @@
 # Tutorial: Your First Experiment
 
+{% hint style="warning" %}
+We are currently updating documentation for Empirica v2. Some information here is incorrect.
+{% endhint %}
+
 This is the tutorial to get started with Empirica. You will discover Empirica's potential and run a simple experiment.&#x20;
 
 If you want to compare your work to a finished version of the tutorial, you can find it [on GitHub](https://github.com/empiricaly/your-first-experiment/).

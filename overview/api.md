@@ -1,12 +1,12 @@
 # API
 
-_Elements on this page refer to the f_[_ile structure_](structure.md)_,_ [_concepts_](concepts.md)_, and_ [_life cycle_](lifecycle/) _of an Empirica experiment._
+_Elements on this page refer to the f_[_ile structure_](broken-reference)_,_ [_concepts_](concepts.md)_, and_ [_life cycle_](lifecycle/) _of an Empirica experiment._
 
 This document describes Empirica's [server](api.md#server), [client](api.md#client) and [shared ](api.md#shared)APIs.
 
 ## Server
 
-### `Empirica.gameInit(callback)`
+### `Empirica.gameStart(callback)`
 
 The `gameInit` callback is called just before a game starts, when all players are ready, and it must create rounds and stages for the game.
 
@@ -56,21 +56,7 @@ Game hooks are optional methods attached to various events throughout the game l
 
 Contrary to client side data updates, sever-side updates are synchronous, there is no risk of conflicting updates, and important calculations can be taken at precise points along the game.
 
-### `Empirica.onGameStart(callback)`
-
-`onGameStart` is triggered once per game, before the game starts, and before the first [`onRoundStart`](broken-reference). It receives the [`game` object](api.md#game-object). Contrary to [`gameInit`](broken-reference), the Game has been created at this point.
-
-#### Example
-
-```javascript
-Empirica.onGameStart(game => {
-  if (game.treatment.myFactor === "fourtytwo") {
-    game.set("maxScore", 100);
-  } else {
-    game.set("maxScore", 0);
-  }
-});
-```
+``
 
 ### `Empirica.onRoundStart(callback)`
 
@@ -79,8 +65,8 @@ Empirica.onGameStart(game => {
 #### Example
 
 ```javascript
-Empirica.onRoundStart((game, round) => {
-  round.set("scoreToReach", game.get("maxScore"));
+Empirica.onRoundStart(({ round }) => {
+  round.set("scoreToReach", round.game.get("maxScore"));
 });
 ```
 
@@ -91,7 +77,7 @@ Empirica.onRoundStart((game, round) => {
 #### Example
 
 ```javascript
-Empirica.onStageStart((game, round, stage) => {
+Empirica.onStageStart(({ stage }) => {
   stage.set("randomColor", myRandomColorGenerator());
 });
 ```
@@ -103,7 +89,7 @@ Empirica.onStageStart((game, round, stage) => {
 #### Example
 
 ```javascript
-Empirica.onStageEnd((game, round, stage) => {
+Empirica.onStageEnd(({ stage }) => {
   stage.set("scoreGroup", stage.get("score") > 10 ? "great" : "not_great");
 });
 ```
@@ -115,9 +101,9 @@ Empirica.onStageEnd((game, round, stage) => {
 #### Example
 
 ```javascript
-Empirica.onRoundEnd((game, round) => {
+Empirica.onRoundEnd(({ round }) => {
   let maxScore = 0;
-  game.players.forEach(player => {
+  round.game.players.forEach(player => {
     const playerScore = player.round.get("score") || 0;
     if (playerScore > maxScore) {
       maxScore = playerScore;
@@ -134,7 +120,7 @@ Empirica.onRoundEnd((game, round) => {
 #### Example
 
 ```javascript
-Empirica.onGameEnd(game => {
+Empirica.onGameEnd(({ game }) => {
   let maxScore = 0;
   game.rounds.forEach(round => {
     const roundMaxScore = round.get("maxScore") || 0;
@@ -147,6 +133,10 @@ Empirica.onGameEnd(game => {
 ```
 
 ### _**Change Callbacks**_
+
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. _**Change Callbacks**_ information here is incorrect.
+{% endhint %}
 
 [onSet](api.md#empirica-onset-callback), [onAppend](api.md#empirica-onappend-callback) and [onChange](api.md#empirica-onchange-callback) are called on every single update made by all players in each game, so they can rapidly become **computationally expensive** and have the potential to seriously slow down the app. Use wisely.
 
@@ -245,6 +235,10 @@ Empirica.onSubmit((game, round, stage, player) => {
 
 ### _**Adding Bots**_
 
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. _**Bots**_ information here is incorrect.
+{% endhint %}
+
 Adding bots to a game is as simple as defining a few callbacks. You can add different bots with different behaviors.
 
 ### `Empirica.bot(name, configuration)`
@@ -293,6 +287,10 @@ Empirica.bot("bob", {
 ```
 
 ## Client
+
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. _**Client**_ information here is incorrect.
+{% endhint %}
 
 ### `Empirica.round(Component)`
 
@@ -503,6 +501,10 @@ Meteor.startup(() => {
 ```
 
 ## Shared
+
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. _**This section's**_ information here is incorrect.
+{% endhint %}
 
 ### `Game` object
 
