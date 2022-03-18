@@ -1,29 +1,28 @@
 # Setup
 
-{% hint style="danger" %}
-**Only macOS** is supported at this point. We will release Windows and Linux version in the near future.
-{% endhint %}
+1. Run the installation script:
 
-1. Install Node.js via [https://nodejs.org/en/](https://nodejs.org/en/) (download and install the LTS bundle on the left)&#x20;
-2.  Run the installation script:
+```
+curl https://get.empirica.dev | sh
+```
 
-    ```
-    curl https://get.empirica.dev | sh
-    ```
-
-That's it, you're done!  Proceed to creating your experiment:
+That's it, you're done!  Proceed to create your experiment:
 
 {% content-ref url="../quick-start.md" %}
 [quick-start.md](../quick-start.md)
 {% endcontent-ref %}
 
-### **A note about Windows 10 Setup**
+### **A note about Windows Setup**
 
 {% hint style="warning" %}
-Windows is currently not supported.
+Windows is currently not natively supported. Empirica does work on Windows with Microsoft's WSL 2.
 {% endhint %}
 
-Empirica is build on industry-standard open-source web technologies which run best in Unix-like operating systems such as Linux and MacOS.  ****&#x20;
+{% hint style="danger" %}
+The installation of WSL 2 has been greatly simplified since Windows 10 version 2004, released at the end of 2021. Windows 11 also benefits from the new much simplified procedure. The following documentation does not cover the new installation. If you are using Windows 10 2004 and higher, we recommend you look online how to install WSL 2, then you can follow the macOS/Linux procedure above.
+{% endhint %}
+
+Empirica is built on industry-standard open-source web technologies which run best in Unix-like operating systems such as Linux and macOS.  ****&#x20;
 
 Running Meteor apps on Windows can be unreliable, as apps struggle to install and launch. Whilst stopping and trying again multiple times (as well as making sure there are no processes that slow down the installation of the Meteor files) might work, it is not recommended.
 
