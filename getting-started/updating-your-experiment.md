@@ -1,8 +1,18 @@
 # Updating your experiment
 
-## Updating the Empirica
+Empirica in your experiment uses a command-line tool called `empirica` and Javascript npm packages. The command-line tool allows you to create and run your experiment, while the packages are the glue in your code that makes Empirica work.
 
-As new versions of Empirica become available, you might want to update the version you are using in your app. To do so, simply run:
+## Updating Empirica in your Experiment
+
+You can update the packages in your experiment by running the following command at the root of your experiment:
+
+```
+empirica upgrade
+```
+
+## Updating the Empirica Command
+
+As new versions of Empirica become available, you might want to update the `empirica` command-line tool. To do so, run:
 
 ```bash
 curl https://get.empirica.dev | sh
