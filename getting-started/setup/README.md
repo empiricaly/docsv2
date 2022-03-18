@@ -5,8 +5,11 @@
 {% endhint %}
 
 1. Install Node.js via [https://nodejs.org/en/](https://nodejs.org/en/) (download and install the LTS bundle on the left)&#x20;
-2. Download the latest binary from [https://github.com/empiricaly/empirica/releases/latest/download/empirica](https://github.com/empiricaly/empirica/releases/latest/download/empirica)
-3. Place the binary in your $PATH
+2.  Run the installation script:
+
+    ```
+    curl https://get.empirica.dev | sh
+    ```
 
 That's it, you're done!  Proceed to creating your experiment:
 
