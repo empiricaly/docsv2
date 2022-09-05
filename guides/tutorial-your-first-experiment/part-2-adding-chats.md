@@ -1,5 +1,10 @@
 # Part 4: Adding Chats
 
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. The information on
+this page is outdated.
+{% endhint %}
+
 ## Installing the Empirica Chat
 
 First, you should stop running your experiment (e.g., press **cntrl+c** in the command line) to [install the package for the Empirica chat](https://www.npmjs.com/package/@empirica/chat).
@@ -21,23 +26,25 @@ import { Chat } from "@empirica/chat";
 Then, still in the `client/game/SocialExposure.jsx` component, we add a chat component by replacing the return of the main render with this code:
 
 ```jsx
-    return (
-      <div className="social-exposure">
-        <h3 className="title">Social Information</h3>
-        <p className="title">
-          {
-            otherPlayers.length > 1
-              ? <strong>There are {otherPlayers.length} other players:</strong>
-              : <strong>There is one other player:</strong>
-          }
-        </p>
-        {otherPlayers.map(p => this.renderSocialInteraction(p))}
-        <div>
-          <p className="chat-title"><strong>Chat</strong></p>
-          <Chat player={player} scope={round} />
-        </div>
-      </div>
-    );
+return (
+  <div className="social-exposure">
+    <h3 className="title">Social Information</h3>
+    <p className="title">
+      {otherPlayers.length > 1 ? (
+        <strong>There are {otherPlayers.length} other players:</strong>
+      ) : (
+        <strong>There is one other player:</strong>
+      )}
+    </p>
+    {otherPlayers.map((p) => this.renderSocialInteraction(p))}
+    <div>
+      <p className="chat-title">
+        <strong>Chat</strong>
+      </p>
+      <Chat player={player} scope={round} />
+    </div>
+  </div>
+);
 ```
 
 Note that we need to assign this `player` as a property of the chat. We also need to define a `scope`, which determines in which element of Empirica the chat is created (the game, every round, every stage, etc.). Here, we want one chat per round, so we set the scope to the `round`.
@@ -53,8 +60,6 @@ With this one:
 ```jsx
 const { game, player, round } = this.props;
 ```
-
-
 
 Overall, your `SocialExposure.jsx` component shoud look like this:
 
@@ -77,7 +82,7 @@ export default class SocialExposure extends React.Component {
   render() {
     const { game, player, round } = this.props;
 
-    const otherPlayers = game.players.filter(p =>
+    const otherPlayers = game.players.filter((p) =>
       player.get("neighbors").includes(p.get("nodeId"))
     );
 
@@ -89,22 +94,23 @@ export default class SocialExposure extends React.Component {
       <div className="social-exposure">
         <h3 className="title">Social Information</h3>
         <p className="title">
-          {
-            otherPlayers.length > 1
-              ? <strong>There are {otherPlayers.length} other players:</strong>
-              : <strong>There is one other player:</strong>
-          }
+          {otherPlayers.length > 1 ? (
+            <strong>There are {otherPlayers.length} other players:</strong>
+          ) : (
+            <strong>There is one other player:</strong>
+          )}
         </p>
-        {otherPlayers.map(p => this.renderSocialInteraction(p))}
+        {otherPlayers.map((p) => this.renderSocialInteraction(p))}
         <div>
-          <p className="chat-title"><strong>Chat</strong></p>
+          <p className="chat-title">
+            <strong>Chat</strong>
+          </p>
           <Chat player={player} scope={round} />
         </div>
       </div>
     );
   }
 }
-
 ```
 
 ## Styling the chat
@@ -143,7 +149,8 @@ Add this bit of styling at the end of the `client/main.less` :
   padding: 0;
 }
 
-.chat-button-send, .chat-input {
+.chat-button-send,
+.chat-input {
   min-height: 50px;
 }
 
@@ -169,28 +176,30 @@ Add this bit of styling at the end of the `client/main.less` :
 
 You might want to create condition where there are chats and a condition without chats. We can do that with new Treatments and Factors.&#x20;
 
-Go back to the Admin Panel and create a new `chat` factor as a `boolean` factor so it will be `true` or `false`.  Now  create a treatment with `chat` set to `true` and a treatment with `chat` set to `false`.
+Go back to the Admin Panel and create a new `chat` factor as a `boolean` factor so it will be `true` or `false`. Now create a treatment with `chat` set to `true` and a treatment with `chat` set to `false`.
 
-Now let's use this information render the chat only if the `chat` factor is set to `true` . Change the return of the main render of the  `SocialExposure.jsx` component with this code:
+Now let's use this information render the chat only if the `chat` factor is set to `true` . Change the return of the main render of the `SocialExposure.jsx` component with this code:
 
 ```jsx
-    return (
-      <div className="social-exposure">
-        <h3 className="title">Social Information</h3>
-        <p className="title">
-          {
-            otherPlayers.length > 1
-              ? <strong>There are {otherPlayers.length} other players:</strong>
-              : <strong>There is one other player:</strong>
-          }
+return (
+  <div className="social-exposure">
+    <h3 className="title">Social Information</h3>
+    <p className="title">
+      {otherPlayers.length > 1 ? (
+        <strong>There are {otherPlayers.length} other players:</strong>
+      ) : (
+        <strong>There is one other player:</strong>
+      )}
+    </p>
+    {otherPlayers.map((p) => this.renderSocialInteraction(p))}
+    {game.treatment.chat && (
+      <div>
+        <p className="chat-title">
+          <strong>Chat</strong>
         </p>
-        {otherPlayers.map(p => this.renderSocialInteraction(p))}
-        {game.treatment.chat &&
-          <div>
-            <p className="chat-title"><strong>Chat</strong></p>
-            <Chat player={player} scope={round} />
-          </div>
-        }
+        <Chat player={player} scope={round} />
       </div>
-    );
+    )}
+  </div>
+);
 ```

@@ -1,11 +1,16 @@
 # Part 5: Adding Bots
 
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. The information on
+this page is outdated.
+{% endhint %}
+
 ## Adding bots in the factors and treatments
 
 To add bots you need to go to the admin panel and create `botsCount` (the name is important this time!) factor as an integer and set it up with the number of bots you want in your study. Then create treatments that use this factor.
 
 {% hint style="info" %}
-Bots will replace one of the player slots. So if you want two human players and one bot, you need to create a game with a `playerCount` of  3.
+Bots will replace one of the player slots. So if you want two human players and one bot, you need to create a game with a `playerCount` of 3.
 {% endhint %}
 
 ## Programming a bot
@@ -41,7 +46,7 @@ onStageTick(bot, game, round, stage, secondsRemaining) {
     bot.stage.submit()
   }
 
-  // if this is a social stage... 
+  // if this is a social stage...
   if (stage.name === "social") {
     // get the mean of the values of the other players and set it to the bot
     if (!bot.round.get("value")) {
@@ -67,11 +72,10 @@ To select a random message from an array we need to create a function to make a 
 ```javascript
 //Function to randomly choose an element from an array:
 export const choice = (array) => {
-    var randomIndex = Math.floor(Math.random() * array.length);
-    var randomElement = array[randomIndex];
-    return randomElement;
-}
-
+  var randomIndex = Math.floor(Math.random() * array.length);
+  var randomElement = array[randomIndex];
+  return randomElement;
+};
 ```
 
 Now, let's import this function at the top of the `server/bots.js` file:
@@ -88,8 +92,8 @@ const botLanguage = [
   "That's a good question!",
   "What do you think the correct answer is?",
   "This experiment is fun",
-  "I also do human things"
-]
+  "I also do human things",
+];
 ```
 
 _Feel free to add your own messages!_
@@ -99,18 +103,18 @@ Now, still in the conditional that it is the social round, add a conditional tha
 ```jsx
 // send a random message every 20s
 if (game.treatment.chat && secondsRemaining % 20 === 0) {
-  const chat = round.get("chat") ?? []
+  const chat = round.get("chat") ?? [];
 
   chat.push({
     text: choice(botLanguage),
     player: {
       _id: bot._id,
       avatar: bot.get("avatar"),
-      name: bot.bot
-    }
-  })
+      name: bot.bot,
+    },
+  });
 
-  round.set("chat", chat)
+  round.set("chat", chat);
 }
 ```
 
@@ -126,25 +130,27 @@ Right now, this app ONLY works for social conditions ; if you don't have any nei
 
 Here are some examples of how we can use Empirica features to expand the functionality of this experiment:
 
-* Add instructions for the different stages of the game.
-* Add logic to use different stage names for social and non-social conditions
-*   Add configurable task instructions to the constants.js that say things like
+- Add instructions for the different stages of the game.
+- Add logic to use different stage names for social and non-social conditions
+- Add configurable task instructions to the constants.js that say things like
 
-    "Please answer the question, you will have a chance to revise your answer" and
+  "Please answer the question, you will have a chance to revise your answer" and
 
-    "Please revise your answer"
-*   Add a factor "questionSet" that takes a comma-separated list of question
+  "Please revise your answer"
 
-    identifiers, and uses only those questions. This allows different treatments
+- Add a factor "questionSet" that takes a comma-separated list of question
 
-    to use different conditions, based on the same constants.js file.
-*   If you want to use more complex network structures, you could store those in a
+  identifiers, and uses only those questions. This allows different treatments
 
-    json/js format and import them in main.js
+  to use different conditions, based on the same constants.js file.
+
+- If you want to use more complex network structures, you could store those in a
+
+  json/js format and import them in main.js
 
 There are also several very basic features from the Intro and Outro we haven't touched yet that you'll need to update:
 
-* The Consent form
-* The Instructions pages
-* The attention check
-* The Exit Survey and Thank You page
+- The Consent form
+- The Instructions pages
+- The attention check
+- The Exit Survey and Thank You page

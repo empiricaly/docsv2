@@ -2,7 +2,7 @@
 
 {% hint style="danger" %}
 We are currently updating documentation for Empirica v2. The information on
-this page is outdate.
+this page is outdated.
 {% endhint %}
 
 This is an experiment powered by [Empirica](https://github.com/empiricaly/empirica). Through this experiment we attempt to answer the question: **How does team composition affect team performance?**

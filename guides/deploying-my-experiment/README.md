@@ -7,7 +7,7 @@ description: >-
 
 {% hint style="warning" %}
 This tutorial does require some knownledge of Linux and servers. We are working
-on an even simpler experience for deployment. Meanwhile, if it's too much, come
+on a simpler experience for deployment. Meanwhile, if it's too much, come
 talk to us in
 [Slack](https://join.slack.com/t/empirica-ly/shared_invite/zt-1fb34yq47-YlgYUJmXJAdv7QmHsa_fdw).
 {% endhint %}

@@ -1,12 +1,17 @@
 # Part 2: Configuring the Experiment
 
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. The information on
+this page is outdated.
+{% endhint %}
+
 ## Configuring the task page
 
 The main file that determines what is displayed to the participant (i.e., the user-side) during a game is located at `/client/game/Round.jsx`.
 
 By default, this is divided into two main components, `Task` and `SocialExposure`. The `Task` itself is composed of `TaskStimulus` which contains the stimulus (e.g., a survey question — or in this example, an estimation task) and `TaskResponse` which contains the input for users to response to the stimulus.
 
-Let's start by adding a title to the `/client/game/Task.jx`  so that the component looks like this:
+Let's start by adding a title to the `/client/game/Task.jx` so that the component looks like this:
 
 ```jsx
 import React from "react";
@@ -25,13 +30,12 @@ export default class Task extends React.Component {
     );
   }
 }
-
 ```
 
 ### Adding content to the task stimulus
 
 {% hint style="info" %}
-React components have a `this.props`  object which contains elements passed into it. These props can be extracted with destructuring (the `const {} = this.props` part). Notice that the props here include `round`, `stage`, and `player`. These are your interface with Empirica, and allow you to both read and set data for the state of the experiment.
+React components have a `this.props` object which contains elements passed into it. These props can be extracted with destructuring (the `const {} = this.props` part). Notice that the props here include `round`, `stage`, and `player`. These are your interface with Empirica, and allow you to both read and set data for the state of the experiment.
 {% endhint %}
 
 All we're doing here is adding an image and question to the `client/game/TaskStimulus.jsx` so that it looks like this:
@@ -73,7 +77,7 @@ The `public` directory allows you to store static assets, such as images, that c
 
 ### Customizing the input field
 
-In this section, we are going to change the input type from a slider to a numeric input box.  To do so, go to the `client/game/TaskResponse.jsx` file.&#x20;
+In this section, we are going to change the input type from a slider to a numeric input box. To do so, go to the `client/game/TaskResponse.jsx` file.&#x20;
 
 You can see that there are some "handle" functions (they don't need to be named this way, but clear names are helpful) that will execute on certain events.&#x20;
 
@@ -106,7 +110,7 @@ Notice that this method uses the `player` data to control the form input. This p
 The sliders and inputs don't send exactly the same data format, so we have to change the `handleChange` function to look like this:
 
 ```jsx
-handleChange = event => {
+handleChange = (event) => {
   const value = Number(event.currentTarget.value);
   const { player } = this.props;
   player.round.set("value", value);
@@ -142,7 +146,7 @@ Because we changed the name of the "render" function to `renderInput` we need to
 You might notice that a react component, like `TaskResponse.jsx` has a few import lines at the top of the file and then starts with this type of line and opening of curly brackets {}
 
 ```jsx
-export default class TaskResponse extends React.Component { 
+export default class TaskResponse extends React.Component {
 ```
 
 This curly bracket will close on the last line of the file.
@@ -158,13 +162,13 @@ Overall, `TaskResponse.jsx` should look like this:
 import React from "react";
 
 export default class TaskResponse extends React.Component {
-  handleChange = event => {
+  handleChange = (event) => {
     const value = Number(event.currentTarget.value);
     const { player } = this.props;
     player.round.set("value", value);
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     this.props.player.stage.submit();
   };
@@ -213,7 +217,6 @@ export default class TaskResponse extends React.Component {
     );
   }
 }
-
 ```
 
 ## Configuring stimulus content
@@ -228,13 +231,13 @@ export const taskData = {
     path: "/experiment/images/candies.jpg",
     questionText:
       "The jar in this image contains nothing but standard M&M's.  How many M&M's are in the jar?",
-    correctAnswer: 797
+    correctAnswer: 797,
   },
   survey: {
     questionText:
       "A 2014 survey asked Americans whether science and technology make our lives better (easier, healthier, more comfortable).  What percentage of respondents agreed that science and technology are making our lives better?",
-    correctAnswer: 80.5
-  }
+    correctAnswer: 80.5,
+  },
 };
 ```
 
@@ -273,7 +276,7 @@ import { taskData } from "./constants";
 // and the players. You can also get/set initial values on your game, players,
 // rounds and stages (with get/set methods), that will be able to use later in
 // the game.
-Empirica.gameInit(game => {
+Empirica.gameInit((game) => {
   // Establish node list
   const nodes = [];
   for (let i = 0; i <= game.players.length; i++) {
@@ -288,30 +291,28 @@ Empirica.gameInit(game => {
     player.set("nodeId", i);
 
     // Assign each node as a neighbor
-    const networkNeighbors = nodes.filter(node => node !== i);
+    const networkNeighbors = nodes.filter((node) => node !== i);
     player.set("neighbors", networkNeighbors);
   });
 
-  Object.keys(taskData).forEach(taskName => {
+  Object.keys(taskData).forEach((taskName) => {
     const task = taskData[taskName];
     const round = game.addRound({
       data: {
         taskName: taskName,
         questionText: task.questionText,
         imagePath: task.path,
-        correctAnswer: task.correctAnswer
-      }
+        correctAnswer: task.correctAnswer,
+      },
     });
 
     round.addStage({
       name: "response",
       displayName: "Response",
-      durationInSeconds: 120
+      durationInSeconds: 120,
     });
-  })
-
+  });
 });
-
 ```
 
 An important part of what is being done is here is adding a `data` object to the rounds. Any value in this object can then be access with `round.get()` .
@@ -370,13 +371,13 @@ Empirica provides a set of methods that will run at the start and end of each ro
 To learn more about callbacks, see [our guide on the life cycle of an Empirica experiment](../../overview/lifecycle/).
 {% endhint %}
 
-By default, the score is equal to the total sum of responses, but this is not very informative. We'll modify this to show percentage of error subtracted from 1. Replace the `Empirica.onRoundEnd` code in `server/callbacks.js`  with this:
+By default, the score is equal to the total sum of responses, but this is not very informative. We'll modify this to show percentage of error subtracted from 1. Replace the `Empirica.onRoundEnd` code in `server/callbacks.js` with this:
 
 ```javascript
 // onRoundEnd is triggered after each round.
 // It receives the same options as onGameEnd, and the round that just ended.
 Empirica.onRoundEnd((game, round) => {
-  game.players.forEach(player => {
+  game.players.forEach((player) => {
     let value = player.round.get("value") || 0;
     const prevScore = player.get("score") || 0;
     let newScore = 1 - value / round.get("correctAnswer");

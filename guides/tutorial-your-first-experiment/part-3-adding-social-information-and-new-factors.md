@@ -1,5 +1,10 @@
 # Part 3: Adding Social Information and New Factors
 
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. The information on
+this page is outdated.
+{% endhint %}
+
 ## Adding social information
 
 Social information is included in the default Empirica template via `SocialExposure.jsx`. However, nothing will show if we don't have any other players!
@@ -24,7 +29,7 @@ Within each `round` are multiple `stages`. We can add more stages by returning t
 round.addStage({
   name: "social",
   displayName: "Social Information",
-  durationInSeconds: 120
+  durationInSeconds: 120,
 });
 ```
 
@@ -45,7 +50,7 @@ import { taskData } from "./constants";
 // and the players. You can also get/set initial values on your game, players,
 // rounds and stages (with get/set methods), that will be able to use later in
 // the game.
-Empirica.gameInit(game => {
+Empirica.gameInit((game) => {
   // Establish node list
   const nodes = [];
   for (let i = 0; i <= game.players.length; i++) {
@@ -60,37 +65,34 @@ Empirica.gameInit(game => {
     player.set("nodeId", i);
 
     // Assign each node as a neighbor
-    const networkNeighbors = nodes.filter(node => node !== i);
+    const networkNeighbors = nodes.filter((node) => node !== i);
     player.set("neighbors", networkNeighbors);
   });
 
-  Object.keys(taskData).forEach(taskName => {
+  Object.keys(taskData).forEach((taskName) => {
     const task = taskData[taskName];
     const round = game.addRound({
       data: {
         taskName: taskName,
         questionText: task.questionText,
         imagePath: task.path,
-        correctAnswer: task.correctAnswer
-      }
+        correctAnswer: task.correctAnswer,
+      },
     });
 
     round.addStage({
       name: "response",
       displayName: "Response",
-      durationInSeconds: 120
+      durationInSeconds: 120,
     });
 
     round.addStage({
       name: "social",
       displayName: "Social Information",
-      durationInSeconds: 120
+      durationInSeconds: 120,
     });
-
-  })
-
+  });
 });
-
 ```
 
 ### In Round.jsx
@@ -101,9 +103,7 @@ Modify the `<SocialExposure {...this.props} />` part with this code:
 
 ```jsx
 {
-  stage.name === "social" && (
-    <SocialExposure {...this.props} />
-  )
+  stage.name === "social" && <SocialExposure {...this.props} />;
 }
 ```
 
@@ -125,17 +125,12 @@ export default class Round extends React.Component {
         <div className="content">
           <PlayerProfile player={player} stage={stage} game={game} />
           <Task game={game} round={round} stage={stage} player={player} />
-          {
-            stage.name === "social" && (
-              <SocialExposure {...this.props} />
-            )
-          }
+          {stage.name === "social" && <SocialExposure {...this.props} />}
         </div>
       </div>
     );
   }
 }
-
 ```
 
 ### In SocialExplosure.jsx
@@ -164,7 +159,7 @@ This simple feature shows just how powerful Empirica can be. Just by virtue of s
 We also only want to show information for players listed in `player.get("neighbors")` . Let's do this by replacing the declaration for `const otherPlayers` with:
 
 ```javascript
-const otherPlayers = game.players.filter(p =>
+const otherPlayers = game.players.filter((p) =>
   player.get("neighbors").includes(p.get("nodeId"))
 );
 ```
@@ -175,18 +170,18 @@ Now, let's add a title to make this component match the other two. And let's mak
 
 ```jsx
 return (
-      <div className="social-exposure">
-        <h3 className="title">Social Information</h3>
-        <p className="title">
-          {
-            otherPlayers.length > 1
-              ? <strong>There are {otherPlayers.length} other players:</strong>
-              : <strong>There is one other player:</strong>
-          }
-        </p>
-        {otherPlayers.map(p => this.renderSocialInteraction(p))}
-      </div>
-    );
+  <div className="social-exposure">
+    <h3 className="title">Social Information</h3>
+    <p className="title">
+      {otherPlayers.length > 1 ? (
+        <strong>There are {otherPlayers.length} other players:</strong>
+      ) : (
+        <strong>There is one other player:</strong>
+      )}
+    </p>
+    {otherPlayers.map((p) => this.renderSocialInteraction(p))}
+  </div>
+);
 ```
 
 In the end, your `SocialExposure.jsx` component should look like this:
@@ -209,7 +204,7 @@ export default class SocialExposure extends React.Component {
   render() {
     const { game, player } = this.props;
 
-    const otherPlayers = game.players.filter(p =>
+    const otherPlayers = game.players.filter((p) =>
       player.get("neighbors").includes(p.get("nodeId"))
     );
 
@@ -221,18 +216,17 @@ export default class SocialExposure extends React.Component {
       <div className="social-exposure">
         <h3 className="title">Social Information</h3>
         <p className="title">
-          {
-            otherPlayers.length > 1
-              ? <strong>There are {otherPlayers.length} other players:</strong>
-              : <strong>There is one other player:</strong>
-          }
+          {otherPlayers.length > 1 ? (
+            <strong>There are {otherPlayers.length} other players:</strong>
+          ) : (
+            <strong>There is one other player:</strong>
+          )}
         </p>
-        {otherPlayers.map(p => this.renderSocialInteraction(p))}
+        {otherPlayers.map((p) => this.renderSocialInteraction(p))}
       </div>
     );
   }
 }
-
 ```
 
 ## Adding treatments and factors
@@ -241,7 +235,7 @@ One of the key features of Empirica is that you can think like a scientist and c
 
 First, we add the new factor through the `admin panel` by navigating to the factors interface and clicking "New Factor".&#x20;
 
-We will create a `stageLength` factor of type `Integer`.  You need to add a little description, but you do not need to specify a minimum or maximum.
+We will create a `stageLength` factor of type `Integer`. You need to add a little description, but you do not need to specify a minimum or maximum.
 
 {% hint style="info" %}
 Because we are replacing timing of the stages with this factor, you should make this factor `Required` so that it has to be entered when creating treatment. Otherwise, if you forget to set a `stageLength`, the experiment will break.
@@ -253,20 +247,20 @@ Now, add a new value to the factor you have created (such as `60`, for 60 second
 
 **Now create a new treatment where you use the stage length.** You can now use this new treatment when you create new batches.&#x20;
 
-We use this treatment information in the `Empirica.gameInit` callback. In  `server/main.js` , go to the part where stages are added to the round, and change the `durationInSeconds: 120`to  `durationInSeconds: game.treatment.stageLength` for both stages.
+We use this treatment information in the `Empirica.gameInit` callback. In `server/main.js` , go to the part where stages are added to the round, and change the `durationInSeconds: 120`to `durationInSeconds: game.treatment.stageLength` for both stages.
 
 ```javascript
-		round.addStage({
-			name: "response",
-			displayName: "Response",
-			durationInSeconds: game.treatment.stageLength
-		});
+round.addStage({
+  name: "response",
+  displayName: "Response",
+  durationInSeconds: game.treatment.stageLength,
+});
 
-		round.addStage({
-			name: "social",
-			displayName: "Social Information",
-			durationInSeconds: game.treatment.stageLength
-		});
+round.addStage({
+  name: "social",
+  displayName: "Social Information",
+  durationInSeconds: game.treatment.stageLength,
+});
 ```
 
 {% hint style="info" %}

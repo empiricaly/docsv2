@@ -1,7 +1,8 @@
 # Tutorial: Your First Experiment
 
-{% hint style="warning" %}
-We are currently updating documentation for Empirica v2. Some information here is incorrect.
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. The information on
+this page is outdated.
 {% endhint %}
 
 This is the tutorial to get started with Empirica. You will discover Empirica's potential and run a simple experiment.&#x20;
@@ -29,4 +30,3 @@ Each part builds on the previous one:
 {% content-ref url="part-3-adding-bots.md" %}
 [part-3-adding-bots.md](part-3-adding-bots.md)
 {% endcontent-ref %}
-

@@ -8,10 +8,6 @@ description: Easy Multiplayer Interactive Experiments in the Browser
 This documentation is for Empirica v2. If you want to see the documentation for Empirica v1, head over to [https://docsv1.empirica.ly](https://app.gitbook.com/o/-Lzv6Vw-a9xVOYgsBodE/s/-M-Cqf0McgfJZYwXisux/).
 {% endhint %}
 
-{% hint style="warning" %}
-We are currently updating documentation for Empirica v2. Some information here is incorrect.
-{% endhint %}
-
 Empirica is an open-source JavaScript framework for running multiplayer interactive experiments and games in the browser. Empirica makes it easy to develop and iterate on sophisticated designs in a statistically sound manner. It offers a unique combination of power, flexibility, and speed. Empirica is a powerful framework that facilitates the management of your games and experiments and is useful even for single-player research.
 
 Empirica uses industry-standard open-source technologies (Go, GraphQL, Typescript, Javascript, React) Empirica provides a helpful structure to how your Games, Players, Rounds, and Stages interact. Furthermore, Empirica gives you an Admin Panel that makes organizing and running your Games for data collection easy and intuitive.

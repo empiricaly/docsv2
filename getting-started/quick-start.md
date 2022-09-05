@@ -24,7 +24,3 @@ Empirica experiment, and you can try our tutorial:
 {% content-ref url="quick-test.md" %}
 [quick-test.md](quick-test.md)
 {% endcontent-ref %}
-
-{% content-ref url="../guides/tutorial-your-first-experiment/" %}
-[tutorial-your-first-experiment](../guides/tutorial-your-first-experiment/)
-{% endcontent-ref %}
