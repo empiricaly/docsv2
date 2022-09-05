@@ -28,20 +28,20 @@ To learn more about the parts of an Empirica app (e.g., what are Games, Rounds, 
 
 ### What skills do I need to use Empirica?
 
-Empirica helps you build online apps for online research. As with many online tools, basic notions of HTML, CSS, and JavaScript will be helpful. As Empirica uses with React.js, knowing a bit about it can also be beneficial, although you do not need to be an expert. There are many tutorials online for all the technologies mentioned here.
+Empirica helps you build online apps for online research. As with many online
+tools, basic notions of HTML, CSS, and JavaScript will be helpful. Knowing a bit
+about React.js can also be beneficial, although you do not need to be an
+expert. There are many tutorials online for all the technologies mentioned here.
 
 ### Why should I use Empirica instead of just Node.js and React.js directly?
 
-While Node.js and React.js are powerful tools, and you could build sophisticated experiments with them, Empirica makes building and managing your experiments much easier.
+While Node.js and React.js are powerful tools, and you could build sophisticated
+experiments with them, Empirica makes building and managing your experiments
+much easier.
 
-Notably, Empirica provides an Admin Panel that allows you to manage the conditions of your experiments (Treatments and Factors) and which Games are running, collecting data, or waiting for players.
+Notably, Empirica provides an Admin Panel that allows you to manage the
+conditions of your experiments (Treatments and Factors) and which Games are
+running, collecting data, or waiting for players.
 
-Empirica does the heavy lifting in managing games, player connections, game life cycles, and more.
-
-### YouTube tutorial
-
-{% hint style="warning" %}
-The follwing tutorial has not yet been updated for Empirica v2.
-{% endhint %}
-
-{% embed url="https://www.youtube.com/playlist?list=PLPQelvUwyVgiawBDk3Sp74QMfL8RPgORW" %}
+Empirica does the heavy lifting in managing games, player connections, game life
+cycles, and more.

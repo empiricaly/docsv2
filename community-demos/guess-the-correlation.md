@@ -1,5 +1,10 @@
 # Guess The Correlation
 
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. The information on
+this page is outdate.
+{% endhint %}
+
 You and a group of friends can play with this experiment as we ran it by following these instructions (assuming you have [Meteor installed](https://www.meteor.com/install)):
 
 1. [Download](https://github.com/amaatouq/guess-the-correlation) the repository (and unzip). Alternatively, from terminal just run:
@@ -20,26 +25,26 @@ git clone https://github.com/amaatouq/guess-the-correlation.git
 
 First, you have to enter the Configuration mode instead of the Monitoring model in the admin UI.
 
-![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme\_screenshots/configuration\_mode.png)
+![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme_screenshots/configuration_mode.png)
 
 This will allow you to configure the experiment: Factors, Lobby, and Treatments:
 
-![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme\_screenshots/configuration\_mode\_inside.png)
+![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme_screenshots/configuration_mode_inside.png)
 
 Now, you have the option to create your own configuration (see below) or load an example configuration by clicking on `import` and then choosing the file `./example-config.yaml`. Loading the example configurations will choose some example values for the factors (i.e., independent variables), lobby configuration, and few treatments.
 
-The example factors will look like this: ![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme\_screenshots/factors\_example.png)
+The example factors will look like this: ![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme_screenshots/factors_example.png)
 
-And the example treatments will look like this: ![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme\_screenshots/treatments\_example.png)
+And the example treatments will look like this: ![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme_screenshots/treatments_example.png)
 
 Finally, you can go back to the Monitoring mode:
 
-![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme\_screenshots/monitoring\_mode.png)
+![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme_screenshots/monitoring_mode.png)
 
 Now the _**Batchs**_ tab make sure you add a new batch, add the treatments you want, choose your lobby configurations, and then _**start**_ the batch.
 
-![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme\_screenshots/new\_batch.png)
+![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme_screenshots/new_batch.png)
 
 Go to [http://localhost:3000/](http://localhost:3000) and enjoy! If you don't have 3 friends to play with you, you always can use the `new player` button in development (for more details see this), which can add an arbitrary number players to the experiment while staying in the same browser (i.e., no need to open different browsers).
 
-![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme\_screenshots/game.png)
+![](https://github.com/amaatouq/guess-the-correlation/raw/master/readme_screenshots/game.png)

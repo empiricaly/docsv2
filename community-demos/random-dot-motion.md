@@ -1,5 +1,10 @@
 # Random Dot Motion
 
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. The information on
+this page is outdate.
+{% endhint %}
+
 This is an experiment powered by [Empirica](https://empirica.ly) as a follow-up for the model developed in [Moussaïd M et al. (2018) Dynamical networks of influence in small group discussions](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0190541).
 
 ## Experiment Details:
@@ -8,7 +13,7 @@ This is an experiment powered by [Empirica](https://empirica.ly) as a follow-up 
 
 In this experiment, groups of N=3 participants simultaneously undertake a visual perception task similar to the one implemented in [Moussaïd, et al. (2017). Reach and speed of judgment propagation in the laboratory, PNAS](http://www.pnas.org/content/early/2017/03/28/1611998114.short). Participants are exposed to visual stimuli consisting of a set of moving dots. A proportion of correlated dots move in a specific direction θ, and the remaining proportion of uncorrelated dots moved in random directions. Here, θ is the true value that participants have to estimate visually. The value of θ is the same for all the group members.
 
-![](https://www.researchgate.net/profile/Jiaxiang\_Zhang/publication/230624328/figure/fig1/AS:214158353145856@1428070738125/Schematic-diagram-of-the-RDM-stimulus-with-different-motion-coherence-levels-In-each.png)
+![](https://www.researchgate.net/profile/Jiaxiang_Zhang/publication/230624328/figure/fig1/AS:214158353145856@1428070738125/Schematic-diagram-of-the-RDM-stimulus-with-different-motion-coherence-levels-In-each.png)
 
 In the planned experiment, each group undertakes a series of “discussions” (each discussion is a `Round` from the point of view of Empirica). Within a given discussion round, the true value of θ remains unchanged. Each participant is given the chance to speak 3 times within a single discussion. Therefore, a single discussion round consists of 9 speaking stages (3 players each speaking 3 times), during which the participants share their current estimate with the rest of the group.
 
@@ -63,24 +68,24 @@ git clone https://github.com/amaatouq/small-group-discussion
 
 First, you have to enter the Configuration mode instead of the Monitoring model in the admin UI.
 
-![](https://github.com/amaatouq/small-group-discussion/raw/master/readme\_screenshots/configuration\_mode.png) This will allow you to configure the experiment: Factors, Lobby, and Treatments:
+![](https://github.com/amaatouq/small-group-discussion/raw/master/readme_screenshots/configuration_mode.png) This will allow you to configure the experiment: Factors, Lobby, and Treatments:
 
-![](https://github.com/amaatouq/small-group-discussion/raw/master/readme\_screenshots/configuration\_mode\_inside.png)
+![](https://github.com/amaatouq/small-group-discussion/raw/master/readme_screenshots/configuration_mode_inside.png)
 
 Now, you have the option to create your own configuration (see below) or load an example configuration by clicking on `import` and then choosing the file `./example-config`. Loading the example configurations will choose some example values for the factors (i.e., independent variables), lobby configuration, and few treatments.
 
-The example factors will look like this: ![](https://github.com/amaatouq/small-group-discussion/raw/master/readme\_screenshots/factors\_example.png)
+The example factors will look like this: ![](https://github.com/amaatouq/small-group-discussion/raw/master/readme_screenshots/factors_example.png)
 
-And the example treatments will look like this: ![](https://github.com/amaatouq/small-group-discussion/raw/master/readme\_screenshots/treatments\_example.png)
+And the example treatments will look like this: ![](https://github.com/amaatouq/small-group-discussion/raw/master/readme_screenshots/treatments_example.png)
 
 Finally, you can go back to the Monitoring mode:
 
-![](https://github.com/amaatouq/small-group-discussion/raw/master/readme\_screenshots/monitoring\_mode.png)
+![](https://github.com/amaatouq/small-group-discussion/raw/master/readme_screenshots/monitoring_mode.png)
 
 Now the _**Batchs**_ tab make sure you add a new batch, add the treatments you want, choose your lobby configurations, and then _**start**_ the batch.
 
-![](https://github.com/amaatouq/small-group-discussion/raw/master/readme\_screenshots/new\_batch.png)
+![](https://github.com/amaatouq/small-group-discussion/raw/master/readme_screenshots/new_batch.png)
 
 Go to [http://localhost:3000/](http://localhost:3000) and enjoy! If you don't have 3 friends to play with you, you always can use the `new player` button in development (for more details see this), which can add an arbitrary number players to the experiment while staying in the same browser (i.e., no need to open different browsers).
 
-![](https://github.com/amaatouq/small-group-discussion/raw/master/readme\_screenshots/game.png)
+![](https://github.com/amaatouq/small-group-discussion/raw/master/readme_screenshots/game.png)

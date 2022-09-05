@@ -46,20 +46,23 @@ Factors are assembled into Treatments, which are themselves assigned to Games.
 
 To create _Factor Values_, you must first create Factor Types. A _Factor Type_ describes the Factor. A \_Factor Type) has a `name`, a `description`, a `type` and a `required` marker.
 
-*   The `name` must be a code-friendly name, such a `playerCount`, which does not
+- The `name` must be a code-friendly name, such a `playerCount`, which does not
 
-    contain spaces or odd characters and is written in
+  contain spaces or odd characters and is written in
 
-    [camelCase](https://en.wikipedia.org/wiki/Camel\_case).
-*   The `description` is a human readable description used in the admin UI to help
+  [camelCase](https://en.wikipedia.org/wiki/Camel_case).
 
-    other admins understand what this factor does.
-*   Finally, the `type` is a computing type (integer, string, ...) to limit what
+- The `description` is a human readable description used in the admin UI to help
 
-    \_Factor Values _can be created for this \_Factor Type_.
-*   Factor Types can also be marked as `required`, meaning they are required in
+  other admins understand what this factor does.
 
-    all treatments.
+- Finally, the `type` is a computing type (integer, string, ...) to limit what
+
+  \_Factor Values _can be created for this \_Factor Type_.
+
+- Factor Types can also be marked as `required`, meaning they are required in
+
+  all treatments.
 
 The Factors can then be accessed as a property of the Game. This can be used to represent different conditions. For example, say you want some Games to show information from the other Players' answers to each other and some Games not to. You can have a "socialInformation" factor set to "yes" and "no", and only show the information from other Players if `game.socialInformation == "yes"` .
 
@@ -72,6 +75,11 @@ A Treatment is a named _set of Factors_. Each Factor can appear at most once in 
 A Game Lobby is where the players wait for other players to arrive, and until the game starts.
 
 ### Lobby Config
+
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. _**This section's**_
+information here is incorrect. Lobby timeouts are not yet available in v2.
+{% endhint %}
 
 The Game Lobby is configured by lobby configs for common scenarios. It contains a timer duration for the lobby, and handles the behavior of the app in case of timeouts. Such as whether it should try again or cancel the game once the timer runs out.
 

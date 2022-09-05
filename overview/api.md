@@ -1,52 +1,57 @@
 # API
 
-_Elements on this page refer to the f_[_ile structure_](broken-reference)_,_ [_concepts_](concepts.md)_, and_ [_life cycle_](lifecycle/) _of an Empirica experiment._
-
 This document describes Empirica's [server](api.md#server), [client](api.md#client) and [shared ](api.md#shared)APIs.
 
 ## Server
 
-### `Empirica.gameStart(callback)`
+### `Empirica.onGameStart(callback)`
 
-The `gameInit` callback is called just before a game starts, when all players are ready, and it must create rounds and stages for the game.
+The `onGameStart` callback is called just before a game starts, when all players are ready, and it must create rounds and stages for the game.
 
-One (and one only) gameInit callback is required for Empirica to work.
+One (and one only) onGameStart callback is required for Empirica to work.
 
 The callback receives one argument, the [`game` object](api.md#game-object), which gives access to the `players` and the treatment for this game.
 
 It also offers the `addRound()` method, which allows to add a round to the `game`. The returned Round object will implement the `addStage(stageArgs)` method, which allows to add a Stage to the Round. The `stageArgs` object to be passed to the stage creation method must contain:
 
-* `name`: the name used to identify this stage in the UI code
-* `displayName`: which will be showed to the UI to players
-* `durationInSeconds`: the stage duration, in seconds
+- `duration`: the stage duration, in seconds
 
 Note that the Game has not yet been created when the callback is called, and you do not have access to the other properties of the Game which will be created subsequently.
 
 #### Example
 
-```javascript
+```js
 Empirica.gameInit(game => {
   game.players.forEach((player, i) => {
-    player.set("avatar", `/avatars/jdenticon/${player._id}`);
     player.set("score", 0);
   });
 
-  _.times(10, i => {
-    const round = game.addRound();
-    round.addStage({
-      name: "response",
-      displayName: "Response",
-      durationInSeconds: 120
-    });
-
-    if (game.treatment.playerCount > 1) {
-      round.addStage({
-        name: "response",
-        displayName: "Response",
-        durationInSeconds: 120
-      });
-    }
+  const round1 = game.addRound();
+  round1.addStage({
+    duration: 120
+    name: "Response",
   });
+
+  if (game.treatment.playerCount > 1) {
+    round1.addStage({
+      duration: 120
+      name: "Result",
+    });
+  }
+
+  const round2 = game.addRound();
+  round1.addStage({
+    duration: 300
+    name: "Response",
+    someotherfield: "mydata"
+  });
+
+  if (game.treatment.playerCount > 1) {
+    round1.addStage({
+      duration: 120
+      name: "Result",
+    });
+  }
 });
 ```
 
@@ -60,7 +65,7 @@ Contrary to client side data updates, sever-side updates are synchronous, there 
 
 ### `Empirica.onRoundStart(callback)`
 
-`onRoundStart` is triggered before each round starts, and before [`onStageStart`](broken-reference). It receives the same options as [`onGameStart`](https://app.gitbook.com/s/-M-Cqf0McgfJZYwXisux/overview/empiricaongamestartcallback), and the [round](api.md#round-object) that is starting.
+`onRoundStart` is triggered before each round starts, and before `onStageStart`. It receives the same options as `onGameStart`, and the [round](api.md#round-object) that is starting.
 
 #### Example
 
@@ -72,7 +77,7 @@ Empirica.onRoundStart(({ round }) => {
 
 ### `Empirica.onStageStart(callback)`
 
-`onRoundStart` is triggered before each stage starts. It receives the same options as [`onRoundStart`](https://app.gitbook.com/s/-M-Cqf0McgfJZYwXisux/overview/empiricaonroundstartcallback), and the [stage](api.md#stage-object) that is starting.
+`onRoundStart` is triggered before each stage starts. It receives the same options as `onRoundStart`, and the [stage](api.md#stage-object) that is starting.
 
 #### Example
 
@@ -90,7 +95,9 @@ Empirica.onStageStart(({ stage }) => {
 
 ```javascript
 Empirica.onStageEnd(({ stage }) => {
-  stage.set("scoreGroup", stage.get("score") > 10 ? "great" : "not_great");
+  const expectedScore = stage.round.get("expectedScore");
+  const group = stage.get("score") > expectedScore ? "great" : "not_great";
+  stage.set("scoreGroup", group);
 });
 ```
 
@@ -103,7 +110,7 @@ Empirica.onStageEnd(({ stage }) => {
 ```javascript
 Empirica.onRoundEnd(({ round }) => {
   let maxScore = 0;
-  round.game.players.forEach(player => {
+  round.game.players.forEach((player) => {
     const playerScore = player.round.get("score") || 0;
     if (playerScore > maxScore) {
       maxScore = playerScore;
@@ -115,14 +122,14 @@ Empirica.onRoundEnd(({ round }) => {
 
 ### `Empirica.onGameEnd(callback)`
 
-`onGameEnd` is triggered when the game ends. It receives the [`game`](broken-reference) that just ended.
+`onGameEnd` is triggered when the game ends. It receives the `game` that just ended.
 
 #### Example
 
 ```javascript
 Empirica.onGameEnd(({ game }) => {
   let maxScore = 0;
-  game.rounds.forEach(round => {
+  game.rounds.forEach((round) => {
     const roundMaxScore = round.get("maxScore") || 0;
     if (roundMaxScore > maxScore) {
       maxScore = roundMaxScore;
@@ -132,6 +139,7 @@ Empirica.onGameEnd(({ game }) => {
 });
 ```
 
+<!--
 ### _**Change Callbacks**_
 
 {% hint style="danger" %}
@@ -151,24 +159,26 @@ If you are not using these callbacks, comment them out, so the system does not c
 #### Example
 
 ```javascript
-Empirica.onSet((
-  game,
-  round,
-  stage,
-  player, // Player who made the change
-  target, // Object on which the change was made (eg. player.set() => player)
-  targetType, // Type of object on which the change was made (eg. player.set() => "player")
-  key, // Key of changed value (e.g. player.set("score", 1) => "score")
-  value, // New value
-  prevValue // Previous value
-) => {
-  // Example filtering
-  if (key !== "value") {
-    return;
-  }
+Empirica.onSet(
+  (
+    game,
+    round,
+    stage,
+    player, // Player who made the change
+    target, // Object on which the change was made (eg. player.set() => player)
+    targetType, // Type of object on which the change was made (eg. player.set() => "player")
+    key, // Key of changed value (e.g. player.set("score", 1) => "score")
+    value, // New value
+    prevValue // Previous value
+  ) => {
+    // Example filtering
+    if (key !== "value") {
+      return;
+    }
 
-  // Do some important calculation
-});
+    // Do some important calculation
+  }
+);
 ```
 
 ### `Empirica.onAppend(callback)`
@@ -178,20 +188,22 @@ Empirica.onSet((
 #### Example
 
 ```javascript
-Empirica.onAppend((
-  game,
-  round,
-  stage,
-  player, // Player who made the change
-  target, // Object on which the change was made (eg. player.set() => player)
-  targetType, // Type of object on which the change was made (eg. player.set() => "player")
-  key, // Key of changed value (e.g. player.set("score", 1) => "score")
-  value, // New value
-  prevValue // Previous value
-) => {
-  // Note: `value` is the single last value (e.g 0.2), while `prevValue` will
-  // be an array of the previsous values (e.g. [0.3, 0.4, 0.65]).
-});
+Empirica.onAppend(
+  (
+    game,
+    round,
+    stage,
+    player, // Player who made the change
+    target, // Object on which the change was made (eg. player.set() => player)
+    targetType, // Type of object on which the change was made (eg. player.set() => "player")
+    key, // Key of changed value (e.g. player.set("score", 1) => "score")
+    value, // New value
+    prevValue // Previous value
+  ) => {
+    // Note: `value` is the single last value (e.g 0.2), while `prevValue` will
+    // be an array of the previsous values (e.g. [0.3, 0.4, 0.65]).
+  }
+);
 ```
 
 ### `Empirica.onChange(callback)`
@@ -203,20 +215,22 @@ Empirica.onAppend((
 #### Example
 
 ```javascript
-Empirica.onChange((
-  game,
-  round,
-  stage,
-  player, // Player who made the change
-  target, // Object on which the change was made (eg. player.set() => player)
-  targetType, // Type of object on which the change was made (eg. player.set() => "player")
-  key, // Key of changed value (e.g. player.set("score", 1) => "score")
-  value, // New value
-  prevValue, // Previous value
-  isAppend // True if the change was an append, false if it was a set
-) => {
-  Game.set("lastChangeAt", new Date().toString());
-});
+Empirica.onChange(
+  (
+    game,
+    round,
+    stage,
+    player, // Player who made the change
+    target, // Object on which the change was made (eg. player.set() => player)
+    targetType, // Type of object on which the change was made (eg. player.set() => "player")
+    key, // Key of changed value (e.g. player.set("score", 1) => "score")
+    value, // New value
+    prevValue, // Previous value
+    isAppend // True if the change was an append, false if it was a set
+  ) => {
+    Game.set("lastChangeAt", new Date().toString());
+  }
+);
 ```
 
 ### `Empirica.onSubmit(callback)`
@@ -247,24 +261,26 @@ The `bot` method allows to add a bot with `name` (e.g. "Alice"), while the `conf
 
 The `configuration` has the follows callbacks:
 
-* `onStageTick`: called during each stage at 1 second interval
-*   `onStageStart`: **CURRENTLY NOT SUPPORTED** called at the beginning of each
+- `onStageTick`: called during each stage at 1 second interval
+- `onStageStart`: **CURRENTLY NOT SUPPORTED** called at the beginning of each
 
-    stage (after `onRoundStart`/`onStageStart`)
-*   `onStageEnd`: **CURRENTLY NOT SUPPORTED** called at the end of each stage
+  stage (after `onRoundStart`/`onStageStart`)
 
-    (after `onStageEnd`, before `onRoundEnd` if it's the enf of the round)
-*   `onPlayerChange`: **CURRENTLY NOT SUPPORTED** called each time any (human)
+- `onStageEnd`: **CURRENTLY NOT SUPPORTED** called at the end of each stage
 
-    player has changed a value
+  (after `onStageEnd`, before `onRoundEnd` if it's the enf of the round)
+
+- `onPlayerChange`: **CURRENTLY NOT SUPPORTED** called each time any (human)
+
+  player has changed a value
 
 All callbacks are called with the following arguments:
 
-* `bot`: is the [`Player` object](broken-reference) representing this bot
-* `game`: the current [`Game`](broken-reference)
-* `round`: the current [`Round`](broken-reference)
-* `stage`: the current [`Stage`](broken-reference)
-* `secondsRemaining`: the number of remaining seconds in the stage
+- `bot`: is the [`Player` object](broken-reference) representing this bot
+- `game`: the current [`Game`](broken-reference)
+- `round`: the current [`Round`](broken-reference)
+- `stage`: the current [`Stage`](broken-reference)
+- `secondsRemaining`: the number of remaining seconds in the stage
 
 #### Example
 
@@ -284,221 +300,13 @@ Empirica.bot("bob", {
     bot.set("score", score+1);
   }
 };)
-```
+``` -->
 
 ## Client
 
-{% hint style="danger" %}
-We are currently updating documentation for Empirica v2. _**Client**_ information here is incorrect.
+{% hint style="info" %}
+See the [Special Empirica Component](../guides/special-empirica-components.md) page for more info.
 {% endhint %}
-
-### `Empirica.round(Component)`
-
-Set the `Round` Component that will contain all of the UI logic for your game.
-
-#### Props
-
-_Component_ will receive the following props:
-
-| Prop     | Type                           | Description         |
-| -------- | ------------------------------ | ------------------- |
-| `game`   | [Game](api.md#game-object)     | The current game.   |
-| `player` | [Player](api.md#player-object) | The current player. |
-| `round`  | [Round](api.md#round-object)   | The current round.  |
-| `stage`  | [Stage](api.md#stage-object)   | The current stage.  |
-
-#### Example
-
-```jsx
-const Round = ({ player, game, round, stage }) => (
-  <div className="round">
-    <div className="profile">{player.id}: {player.get("score")}</p>
-    <div className="stimulus">{stage.get("somePieceOfData...")</p>
-    // ... Add round logic here. This is not a good example, we recommend you
-    // take a look a Tutorial or a Demo app for better examples.
-  </div>
-);
-Empirica.round(Round);
-```
-
-### `Empirica.consent(Component)`
-
-Optionally set the `Consent` Component you want to present players before they are allowed to register.
-
-#### Props
-
-_Component_ will receive the following props:
-
-| Prop        | Type     | Description                                                                                 |
-| ----------- | -------- | ------------------------------------------------------------------------------------------- |
-| `onConsent` | Function | A function to call when the user has given consent (usually, clicked a "I consent" button). |
-
-#### Example
-
-```jsx
-const Consent = ({ onConsent }) => (
-  <div className="consent">
-    <p>This experiment is part of...</p>
-    <p>
-      <button onClick={onConsent}>I CONSENT</button>
-    </p>
-  </div>
-);
-Empirica.consent(Consent);
-```
-
-### `Empirica.introSteps(callback)`
-
-Set the intro steps to present to the user after consent and registration, and before they are allowed into the Lobby. These steps might be instructions, a quiz/test, a survey... You may present the steps in multiple pages.
-
-The `introSteps` callback should return an array of 0 or more React Components to show the user in order.
-
-#### Props
-
-_Component_ will receive the following props:
-
-| Prop     | Type                       | Description                             |
-| -------- | -------------------------- | --------------------------------------- |
-| `game`   | [Game](broken-reference)   | The current [game](broken-reference).   |
-| `player` | [Player](broken-reference) | The current [player](broken-reference). |
-
-**N.B.: The `game` given here **_**only**_** has the `treatment` field defined as the game has not yet been created.**
-
-#### Example
-
-```javascript
-Empirica.introSteps((game, player) => {
-  const steps = [InstructionStepOne];
-  if (game.treatment.playerCount > 1) {
-    steps.push(InstructionStepTwo);
-  }
-  steps.push(Quiz);
-  return steps;
-});
-```
-
-N.B.: `InstructionStepOne` or `Quiz`, in this example, are components that are not implemented in this example, they are simply React Components.
-
-### `Empirica.exitSteps(callback)`
-
-Set the exit steps to present to the user after the game has finished successfully (all rounds finished) or not (lobby timeout, cancelled game,...)
-
-The `exitSteps` callback should return an array of 1 or more React Components to show the user in order.
-
-#### Props
-
-_Component_ will receive the following props:
-
-| Prop     | Type                           | Description         |
-| -------- | ------------------------------ | ------------------- |
-| `game`   | [Game](api.md#game-object)     | The current game.   |
-| `player` | [Player](api.md#player-object) | The current player. |
-
-#### Example
-
-```javascript
-Empirica.exitSteps((game, player) => {
-  if (player.exitStatus !== "finished") {
-    return [Sorry];
-  }
-  return [ExitSurvey, Thanks];
-});
-```
-
-N.B.: `ExitSurvey` or `Thanks`, in this example, are components that are not implemented in this example, they are simply React Components.
-
-### `Empirica.lobby(Component)`
-
-Optionally set the `Lobby` Component to replace the default lobby.
-
-#### Props
-
-_Component_ will receive the following props:
-
-| Prop        | Type                                 | Description             |
-| ----------- | ------------------------------------ | ----------------------- |
-| `gameLobby` | [GameLobby](api.md#gamelobby-object) | The current game lobby. |
-| `player`    | [Player](api.md#player-object)       | The current player.     |
-
-#### Example
-
-```jsx
-const Lobby = ({ player, gameLobby }) => (
-  <header className="lobby">
-    <h1>Please wait until the game is ready...</h1>
-    <p>
-      There are {gameLobby.readyCount} players ready out of{" "}
-      {gameLobby.treatment.playerCount} expected total.
-    </p>
-  </header>
-);
-Empirica.lobby(Lobby);
-```
-
-### `Empirica.header(Component)`
-
-Optionally set the `Header` Component to replace the default app header.
-
-#### Props
-
-_Component_ will NOT receive any props.
-
-#### Example
-
-```jsx
-const Header = () => (
-  <header className="app-header">
-    <img src="/my-logo.png" />
-    <h1>My Experiment</h1>
-  </header>
-);
-Empirica.header(Header);
-```
-
-### `Empirica.breadcrumb(Component)`
-
-Optionally set the `Breadcrumb` Component to replace the default Round/Stage progress indicator. This is the UI that shows which are the current Round and Stage, between the page Header and the Round
-
-#### Props
-
-_Component_ will receive the following props:
-
-| Prop     | Type                           | Description         |
-| -------- | ------------------------------ | ------------------- |
-| `game`   | [Game](api.md#game-object)     | The current game.   |
-| `player` | [Player](api.md#player-object) | The current player. |
-| `round`  | [Round](api.md#round-object)   | The current round.  |
-| `stage`  | [Stage](api.md#stage-object)   | The current stage.  |
-
-#### Example
-
-```jsx
-const Breadcrumb = ({ round, stage }) => (
-  <ul className="breadcrumb">
-    <li>Round {round.index + 1}</li>
-    {round.stages.map(s => (
-      <li key={s.name} className={s.name === stage.name ? "current" : ""}>
-        {s.displayName}
-      </li>
-    ))}
-  </ul>
-);
-Empirica.breadcrumb(Breadcrumb);
-```
-
-### `Empirica.routes()`
-
-`routes` are the entry point for the Empirica app. It is required to be used as part of the React render tree for Empirica to work properly and the example below usually does not need changing, other than the HTML node to attach to (`document.getElementById("app")` here).
-
-N.B.: This must be called after any other Empirica calls (Empirica.round(), Empirica.introSteps(), ...).
-
-#### Example
-
-```javascript
-Meteor.startup(() => {
-  render(Empirica.routes(), document.getElementById("app"));
-});
-```
 
 ## Shared
 
@@ -508,13 +316,13 @@ We are currently updating documentation for Empirica v2. _**This section's**_ in
 
 ### `Game` object
 
-| Property    | Type                                            | Description                                                                                                                            |
-| ----------- | ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| `index`     | Number                                          | An auto-increment number assigned to each Game in order (1, 2, 3...)                                                                   |
-| `treatment` | Object (key: String, value: String or Integer)  | An object representing the Factors set on this game, e.g. `{ "playerCount": 12 }`.                                                     |
-| `players`   | Array of [Player objects](api.md#player-object) | Players participating in this Game.                                                                                                    |
-| `rounds`    | Array of [Round objects](api.md#round-object)   | On the server side, this will show every round that makes up the game. But on the client side, this will only show the current round.  |
-| `createdAt` | Date                                            | Time at which the game was created which corresponds approximately to the time at which the Game started.                              |
+| Property    | Type                                            | Description                                                                                                                           |
+| ----------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| `index`     | Number                                          | An auto-increment number assigned to each Game in order (1, 2, 3...)                                                                  |
+| `treatment` | Object (key: String, value: String or Integer)  | An object representing the Factors set on this game, e.g. `{ "playerCount": 12 }`.                                                    |
+| `players`   | Array of [Player objects](api.md#player-object) | Players participating in this Game.                                                                                                   |
+| `rounds`    | Array of [Round objects](api.md#round-object)   | On the server side, this will show every round that makes up the game. But on the client side, this will only show the current round. |
+| `createdAt` | Date                                            | Time at which the game was created which corresponds approximately to the time at which the Game started.                             |
 
 ### `Round` object
 
@@ -525,13 +333,13 @@ We are currently updating documentation for Empirica v2. _**This section's**_ in
 
 ### `Stage` object
 
-| Property            | Type    | Description                                                                                               |
-| ------------------- | ------- | --------------------------------------------------------------------------------------------------------- |
-| `index`             | Object  | The 0 based position of the current stage in the ordered list of a **all** of the game's stages.          |
-| `name`              | String  | Programmatic name of stage (i.e. to be used in code, e.g `if (name === "outcome") ...`).                  |
-| `displayName`       | String  | Human name of stage (i.e. to be showed to the Player, e.g "Round Outcome").                               |
-| `durationInSeconds` | Integer | The stage duration, in seconds.                                                                           |
-| `startTimeAt`       | Date    | Time at which the stage started. (only set if stage has already started, i.e. not set in `onStageStart`). |
+| Property      | Type    | Description                                                                                               |
+| ------------- | ------- | --------------------------------------------------------------------------------------------------------- |
+| `index`       | Object  | The 0 based position of the current stage in the ordered list of a **all** of the game's stages.          |
+| `name`        | String  | Programmatic name of stage (i.e. to be used in code, e.g `if (name === "outcome") ...`).                  |
+| `displayName` | String  | Human name of stage (i.e. to be showed to the Player, e.g "Round Outcome").                               |
+| `duration`    | Integer | The stage duration, in seconds.                                                                           |
+| `startTimeAt` | Date    | Time at which the stage started. (only set if stage has already started, i.e. not set in `onStageStart`). |
 
 ### `Player` object
 
@@ -548,8 +356,8 @@ We are currently updating documentation for Empirica v2. _**This section's**_ in
 | `idle`                | Boolean                    | True if the player is currently online but idle. Idleness is defined as either the page not being active (on another tab/window) or not detecting any activity (mouse/keyboard) for more than 60s.            |
 | `lastActivityAt`      | Date                       | Time when the player was last seen online and active (not idle). Server only (this is not accessible on the client at the moment).                                                                            |
 | `lastLogin.at`        | Date                       | Time the player last come online (registered, reopened page and auto-login kicked in or re-entered player ID – if they were forgotten).                                                                       |
-| `lastLogin.ip`        | String                     | [IP address](https://developer.mozilla.org/en-US/docs/Glossary/IP\_Address) of player on last connection.                                                                                                     |
-| `lastLogin.userAgent` | String                     | [User-Agent](https://developer.mozilla.org/en-US/docs/Glossary/User\_agent) of player on last connection.                                                                                                     |
+| `lastLogin.ip`        | String                     | [IP address](https://developer.mozilla.org/en-US/docs/Glossary/IP_Address) of player on last connection.                                                                                                      |
+| `lastLogin.userAgent` | String                     | [User-Agent](https://developer.mozilla.org/en-US/docs/Glossary/User_agent) of player on last connection.                                                                                                      |
 
 ### `GameLobby` object
 

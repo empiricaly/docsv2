@@ -1,5 +1,10 @@
 # Managing Players and Games
 
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. Some information on
+this page is incorrect.
+{% endhint %}
+
 ### When are players playing synchronously and asynchronously? Can I modify this?
 
 Players are **asynchronous during the Intro Steps** (i.e., they can finish each part at their own pace). At the **lobby**, players have to wait for each other to finish the Intro Steps. Then players are **synchronous during the Game** (i.e., they must all finish a Stage before they can move on to the next Stage or Round). Finally, once all the players have finished the Game, they are **asynchronous again during the Exit Steps**.

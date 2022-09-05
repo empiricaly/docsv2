@@ -1,5 +1,10 @@
 # Room Assignment
 
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. The information on
+this page is outdate.
+{% endhint %}
+
 This is an experiment powered by [Empirica](https://github.com/empiricaly/empirica). Through this experiment we attempt to answer the question: **How does team composition affect team performance?**
 
 ## Experiment Details:
@@ -8,32 +13,34 @@ This is an experiment powered by [Empirica](https://github.com/empiricaly/empiri
 
 In this experiment, participants are asked to assign N students into M rooms to maximize utility while respecting certain constraints. The task difficulty can vary in complexity levels:
 
-* High complexity: Assign 9 students to 6 rooms given 8 constraints
-* Low complexity: Assign 6 students to 4 rooms given 2 constraints
+- High complexity: Assign 9 students to 6 rooms given 8 constraints
+- Low complexity: Assign 6 students to 4 rooms given 2 constraints
 
 When the task is performed in groups then:
 
-*   All participants can do the assignment simultaneously, however, ony one
+- All participants can do the assignment simultaneously, however, ony one
 
-    student can be moved by one player at any given time (i.e., locking the
+  student can be moved by one player at any given time (i.e., locking the
 
-    student being moved, but the others are free to be moved).
-* Participants can chat freely using the in-experiment chatting system.
-*   All events (i.e., which student being assigned to which room etc) will be
+  student being moved, but the others are free to be moved).
 
-    logged and announced in the experiment as they happen.
+- Participants can chat freely using the in-experiment chatting system.
+- All events (i.e., which student being assigned to which room etc) will be
+
+  logged and announced in the experiment as they happen.
 
 ### Procedure
 
 In the planned experiment, **in step 1** each participants will be asked to complete a number of room assignment tasks and other test questions (e.g., read emotions from eyes tests) individually. This will allow us to determine 3 attributes about the individual:
 
-* Ability: measured by the performance in the game.
-*   Social Perceptiveness (SP): Measured through
+- Ability: measured by the performance in the game.
+- Social Perceptiveness (SP): Measured through
 
-    [Reading Emotions from Eye (RME)](https://github.com/amaatouq/RME\_test) test.
-*   Cognitive Style (CS): an in-task measure of problem-solving style (e.g.,
+  [Reading Emotions from Eye (RME)](https://github.com/amaatouq/RME_test) test.
 
-    intuitive versus analytical).
+- Cognitive Style (CS): an in-task measure of problem-solving style (e.g.,
+
+  intuitive versus analytical).
 
 Then, **in step 2**, we randomly construct teams of 3 participants.
 
@@ -59,18 +66,18 @@ git clone https://github.com/amaatouq/room-assigment
 
 First, you have to enter the Configuration mode instead of the Monitoring model in the admin UI.
 
-![](https://raw.githubusercontent.com/amaatouq/room-assigment/master/readme\_screenshots/configuration\_mode.png)
+![](https://raw.githubusercontent.com/amaatouq/room-assigment/master/readme_screenshots/configuration_mode.png)
 
 This will allow you to configure the experiment: Factors, Lobby, and Treatments. Now, you have the option to create your own configuration (see below) or load an example configuration by clicking on `import` and then choosing the file `./example-config.yaml`. Loading the example configurations will choose some example values for the factors (i.e., independent variables), lobby configuration, and few treatments.
 
 Now, you can go back to the Monitoring mode:
 
-![](https://raw.githubusercontent.com/amaatouq/room-assigment/master/readme\_screenshots/monitoring\_mode.png)
+![](https://raw.githubusercontent.com/amaatouq/room-assigment/master/readme_screenshots/monitoring_mode.png)
 
 Now the _**Batchs**_ tab make sure you add a new batch, add the treatments you want, choose your lobby configurations, and then _**start**_ the batch.
 
-![](https://raw.githubusercontent.com/amaatouq/room-assigment/master/readme\_screenshots/new\_batch.png)
+![](https://raw.githubusercontent.com/amaatouq/room-assigment/master/readme_screenshots/new_batch.png)
 
 Go to [http://localhost:3000/](http://localhost:3000) and enjoy! If you don't have 3 friends to play with you, you always can use the `new player` button in development (for more details see this), which can add an arbitrary number players to the experiment while staying in the same browser (i.e., no need to open different browsers).
 
-![](https://raw.githubusercontent.com/amaatouq/room-assigment/master/readme\_screenshots/game.png)
+![](https://raw.githubusercontent.com/amaatouq/room-assigment/master/readme_screenshots/game.png)

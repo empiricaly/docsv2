@@ -1,5 +1,10 @@
 # The Processes and Elements of an Empirica Experiment
 
+{% hint style="danger" %}
+We are currently updating documentation for Empirica v2. Some information on
+this page is incorrect.
+{% endhint %}
+
 ### What is a React.js component?
 
 A React.js component is the main building block of the frontend of your Empirica App. There are many tutorials online to help with your understanding of React.js.
@@ -8,10 +13,10 @@ In Empirica, we assign certain components for the Intro Steps, the Round, the Ex
 
 A component is composed of:
 
-* **states** that affect what is rendered for the user, but that can also be changed by the user interacting with the rendered elements of the app.
-* **props** provided from other components that can be used to determine what is rendered for the user.
-* **other components** that it imports and builds into what it renders for the user.
-* a **render function** that determines what is shown to the user with a mix of HTML (with `<> tags`) and JavaScript (with `{}`).
+- **states** that affect what is rendered for the user, but that can also be changed by the user interacting with the rendered elements of the app.
+- **props** provided from other components that can be used to determine what is rendered for the user.
+- **other components** that it imports and builds into what it renders for the user.
+- a **render function** that determines what is shown to the user with a mix of HTML (with `<> tags`) and JavaScript (with `{}`).
 
 Each component is generally made into one `.jsx` file. Components can be imported into each other to build more complex components. Usually, the type of components used in Empirica are **class-based**.
 
@@ -23,71 +28,41 @@ A component might look like this:
 
 ```jsx
 // Importing elements and other components
-import React, { Component } from 'react'
-import GivingResponse from './GivingResponse'
+import React, { Component } from "react";
+import GivingResponse from "./GivingResponse";
 
 export default class Questionnaire extends Component {
-    // The state of the questionnaire
-    state = {
-        showHint: false
-    }
+  // The state of the questionnaire
+  state = {
+    showHint: false,
+  };
 
-    // Handling if the player clicks to show hint (toggles the hint on and off)
-    handleShowHint = () => {
-        this.setState({ showHint: !this.state.showHint })
-    }
+  // Handling if the player clicks to show hint (toggles the hint on and off)
+  handleShowHint = () => {
+    this.setState({ showHint: !this.state.showHint });
+  };
 
-    render() {
-
-        // Getting the props
-        const { player } = this.props;
-
-        return (
-            <div>
-                <p> What is the name of the first person to set foot on the moon?</p>
-
-                {/* A button that affects the conditional that
-                 determines whether to show the hint or not */}
-                <button onClick={this.handleShowHint()}>Show hint</button>
-                {this.state.showHint && <p className="hintcolour">He was American.</p>}
-
-                {/* Importing another component for the player to give their answer.
-                 We pass down the prop of the player */}
-                <GivingResponse player={player} />
-            </div>
-        )
-    }
-}
-```
-
-### How can I get rid of the "Waiting on the other players. Please wait until all players are ready"?
-
-This is not something directly specific to Empirica, it's just how the basic template is set up.
-
-&#x20;As shown [here](../overview/lifecycle/customising-when-players-submit-stages.md), it is possible to use the information that a Player has submitted their Stage to render something different than before they submit their Stage. In template, this happens in the `TaskResponse.jsx`.  You can see that two **render functions** have been created: `renderSubmitted()` and `renderInput()`. In the `render()` part of the component, you can see that there is an **if conditional** that determines whether the render function used will be `renderSubmitted()`, which will prevent the `renderSubmitted()` from being called (and thereby hiding the slider and method of response from the player):
-
-```jsx
-render() {
+  render() {
+    // Getting the props
     const { player } = this.props;
 
-    // If the player already submitted, don't show the slider or submit button
-    if (player.stage.submitted) {
-      return this.renderSubmitted();
-    }
-
     return (
-      <div className="task-response">
-        <form onSubmit={this.handleSubmit}>
-          {this.renderInput()}
-          {" "}
-          <button type="submit">Submit</button>
-        </form>
+      <div>
+        <p> What is the name of the first person to set foot on the moon?</p>
+
+        {/* A button that affects the conditional that
+                 determines whether to show the hint or not */}
+        <button onClick={this.handleShowHint()}>Show hint</button>
+        {this.state.showHint && <p className="hintcolour">He was American.</p>}
+
+        {/* Importing another component for the player to give their answer.
+                 We pass down the prop of the player */}
+        <GivingResponse player={player} />
       </div>
     );
   }
+}
 ```
-
-You can get rid of this message by taking out the **if conditional**, or changing what `renderSubmitted()` does.
 
 ### How can I redirect a player if I detect they are using a certain browser or a mobile device?
 
@@ -101,11 +76,11 @@ meteor npm install react-device-detect
 
 react-device-detect has different Booleans that you can import and use in one of your components to detect whether the player is using a certain browser.
 
-* isMobile for whether they are using a mobile device
-* isChrome for whether they are using Chrome
-* isFirefox for whether they are using Firefox
-* isSafari for whether they are using Safari
-* ...
+- isMobile for whether they are using a mobile device
+- isChrome for whether they are using Chrome
+- isFirefox for whether they are using Firefox
+- isSafari for whether they are using Safari
+- ...
 
 And others than you can find out about [here](https://www.npmjs.com/package/react-device-detect).
 
@@ -118,38 +93,46 @@ import { isMobile, isFirefox, isSafari, isChrome } from 'react-device-detect';
 For example, if you want to render a different consent form if the player is using a mobile device or is not using Chrome:
 
 ```jsx
-return !isMobile && isChrome ?
-(
-    <div>This is the consent form...</div>
-) :
-(
-    <div>Please use a computer and Chrome.</div>
-)
+return !isMobile && isChrome ? (
+  <div>This is the consent form...</div>
+) : (
+  <div>Please use a computer and Chrome.</div>
+);
 ```
 
 ### How can I show a different Exit Step to players depending on whether they have finished the game or if the game was cancelled/had a problem?
 
-In the `client/main.js` you set which components form the **Exit Steps** with `Empirica.exitSteps()`. You can use the `player.exitStatus` to separate out whether they have finished the game or if they were sent to the exit steps because the game was cancelled/had an issue and send them to different Exit Steps.
+In the `client/src/App.jsx` you set which components form the **Exit Steps** with
+the `exitSteps` prop on `EmpiricaContext`. You can use the
+`player.get("exitStatus")` to separate out whether they have finished the game
+or if they were sent to the exit steps because the game was cancelled/had an
+issue and send them to different Exit Steps.
 
 For example:
 
 ```jsx
-Empirica.exitSteps((game, player) => {
-    return player.exitStatus === "finished"
-        ? [PostSurvey, Thanks]
-        : [Sorry];
-});
+export default function App() {
+  // ...
+  return (
+    <EmpiricaParticipant>
+      <EmpiricaContext
+        existSteps={({ game, player }) =>  player.get("ended") === "finished" ? [PostSurvey, Thanks] : [Sorry]}>
+        <Game />
+      </EmpiricaContext>
+    </EmpiricaContext>
+  )
+}
 ```
 
 ### Can players navigate back and forth between the Exit Steps?
 
-For now, players cannot navigate back and forth between the Exit Steps.&#x20;
+For now, players cannot navigate back and forth between the Exit Steps.
 
-Each Exit Step has a name set by `static stepName = "";` and players can only move from one Exit Step to the next if the component has an element (e.g., a button) that will call the `onSubmit` prop. For example:
+Players can only move from one Exit Step to the next if the component has an element (e.g., a button) that will call the `next` prop. For example:
 
 ```jsx
-<button type="button" onClick={onSubmit}>
-    Finish this experiment
+<button type="button" onClick={next}>
+  Finish this experiment
 </button>
 ```
 
@@ -160,11 +143,12 @@ If you wanted multiple pages within the Exit Steps that players can navigate thr
 You can have a piece of code to manually send a player to an exit stage if they do something (e.g., you want to give them a quit button) by using:
 
 ```
-player.exit("name of exit step")
+player.set("ended", "reason")
 ```
 
 where the string is the name of the exit stage you want to send them to.
 
+<!--
 ### How can I use bots?
 
 In the `server/bots.js` you can create bots for them to participate in your games.
@@ -177,7 +161,7 @@ Empirica.bot("bob", {
   // onStageStart(bot, game, round, stage, players) {},
 
   // Called during each stage at tick interval (~1s at the moment)
-  onStageTick(bot, game, round, stage, secondsRemaining) {}
+  onStageTick(bot, game, round, stage, secondsRemaining) {},
 
   // // NOT SUPPORTED A player has changed a value
   // // This might happen a lot!
@@ -186,4 +170,4 @@ Empirica.bot("bob", {
   // // NOT SUPPORTED Called at the end of the stage (after it finished, before onStageEnd/onRoundEnd is called)
   // onStageEnd(bot, game, round, stage, players) {}
 });
-```
+``` -->

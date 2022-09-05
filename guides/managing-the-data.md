@@ -6,70 +6,56 @@ There are multiple places where you can record data in an Empirica experiment.
 
 ### To the player
 
-One way of recording the data of players' responses is to set them to the `player` prop itself. You can do so with this command:
+One way of recording the data of players' responses is to set them to the
+`player` prop itself. You can do so with this command:
 
 ```
-player.set("name of property", value)
+player.set("name_of_property", value)
 ```
 
-You can retrieve what you have set as a specific property/answer for the player with:
+You can retrieve what you have set as a specific property/answer for the player
+with:
 
 ```
-player.get("name of property")
+player.get("name_of_property")
 ```
 
-### To the player.stage
+### To the game, round or stage
 
-One way of recording the data of players' responses is to set them to the `player.stage` prop to identify a particular data/response of a particular player to a particular stage. You can do so with this command:
-
-```
-player.stage.set("name of property", value)
-```
-
-You can retrieve what you have set as a specific property/answer with:
+If you want to save general data (not specific to one player), you can save it
+to the `game`, `round` or `stage` with:
 
 ```
-player.stage.get("name of property")
-```
-
-### To the player.round
-
-One way of recording the data of players' responses is to set them to the `player.round` prop to identify a particular data/response of a particular player to a particular round. You can do so with this command:
-
-```
-player.round.set("name of property", value)
+game.set("name_of_property", value)
+round.set("name_of_property", value)
+stage.set("name_of_property", value)
 ```
 
 You can retrieve what you have set as a specific property/answer with:
 
 ```
-player.round.get("name of property")
+game.get("name_of_property")
+round.get("name_of_property")
+stage.get("name_of_property")
 ```
 
-### To the round
+### To the player.game, player.round or player.stage
 
-If you want to save general data (not specific to one player), you can save it to the `round` with:
-
-```
-round.set("name of property", value)
-```
-
-You can retrieve what you have set as a specific property/answer with:
+One way of recording the data of players' responses is to set them to the
+`player.game`, `player.round` or `player.stage` prop to identify a particular
+data/response of a _particular player_ to a _particular game, round or stage_.
+You can do so with this command:
 
 ```
-round.get("name of property")
-```
-
-### To the game
-
-If you want to save general data (not specific to one player), you can save it to the `game` with:
-
-```
-game.set("name of property", value)
+player.game.set("name_of_property", value)
+player.round.set("name_of_property", value)
+player.stage.set("name_of_property", value)
 ```
 
 You can retrieve what you have set as a specific property/answer with:
 
 ```
-game.get("name of property")
+player.game.get("name_of_property")
+player.round.get("name_of_property")
+player.stage.get("name_of_property")
 ```
