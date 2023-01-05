@@ -32,12 +32,6 @@
 * [The Processes and Elements of an Empirica Experiment](faq/the-processes-and-elements-of-an-empirica-experiment.md)
 * [Managing Players and Games](faq/faq.md)
 
-## Community Demos
-
-* [Guess The Correlation](community-demos/guess-the-correlation.md)
-* [Random Dot Motion](community-demos/random-dot-motion.md)
-* [Room Assignment](community-demos/room-assignment.md)
-
 ## Tips & Tricks
 
 * [Helpful Linux Commands](tips-and-tricks/helpful-linux-commands.md)
