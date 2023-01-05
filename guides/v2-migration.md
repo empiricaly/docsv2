@@ -55,6 +55,5 @@ On the client side, you will need to move over your configuration manually (intr
 There are a few known missing features compared to v1:
 
 * **Bot** There is currently no bot system in v2. We have everything we need to implement a great bot system, we it's not there yet. We will release this as soon as possible. Let us know your use case in a ticket.
-* **Lobby timeouts** The lobby timeouts are missing the extensible individual timeout mode. If you need this, please create a ticket and tell us your use case.
 * **Improved Admin** There is, of course, an admin UI already in v2, but it could be more feature rich. We are working on improvements there. Again, if you have particular features you want to see, create a ticket with your experience, so to help us prioritize what to work on first.
 * **Automated Deployment** Deployment currently requires setting up a server manually. We want to make this experience much easier. We're working on it.
