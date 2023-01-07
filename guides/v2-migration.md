@@ -16,9 +16,9 @@ We still have `server/` and `client/` directories. They are separate npm project
 
 ### Server-side
 
-On the server, we have the same callbacks except one: `onGameInit` is not called `onGameStart` (we already had an `onGameStart` that was not very used, and we have now merged them).
+On the server, we have the same callbacks except for one: `onGameInit` is not called `onGameStart` (we already had an `onGameStart` that was not very used, and we have now merged them).
 
-The arguments for each callback have changed a bit. We only pass the main object for the callback. For example, `onGameStart` passes a Game object, and `onStageEnd` passes a Stage object. You can walk through the objects if you need to reach related objects. For example, if you need the Game object in a Stage callback (say `onStageStart`), you can do: `stage.round.game`. It follows the logical structure of the objects: batches > games > rounds > stages. Players for a game are on the Game object.
+The arguments for each callback have changed a bit. We only pass the principal object for the callback. For example, `onGameStart` passes a Game object, and `onStageEnd` passes a Stage object. You can walk through the objects if you need to reach related objects. For example, if you need the Game object in a Stage callback (say `onStageStart`), you can do: `stage.round.game`. It follows the logical structure of the objects: batches > games > rounds > stages. Players for a game are on the Game object.
 
 ### Client-side
 
@@ -30,9 +30,9 @@ Configuration for intro and exit steps, as well as Consent, NewPlayerForm, Loadi
 
 ### Data&#x20;
 
-The database is no longer MongoDB. It is a single JSON file that resides in the `.empirica/local` directory, called `tajriba.json` (Tajriba is the name of our API Server). To back up or clear the database, it is simply a matter of copying or deleting that file.
+The database is no longer MongoDB. It is a single JSON file that resides in the `.empirica/local` directory, called `tajriba.json` (Tajriba is the name of our API Server). To back up or clear the database is simply a matter of copying or deleting that file.
 
-We do not recommend reading that file directly, as the format for that file might change over time. also, if you upgrade empirica, any previous `tajriba.json` file will be invalid with the newer version. Using the export command, you can still export the data from that file, even on a different version, though we recommend exporting data before upgrading, then clearing the Tajriba file after the upgrade.
+We do not recommend reading that file directly, as the format for that file might change over time. Also, if you upgrade empirica, any previous `tajriba.json` file will be invalid with the newer version. Using the export command, you can still export the data from that file, even on a different version. However, we recommend exporting data before upgrading, then clearing the Tajriba file after the upgrade.
 
 The `empirica export` is the preferred way to access the data. See [#exporting-the-data](managing-the-data.md#exporting-the-data "mention") for details about the export command.
 
@@ -40,11 +40,29 @@ The `empirica export` is the preferred way to access the data. See [#exporting-t
 
 Deployment is no longer done in Meteor Galaxy. Deployment is much easier done manually than it used to be, but it is still very much manual at the moment. See the [deploying-my-experiment](deploying-my-experiment/ "mention") page for an example deployment. We are working on further simplifying deployment.
 
+## API changes
+
+### Game Init
+
+You should make game initialization calls (`addRound`, `addStage`...) you used to make in `onGameInit` in `onGameStart`. Note that you can now add Rounds and Stages in any callback. For example, you can add a new Stage to a Round in `onStageEnd`. This allows for a dynamic number of Rounds and Stages. You could start by creating only 1 Round and 1 Stage in `onGameStart`, and add Stages and Rounds as needed during the Game.
+
+### Stage Submit
+
+Stage submission is now done with `player.stage.set("submit", true)` (it used to be `player.stage.submit()`). And you can check whether the player has submitted the stage (the on client and server) with `player.stage.get("submit")` (it used to be `player.stage.submitted`). You can now cancel a player's submit status by setting "submit" to false `player.stage.set("submit", false)`.
+
+### Game Treatment
+
+Game treatment is no longer in `game.treatment`. It is now found in `game.get("treatment")`.
+
+### Identifiers
+
+Identifiers (IDs) are now `.id` (it used to be `._id`). For example, you can do `game.id` (instead of `game._id`).
+
 ## Migrating an existing experiment
 
 The process of migrating an existing experiment is not automatic. If you do not need the new features of v2 and are done with developing your experiment, we recommend keeping it on v1. If you have just started or are about to start, moving to v2 is a good idea.
 
-If you wish to convert your existing experiment, we recommend you start by creating a new v2 experiment from scratch (see [quick-start.md](../getting-started/quick-start.md "mention")).
+If you wish to convert your existing experiment, we recommend you create a new v2 experiment from scratch (see [quick-start.md](../getting-started/quick-start.md "mention")).
 
 Then, move over your callbacks, making sure to change the reference to your objects (see the[#server-side](v2-migration.md#server-side "mention") section above).
 
@@ -55,5 +73,5 @@ On the client side, you will need to move over your configuration manually (intr
 There are a few known missing features compared to v1:
 
 * **Bot** There is currently no bot system in v2. We have everything we need to implement a great bot system, we it's not there yet. We will release this as soon as possible. Let us know your use case in a ticket.
-* **Improved Admin** There is, of course, an admin UI already in v2, but it could be more feature rich. We are working on improvements there. Again, if you have particular features you want to see, create a ticket with your experience, so to help us prioritize what to work on first.
-* **Automated Deployment** Deployment currently requires setting up a server manually. We want to make this experience much easier. We're working on it.
+* **Improved Admin** There is, of course, an admin UI already in v2, but it could be more feature rich. We are working on improvements there. Again, if you have particular features you want to see, create a ticket with your experience so to help us prioritize what to work on first.
+* **Automated Deployment** Deployment currently requires setting up a server manually. We want to make this experience much more accessible. We're working on it.
