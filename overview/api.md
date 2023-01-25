@@ -145,7 +145,7 @@ Empirica.onGameEnd(({ game }) => {
 See the [Special Empirica Component](../guides/special-empirica-components.md) page for more info.
 {% endhint %}
 
-## Server
+## Server Objects
 
 ### `Game` object
 
