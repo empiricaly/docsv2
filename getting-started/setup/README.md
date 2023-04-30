@@ -20,7 +20,7 @@ On macOS:
 
 ```
 rm -rf $HOME/.local/share/empirica
-rm -rf "$HOME/Library/Application Support"
+rm -rf "$HOME/Library/Application Support/empirica"
 ```
 
 On Linux:
