@@ -8,9 +8,6 @@ There are two main categories of modules:
 - **Admin**: modules that are used with full access to Tajriba data and
   functionality. These modules are used by the Empirica Admin Panel and the
   server.
-  - **admin**: the main admin module, which is not empirica-specific.
-  - **admin_classic**: the classic admin module.
-  - **admin_user**: the admin user module.
 - **Player**: modules that are used by the Empirica Player. These modules are
   used in the frontend.
 
