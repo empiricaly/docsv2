@@ -3,11 +3,11 @@
 ## Step 1.  Install WSL 2 and Ubuntu 20.04
 
 1. Follow either the written instructions or video tutorial below to install WSL2. &#x20;
-2. During this process, select "Ubuntu 20.04" as your Linux version.
+2. During this process, select "Ubuntu 20.04" or higher as your Linux version.
 3. See our overview below for a summary with screenshots.
 
 **Written Instructions:**\
-****[https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+[https://docs.microsoft.com/en-us/windows/wsl/install-win10](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 **Video Tutorial:**\
 [https://www.youtube.com/watch?v=D7Em1wjMiak](https://www.youtube.com/watch?v=D7Em1wjMiak) (commands in the description)
@@ -60,5 +60,5 @@ If you are using the WSL, you files for your experiment must be in the WSL, you 
 
 ### Using code editors
 
-Different [code editors](../../tips-and-tricks/code-editors.md) (such as VSCode) will have commands that you can run to open them in the current directory (e.g., `code .`). This helps make for a better coding experience in the WSL.
+Different [code editors](../../resources/code-editors.md) (such as VSCode) will have commands that you can run to open them in the current directory (e.g., `code .`). This helps make for a better coding experience in the WSL.
 
