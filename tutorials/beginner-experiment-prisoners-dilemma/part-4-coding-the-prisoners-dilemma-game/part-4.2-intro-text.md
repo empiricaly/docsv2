@@ -61,34 +61,32 @@ Within the browser, you can see these changes reflected immediately by simply sa
 
 Your edited file should look like this:
 
-{% code title="Introduction.jsx" lineNumbers="true" %}
-```jsx
-import React from "react";
-import { Button } from "../components/Button";
+<pre class="language-jsx" data-title="Introduction.jsx" data-line-numbers><code class="lang-jsx"><strong>import React from "react";
+</strong>import { Button } from "../components/Button";
 
 export function Introduction({ next }) {
   return (
-    <div className="mt-3 sm:mt-5 p-20">
-      <h3 className="text-lg leading-6 font-medium text-gray-900">
+    &#x3C;div className="mt-3 sm:mt-5 p-20">
+      &#x3C;h3 className="text-lg leading-6 font-medium text-gray-900">
         Instruction One
-      </h3>
-      <div className="mt-2 mb-6">
-        <p>
+      &#x3C;/h3>
+      &#x3C;div className="mt-2 mb-6">
+        &#x3C;p>
           In this game, you will be partnered with another experiment
           participant.
-          <br />
-          In <strong>each round of the game</strong>, you and your partner will:
-        </p>
-        <p>
+          &#x3C;br />
+          In &#x3C;strong>each round of the game&#x3C;/strong>, you and your partner will:
+        &#x3C;/p>
+        &#x3C;p>
           (a) choose whether to work together or to look out for your own
           interests
-        </p>
-        <p>(b) see each others choices and the results of your choices</p>
-      </div>
-      <Button handleClick={next} autoFocus>
-        <p>Next</p>
-      </Button>
-    </div>
+        &#x3C;/p>
+        &#x3C;p>(b) see each others choices and the results of your choices&#x3C;/p>
+      &#x3C;/div>
+      &#x3C;Button handleClick={next} autoFocus>
+        &#x3C;p>Next&#x3C;/p>
+      &#x3C;/Button>
+    &#x3C;/div>
   );
-```
-{% endcode %}
+}
+</code></pre>

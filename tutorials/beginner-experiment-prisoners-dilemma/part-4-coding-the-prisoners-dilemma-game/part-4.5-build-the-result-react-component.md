@@ -112,10 +112,8 @@ We can build up our click handler inline, as it only needs to set the stage subm
 
 Your final code should look like this:
 
-{% code title="Result.jsx" lineNumbers="true" %}
-```jsx
-import React from "react";
-import { usePlayer, usePlayers } from "@empirica/core/player/classic/react";
+<pre class="language-jsx" data-title="Result.jsx" data-line-numbers><code class="lang-jsx"><strong>import React from "react";
+</strong>import { usePlayer, usePlayers } from "@empirica/core/player/classic/react";
 import { Button } from "../components/Button";
 
 export function Result() {
@@ -124,20 +122,19 @@ export function Result() {
   const partner = players.filter((p) => p.id !== player.id)[0];
 
   return (
-    <div>
-      <p>You chose: {player.round.get("decision")}</p>
-      <p>Your partner chose: {partner.round.get("decision")}</p>
-      <br />
-      <p>You get {player.round.get("score")} months in jail!</p>
+    &#x3C;div>
+      &#x3C;p>You chose: {player.round.get("decision")}&#x3C;/p>
+      &#x3C;p>Your partner chose: {partner.round.get("decision")}&#x3C;/p>
+      &#x3C;br />
+      &#x3C;p>You get {player.round.get("score") || "TBD"} months in jail!&#x3C;/p>
 
-      <Button handleClick={() => player.stage.set("submit", true)}>
+      &#x3C;Button handleClick={() => player.stage.set("submit", true)}>
         Continue
-      </Button>
-    </div>
+      &#x3C;/Button>
+    &#x3C;/div>
   );
 }
-```
-{% endcode %}
+</code></pre>
 
 <figure><img src="../../../.gitbook/assets/ezgif-3-f6bbb852d6.gif" alt=""><figcaption><p>participant sites at the end of this step</p></figcaption></figure>
 

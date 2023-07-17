@@ -78,7 +78,7 @@ The admin console opens to the "Batches" tab. To create a new batch, click the "
 
 Click `Create` to return to the main batch screen. You'll see that a batch has been added to the batches list. Click "Start" to begin the batch.&#x20;
 
-<figure><img src="../../.gitbook/assets/Screenshot 2023-07-15 at 11.48.13 AM.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-07-16 at 4.23.23 PM.png" alt="" width="563"><figcaption></figcaption></figure>
 
 If you find it helpful to see the process animated:
 

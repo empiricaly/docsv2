@@ -78,5 +78,7 @@ Now we can restart Empirica to have it reflect our changes. The command below wi
 rm .empirica/local/tajriba.json; empirica
 ```
 
-At this point of the tutorial, you should be able to start a new game on the admin site ([http://localhost:3000/admin/](http://localhost:3000/admin/)). On participants' window ([http://localhost:3000/](http://localhost:3000/)), when you enter into the game, you'll see the message "Not yet implemented..."
+At this point of the tutorial, you should be able to start a new game on the admin site ([http://localhost:3000/admin/](http://localhost:3000/admin/)).&#x20;
+
+At this stage, if we login as a participant (by visiting [http://localhost:3000](http://localhost:3000/admin/)), the game will be stuck in loading, as we haven't yet added any content - that's what we'll do next!&#x20;
 

@@ -19,7 +19,7 @@ First, we'll enter some text to describe the Prisoner's Dilemma to the participa
         </li>
         <li>
           If you 📣 testify against your partner and he 🤐 keeps silent,
-          <strong>you are free</strong>.
+          <strong>you will only spend 1 month in jail</strong>.
         </li>
         <li>
           If you 🤐 keep silent, but your partner 📣 testifies, you get 
@@ -160,7 +160,7 @@ export function Choice() {
         </li>
         <li>
           If you 📣 testify against your partner and he 🤐 keeps silent,
-          <strong>you are free</strong>.
+          <strong>you will only spend 1 month in jail</strong>.
         </li>
         <li>
           If you 🤐 keep silent, but your partner 📣 testifies, you get

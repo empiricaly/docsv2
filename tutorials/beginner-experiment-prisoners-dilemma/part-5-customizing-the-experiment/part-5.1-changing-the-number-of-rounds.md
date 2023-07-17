@@ -177,13 +177,15 @@ We can now update the player's score to be the previous `currentScore`, plus the
 
 Your complete code for `server/src/callbacks.js` should now look like this:
 
-<pre class="language-javascript" data-title="server/src/callbacks.js" data-line-numbers><code class="lang-javascript"><strong>import { ClassicListenersCollector } from "@empirica/core/admin/classic";
-</strong>export const Empirica = new ClassicListenersCollector();
+{% code title="server/src/callbacks.js" lineNumbers="true" %}
+```javascript
+import { ClassicListenersCollector } from "@empirica/core/admin/classic";
+export const Empirica = new ClassicListenersCollector();
 
 Empirica.onGameStart(({ game }) => {
   const treatment = game.get("treatment");
   const { numRounds } = treatment;
-  for (let i = 0; i &#x3C; numRounds; i++) {
+  for (let i = 0; i < numRounds; i++) {
     const round = game.addRound({
       name: `Round ${i}`,
     });
@@ -200,6 +202,8 @@ Empirica.onStageEnded(({ stage }) => {
   if (stage.get("name") !== "choice") return;
   console.log("End of choice stage");
 
+  const players = stage.currentGame.players;
+  
   for (const player of players) {
     console.log("computing score for player ", player.id);
     const partner = players.filter((p) => p.id !== player.id)[0];
@@ -207,11 +211,11 @@ Empirica.onStageEnded(({ stage }) => {
     const partnerChoice = partner.round.get("decision");
 
     let score;
-    if (playerChoice === "testify" &#x26;&#x26; partnerChoice === "testify") {
+    if (playerChoice === "testify" && partnerChoice === "testify") {
       score = 6;
-    } else if (playerChoice === "testify" &#x26;&#x26; partnerChoice === "silent") {
-      score = 0;
-    } else if (playerChoice === "silent" &#x26;&#x26; partnerChoice === "testify") {
+    } else if (playerChoice === "testify" && partnerChoice === "silent") {
+      score = 1;
+    } else if (playerChoice === "silent" && partnerChoice === "testify") {
       score = 12;
     } else {
       score = 2;
@@ -225,7 +229,9 @@ Empirica.onStageEnded(({ stage }) => {
 Empirica.onRoundEnded(({ round }) => {});
 
 Empirica.onGameEnded(({ game }) => {});
-</code></pre>
+
+```
+{% endcode %}
 
 Remember to restart the server to incorporate server-side code changes by pressing `<ctrl>+c` within the terminal window, and then using the command below to clear the database and restart the server:
 
