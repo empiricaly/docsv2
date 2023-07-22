@@ -126,9 +126,8 @@ Empirica.onRoundEnd(({ round }) => {
 
 #### Example
 
-```javascript
-Empirica.onGameEnd(({ game }) => {
-  let maxScore = 0;
+<pre class="language-javascript"><code class="lang-javascript"><strong>Empirica.onGameEnd(({ game }) => {
+</strong>  let maxScore = 0;
   game.rounds.forEach((round) => {
     const roundMaxScore = round.get("maxScore") || 0;
     if (roundMaxScore > maxScore) {
@@ -137,12 +136,38 @@ Empirica.onGameEnd(({ game }) => {
   });
   game.set("maxScore", maxScore);
 });
+</code></pre>
+
+### Empirica.on(model, callback)
+
+`on(model, callback)` listens to the creation of new mode objects. Model objects are the "game", "round", "stage", "player" and "batch". The callback receives a `ctx` object, and the model object listened to. In the example below, we're listening to new games, so we receive the `game` as argument.
+
+```jsx
+Empirica.on("game", (ctx, { game } => {
+  if (game.get("initCalc")) return;
+  
+  game.set("initCalc", initCalcs());
+});
 ```
 
-## Client
+{% hint style="warning" %}
+Beware, `Empirica.on(model, callback)`is called on new objects **and** when the server restarts (when you run `empirica` or the server restarts after a code change in development mode). You should add a check such as the one in the example above, where we check if `initCalc` was already set at the top of the callback.
+{% endhint %}
+
+### Empirica.on(model, attributeName, callback)
+
+`on(model, attributeName, callback)` listens on changes to the attribute of `attributeName` on `model`. Model objects are the "game", "round", "stage", "player" and "batch". The callback receives a `ctx` object, the model object, and the attribute value. In the example below, we're listening on changes to `choice` on the `player` model.
+
+```jsx
+Empirica.on("player", "choice", (ctx, { player, choice } => {
+  if (choice === "yes") {
+    // ...
+  }
+});
+```
 
 {% hint style="info" %}
-See the [Special Empirica Component](../guides/special-empirica-components.md) page for more info.
+We recommend using the value of the attribute given on the callback argument instead of doing `.get(attributeName)` on the model object as the value could have changed changed asynchronously.
 {% endhint %}
 
 ## Server Objects
@@ -175,3 +200,12 @@ See the [Special Empirica Component](../guides/special-empirica-components.md) p
 | `id`           | String                              | The ID the player used to register (e.g. MTurk ID). |
 | `currentRound` | [Round object](api.md#round-object) | Round the player is currently in.                   |
 | `currentStage` | [Stage object](api.md#stage-object) | Stage the player is currently in.                   |
+| `currentGame`  | [Game object](api.md#game-object)   | Game the player is currently in.                    |
+
+## Client
+
+{% hint style="info" %}
+See the [Special Empirica Component](../guides/special-empirica-components.md) page for more info.
+{% endhint %}
+
+##
