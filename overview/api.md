@@ -143,7 +143,7 @@ Empirica.onRoundEnd(({ round }) => {
 `on(model, callback)` listens to the creation of new mode objects. Model objects are the "game", "round", "stage", "player" and "batch". The callback receives a `ctx` object, and the model object listened to. In the example below, we're listening to new games, so we receive the `game` as argument.
 
 ```jsx
-Empirica.on("game", (ctx, { game } => {
+Empirica.on("game", (ctx, { game }) => {
   if (game.get("initCalc")) return;
   
   game.set("initCalc", initCalcs());
@@ -159,7 +159,7 @@ Beware, `Empirica.on(model, callback)`is called on new objects **and** when the 
 `on(model, attributeName, callback)` listens on changes to the attribute of `attributeName` on `model`. Model objects are the "game", "round", "stage", "player" and "batch". The callback receives a `ctx` object, the model object, and the attribute value. In the example below, we're listening on changes to `choice` on the `player` model.
 
 ```jsx
-Empirica.on("player", "choice", (ctx, { player, choice } => {
+Empirica.on("player", "choice", (ctx, { player, choice }) => {
   if (choice === "yes") {
     // ...
   }
