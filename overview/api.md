@@ -87,28 +87,28 @@ Empirica.onStageStart(({ stage }) => {
 });
 ```
 
-### `Empirica.onStageEnd(callback)`
+### `Empirica.onStageEnded(callback)`
 
-`onStageEnd` is triggered after each stage. It receives the current [game](api.md#game-object), the current [round](api.md#round-object), and [stage](api.md#stage-object) that just ended.
+`onStageEnded` is triggered after each stage. It receives the current [game](api.md#game-object), the current [round](api.md#round-object), and [stage](api.md#stage-object) that just ended.
 
 #### Example
 
 ```javascript
-Empirica.onStageEnd(({ stage }) => {
+Empirica.onStageEnded(({ stage }) => {
   const expectedScore = stage.round.get("expectedScore");
   const group = stage.get("score") > expectedScore ? "great" : "not_great";
   stage.set("scoreGroup", group);
 });
 ```
 
-### `Empirica.onRoundEnd(callback)`
+### `Empirica.onRoundEnded(callback)`
 
-`onRoundEnd` is triggered after each round. It receives the current [game](api.md#game-object), and the [round](api.md#round-object) that just ended.
+`onRoundEnded` is triggered after each round. It receives the current [game](api.md#game-object), and the [round](api.md#round-object) that just ended.
 
 #### Example
 
 ```javascript
-Empirica.onRoundEnd(({ round }) => {
+Empirica.onRoundEnded(({ round }) => {
   let maxScore = 0;
   round.game.players.forEach((player) => {
     const playerScore = player.round.get("score") || 0;
@@ -120,14 +120,15 @@ Empirica.onRoundEnd(({ round }) => {
 });
 ```
 
-### `Empirica.onGameEnd(callback)`
+### `Empirica.onGameEnded(callback)`
 
-`onGameEnd` is triggered when the game ends. It receives the `game` that just ended.
+`onGameEnded` is triggered when the game ends. It receives the `game` that just ended.
 
 #### Example
 
-<pre class="language-javascript"><code class="lang-javascript"><strong>Empirica.onGameEnd(({ game }) => {
-</strong>  let maxScore = 0;
+```javascript
+Empirica.onGameEnded(({ game }) => {
+  let maxScore = 0;
   game.rounds.forEach((round) => {
     const roundMaxScore = round.get("maxScore") || 0;
     if (roundMaxScore > maxScore) {
@@ -136,7 +137,7 @@ Empirica.onRoundEnd(({ round }) => {
   });
   game.set("maxScore", maxScore);
 });
-</code></pre>
+```
 
 ### Empirica.on(model, callback)
 
