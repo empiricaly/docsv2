@@ -18,7 +18,8 @@
   * [Customising when players submit stages](overview/lifecycle/customising-when-players-submit-stages.md)
 * [Concepts](overview/concepts.md)
 * [Randomization & Batches](overview/randomization-and-batches.md)
-* [API](overview/api.md)
+* [API](overview/api/README.md)
+  * [Client Side API](overview/api/client-side-api.md)
 
 ## Guides
 

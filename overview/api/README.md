@@ -1,6 +1,6 @@
 # API
 
-This document describes Empirica's [server](api.md#server), [client](api.md#client) and [shared ](api.md#shared)APIs.
+This document describes Empirica's [server](./#server), [client](./#client) and [shared ](./#shared)APIs.
 
 ## Server
 
@@ -10,7 +10,7 @@ The `onGameStart` callback is called just before a game starts, when all players
 
 One (and one only) onGameStart callback is required for Empirica to work.
 
-The callback receives one argument, the [`game` object](api.md#game-object), which gives access to the `players` and the treatment for this game.
+The callback receives one argument, the [`game` object](./#game-object), which gives access to the `players` and the treatment for this game.
 
 It also offers the `addRound()` method, which allows to add a round to the `game`. The returned Round object will implement the `addStage(stageArgs)` method, which allows to add a Stage to the Round. The `stageArgs` object to be passed to the stage creation method must contain:
 
@@ -65,7 +65,7 @@ Contrary to client side data updates, sever-side updates are synchronous, there 
 
 ### `Empirica.onRoundStart(callback)`
 
-`onRoundStart` is triggered before each round starts, and before `onStageStart`. It receives the same options as `onGameStart`, and the [round](api.md#round-object) that is starting.
+`onRoundStart` is triggered before each round starts, and before `onStageStart`. It receives the same options as `onGameStart`, and the [round](./#round-object) that is starting.
 
 #### Example
 
@@ -77,7 +77,7 @@ Empirica.onRoundStart(({ round }) => {
 
 ### `Empirica.onStageStart(callback)`
 
-`onRoundStart` is triggered before each stage starts. It receives the same options as `onRoundStart`, and the [stage](api.md#stage-object) that is starting.
+`onRoundStart` is triggered before each stage starts. It receives the same options as `onRoundStart`, and the [stage](./#stage-object) that is starting.
 
 #### Example
 
@@ -89,7 +89,7 @@ Empirica.onStageStart(({ stage }) => {
 
 ### `Empirica.onStageEnded(callback)`
 
-`onStageEnded` is triggered after each stage. It receives the current [game](api.md#game-object), the current [round](api.md#round-object), and [stage](api.md#stage-object) that just ended.
+`onStageEnded` is triggered after each stage. It receives the current [game](./#game-object), the current [round](./#round-object), and [stage](./#stage-object) that just ended.
 
 #### Example
 
@@ -103,7 +103,7 @@ Empirica.onStageEnded(({ stage }) => {
 
 ### `Empirica.onRoundEnded(callback)`
 
-`onRoundEnded` is triggered after each round. It receives the current [game](api.md#game-object), and the [round](api.md#round-object) that just ended.
+`onRoundEnded` is triggered after each round. It receives the current [game](./#game-object), and the [round](./#round-object) that just ended.
 
 #### Example
 
@@ -175,38 +175,38 @@ We recommend using the value of the attribute given on the callback argument ins
 
 ### `Game` object
 
-| Property       | Type                                            | Description                                          |
-| -------------- | ----------------------------------------------- | ---------------------------------------------------- |
-| `players`      | Array of [Player objects](api.md#player-object) | Players participating in this Game.                  |
-| `rounds`       | Array of [Round objects](api.md#round-object)   | This will return every round that makes up the game. |
-| `stages`       | Array of [Stage objects](api.md#stage-object)   | This will return every stage that makes up the game. |
-| `currentRound` | [Round object](api.md#round-object)             | The current Round.                                   |
-| `currentStage` | [Stage object](api.md#stage-object)             | The current Stage.                                   |
+| Property       | Type                                        | Description                                          |
+| -------------- | ------------------------------------------- | ---------------------------------------------------- |
+| `players`      | Array of [Player objects](./#player-object) | Players participating in this Game.                  |
+| `rounds`       | Array of [Round objects](./#round-object)   | This will return every round that makes up the game. |
+| `stages`       | Array of [Stage objects](./#stage-object)   | This will return every stage that makes up the game. |
+| `currentRound` | [Round object](./#round-object)             | The current Round.                                   |
+| `currentStage` | [Stage object](./#stage-object)             | The current Stage.                                   |
 
 ### `Round` object
 
-| Property      | Type                                          | Description                   |
-| ------------- | --------------------------------------------- | ----------------------------- |
-| `stages`      | Array of [Stage objects](api.md#stage-object) | Stages composing this Round.  |
-| `currentGame` | [Game object](api.md#game-object)             | Game this round is a part of. |
+| Property      | Type                                      | Description                   |
+| ------------- | ----------------------------------------- | ----------------------------- |
+| `stages`      | Array of [Stage objects](./#stage-object) | Stages composing this Round.  |
+| `currentGame` | [Game object](./#game-object)             | Game this round is a part of. |
 
 ### `Stage` object
 
-<table><thead><tr><th>Property</th><th>Type</th><th>Description</th><th data-type="select"></th></tr></thead><tbody><tr><td><code>round</code></td><td><a href="api.md#round-object">Round object</a></td><td>Round this stage is a part of.</td><td></td></tr><tr><td><code>currentGame</code></td><td><a href="api.md#game-object">Game object</a></td><td>Game this stage is a part of.</td><td></td></tr></tbody></table>
+<table><thead><tr><th>Property</th><th>Type</th><th>Description</th><th data-type="select"></th></tr></thead><tbody><tr><td><code>round</code></td><td><a href="./#round-object">Round object</a></td><td>Round this stage is a part of.</td><td></td></tr><tr><td><code>currentGame</code></td><td><a href="./#game-object">Game object</a></td><td>Game this stage is a part of.</td><td></td></tr></tbody></table>
 
 ### `Player` object
 
-| Property       | Type                                | Description                                         |
-| -------------- | ----------------------------------- | --------------------------------------------------- |
-| `id`           | String                              | The ID the player used to register (e.g. MTurk ID). |
-| `currentRound` | [Round object](api.md#round-object) | Round the player is currently in.                   |
-| `currentStage` | [Stage object](api.md#stage-object) | Stage the player is currently in.                   |
-| `currentGame`  | [Game object](api.md#game-object)   | Game the player is currently in.                    |
+| Property       | Type                            | Description                                         |
+| -------------- | ------------------------------- | --------------------------------------------------- |
+| `id`           | String                          | The ID the player used to register (e.g. MTurk ID). |
+| `currentRound` | [Round object](./#round-object) | Round the player is currently in.                   |
+| `currentStage` | [Stage object](./#stage-object) | Stage the player is currently in.                   |
+| `currentGame`  | [Game object](./#game-object)   | Game the player is currently in.                    |
 
 ## Client
 
 {% hint style="info" %}
-See the [Special Empirica Component](../guides/special-empirica-components.md) page for more info.
+See the [Special Empirica Component](../../guides/special-empirica-components.md) page for more info.
 {% endhint %}
 
 ##

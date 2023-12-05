@@ -1,6 +1,6 @@
 # Game Life Cycle
 
-_Elements on this page refer to the [concepts](../concepts.md), and [API](../api.md) of an Empirica experiment._
+_Elements on this page refer to the_ [_concepts_](../concepts.md)_, and_ [_API_](../api/) _of an Empirica experiment._
 
 Empirica experiments are event driven. The image below summarizes the lifecycle from the beginning of a game through exit steps.
 
@@ -22,10 +22,10 @@ During these steps, players are **synchronous**; namely, every player has to fin
 
 In the `./server/src/callbacks.js`, a series of callbacks are triggered during this process:
 
-- Before a round starts, [`onRoundStart`](../api#empiricaonroundstartcallback) is called.
-- Before a stages starts, [`onStageStart`](../api#empiricaonstagestartcallback)is called.
-- When a Stage ends, [`onStageEnd`](../api#empiricaonstageendcallback) is called.
-- When a Round ends, [`onRoundEnd`](../api#empiricaonroundendcallback)is called.
+* Before a round starts, [`onRoundStart`](../api/#empiricaonroundstartcallback) is called.
+* Before a stages starts, [`onStageStart`](../api/#empiricaonstagestartcallback)is called.
+* When a Stage ends, [`onStageEnd`](../api/#empiricaonstageendcallback) is called.
+* When a Round ends, [`onRoundEnd`](../api/#empiricaonroundendcallback)is called.
 
 See our guide on customising when player submit a stage:
 
@@ -35,7 +35,7 @@ See our guide on customising when player submit a stage:
 
 ### Game end and exit steps
 
-Finally, when the last Round ends, after the end of Stage and Round callbacks are triggered, the [`onGameEnd`](../api#empiricaongameendcallback) callback is called in the `./server/src/callbacks.js`.
+Finally, when the last Round ends, after the end of Stage and Round callbacks are triggered, the [`onGameEnd`](../api/#empiricaongameendcallback) callback is called in the `./server/src/callbacks.js`.
 
 After which, the players goes through the exit steps. During these steps, players are **asynchronous**; namely, they complete these steps at their own pace until they have finished them, independent from the pace of other players.
 
@@ -43,9 +43,9 @@ After which, the players goes through the exit steps. During these steps, player
 
 The list of callbacks goes as follows in order:
 
-- `onGameStart` Required
-- `onRoundStart` Repeated for each Round
-- `onStageStart` Repeated for each Stage
-- `onStageEnd` Repeated for each Stage
-- `onRoundEnd` Repeated for each Round
-- `onGameEnd`
+* `onGameStart` Required
+* `onRoundStart` Repeated for each Round
+* `onStageStart` Repeated for each Stage
+* `onStageEnd` Repeated for each Stage
+* `onRoundEnd` Repeated for each Round
+* `onGameEnd`

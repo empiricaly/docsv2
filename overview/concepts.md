@@ -1,6 +1,6 @@
 # Concepts
 
-_Elements on this page might refer to the_ [_life cycle_](lifecycle/) _or the_ [_API_](api.md) _of an Empirica experiment._
+_Elements on this page might refer to the_ [_life cycle_](lifecycle/) _or the_ [_API_](api/) _of an Empirica experiment._
 
 ## Game
 
