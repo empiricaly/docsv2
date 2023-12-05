@@ -38,7 +38,7 @@ Within your current experiment, this will upgrade both the `empirica` command an
 If you need to upgrade (or downgrade) to a specific version of Empirica, you can pass the exact version like so:
 
 ```
-$ empirica upgrade --version "version: v1.2.3"
+$ empirica upgrade --version "v1.2.3"
 ```
 
 You can also choose to only upgrade the command line or the npm packages individually with either:
