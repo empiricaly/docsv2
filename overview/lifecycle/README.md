@@ -1,6 +1,6 @@
 # Game Life Cycle
 
-_Elements on this page refer to the_ [_concepts_](../concepts.md)_, and_ [_API_](../api/) _of an Empirica experiment._
+_Elements on this page refer to the_ [_concepts_](../concepts.md)_, and_ [_API_](../api.md) _of an Empirica experiment._
 
 Empirica experiments are event driven. The image below summarizes the lifecycle from the beginning of a game through exit steps.
 
