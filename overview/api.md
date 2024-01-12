@@ -71,7 +71,7 @@ Contrary to client side data updates, sever-side updates are synchronous, there 
 
 ```javascript
 Empirica.onRoundStart(({ round }) => {
-  round.set("scoreToReach", round.game.get("maxScore"));
+  round.set("scoreToReach", round.currentGame.get("maxScore"));
 });
 ```
 
@@ -110,7 +110,7 @@ Empirica.onStageEnded(({ stage }) => {
 ```javascript
 Empirica.onRoundEnded(({ round }) => {
   let maxScore = 0;
-  round.game.players.forEach((player) => {
+  round.currentGame.players.forEach((player) => {
     const playerScore = player.round.get("score") || 0;
     if (playerScore > maxScore) {
       maxScore = playerScore;
