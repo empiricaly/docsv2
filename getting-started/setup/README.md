@@ -2,8 +2,8 @@
 
 1. Run the installation script:
 
-```
-curl https://install.empirica.dev | sh
+```sh
+curl -fsS https://install.empirica.dev | sh
 ```
 
 That's it, you're done! Proceed to create your experiment:
@@ -12,24 +12,13 @@ That's it, you're done! Proceed to create your experiment:
 [quick-start.md](../quick-start.md)
 {% endcontent-ref %}
 
-### Pre-release cleanup
+{% hint style="info" %}
+If you are running on an older version and are encountering version issues, try running the curl command above again. It should reset your local install.
+{% endhint %}
 
-If have installed `empirica` before the official launch (before January 2023), you might need to clean the beta version from your system.
-
-On macOS:
-
-```
-rm -rf $HOME/.local/share/empirica
-rm -rf "$HOME/Library/Application Support/empirica"
-```
-
-On Linux:
-
-```
-rm -rf $HOME/.local/share/empirica
-```
-
-Then, proceed to reinstall empirica with the command at the top of this page.
+{% hint style="success" %}
+To upgrade the empirica command globally on your machine, you can either run `empirica upgrade --global` outside of any projects, or run the curl command above again.
+{% endhint %}
 
 ### **A note about Windows Setup**
 
