@@ -89,13 +89,13 @@
 
 > **CSV**: "csv"
 
-Defined in: [lib/@empirica/core/src/admin/classic/export/export.ts:9](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/export/export.ts#L9)
+Defined in: [lib/@empirica/core/src/admin/classic/export/export.ts:9](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/export/export.ts#L9)
 
 ##### JSON
 
 > **JSON**: "json"
 
-Defined in: [lib/@empirica/core/src/admin/classic/export/export.ts:10](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/export/export.ts#L10)
+Defined in: [lib/@empirica/core/src/admin/classic/export/export.ts:10](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/export/export.ts#L10)
 
 ---
 
@@ -107,19 +107,19 @@ Defined in: [lib/@empirica/core/src/admin/classic/export/export.ts:10](https://g
 
 > **ParticipantConnect**: "PARTICIPANT_CONNECT"
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:21](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L21)
+Defined in: [lib/@empirica/core/src/admin/events.ts:21](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L21)
 
 ##### ParticipantDisconnect
 
 > **ParticipantDisconnect**: "PARTICIPANT_DISCONNECT"
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:22](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L22)
+Defined in: [lib/@empirica/core/src/admin/events.ts:22](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L22)
 
 ##### TransitionAdd
 
 > **TransitionAdd**: "TRANSITION_ADD"
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:20](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L20)
+Defined in: [lib/@empirica/core/src/admin/events.ts:20](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L20)
 
 ---
 
@@ -140,7 +140,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:20](https://github.com/empir
 > donesObs: `Observable`\<`string`[]\>,
 > setAttributes: `Function`): [`Attributes`](modules.md#attributes)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:49](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L49)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:49](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L49)
 
 ###### Parameters
 
@@ -164,7 +164,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:49](https://github.com/
 
 > `readonly` **setAttributes**: `Function`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:52](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L52)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:52](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L52)
 
 ###### Type declaration
 
@@ -190,7 +190,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:52](https://github.com/
 
 > **attribute**(scopeID: `string`, key: `string`): [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:67](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L67)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:67](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L67)
 
 ###### Parameters
 
@@ -211,7 +211,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:67](https://github.com/
 
 > **attributePeek**(scopeID: `string`, key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:93](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L93)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:93](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L93)
 
 ###### Parameters
 
@@ -232,7 +232,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:93](https://github.com/
 
 > **attributes**(scopeID: `string`): [`SharedAttribute`](modules.md#sharedattribute)[]
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:83](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L83)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:83](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L83)
 
 ###### Parameters
 
@@ -252,7 +252,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:83](https://github.com/
 
 > **nextAttributeValue**(scopeID: `string`, key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:129](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L129)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:129](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L129)
 
 ###### Parameters
 
@@ -273,7 +273,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:129](https://github.com
 
 > **scopeWasUpdated**(scopeID?: `string`): `boolean`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:165](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L165)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:165](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L165)
 
 ###### Parameters
 
@@ -293,7 +293,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:165](https://github.com
 
 > **subscribeAttribute**(kind: `string`, key: `string`): `Observable`\<[`AttributeMsg`](modules.md#attributemsg)\>
 
-Defined in: [lib/@empirica/core/src/admin/attributes.ts:24](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/attributes.ts#L24)
+Defined in: [lib/@empirica/core/src/admin/attributes.ts:24](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/attributes.ts#L24)
 
 ###### Parameters
 
@@ -324,7 +324,7 @@ Defined in: [lib/@empirica/core/src/admin/attributes.ts:24](https://github.com/e
 > scopes: [`Scopes`](modules.md#scopes)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > attributes: [`Attributes`](modules.md#attributes)): [`Batch`](modules.md#batch)
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L109)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L109)
 
 ###### Parameters
 
@@ -349,19 +349,19 @@ Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empi
 
 > get **games()**: [`Game`](modules.md#game)[]
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:44](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L44)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:44](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L44)
 
 ##### hasEnded
 
 > get **hasEnded()**: `boolean`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:97](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L97)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:97](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L97)
 
 ##### id
 
 > get **id()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L209)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L209)
 
 ###### Inherited from
 
@@ -371,13 +371,13 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/emp
 
 > get **isRunning()**: `boolean`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:40](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L40)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:40](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L40)
 
 ##### lobbyConfig
 
 > get **lobbyConfig()**: `object`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:101](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L101)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:101](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L101)
 
 #### Methods
 
@@ -385,7 +385,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:101](https://github.
 
 > **addGame**(attributes: [`AttrInput`](modules.md#attrinput)[] \| \{}): `object`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:48](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L48)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:48](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L48)
 
 ###### Parameters
 
@@ -427,7 +427,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:48](https://github.c
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L269)
 
 ###### Parameters
 
@@ -449,7 +449,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/emp
 
 > **end**(reason: `string`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:88](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L88)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:88](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L88)
 
 ###### Parameters
 
@@ -465,7 +465,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:88](https://github.c
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L221)
 
 ###### Parameters
 
@@ -485,7 +485,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/emp
 
 > **getAttribute**(key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L225)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L225)
 
 ###### Parameters
 
@@ -505,7 +505,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/emp
 
 > **inspect**(): `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L278)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L278)
 
 ###### Returns
 
@@ -519,7 +519,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/emp
 
 > **obs**(key: `string`): `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L229)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L229)
 
 ###### Parameters
 
@@ -539,7 +539,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/emp
 
 > **set**(values: [`AttributeInput`](modules.md#attributeinput)[]): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L233)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L233)
 
 ###### Parameters
 
@@ -560,7 +560,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/emp
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L234)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L234)
 
 ###### Parameters
 
@@ -608,7 +608,7 @@ Collects event listeners.
 
 > get **unique()**: [`ListenersCollectorProxy`](modules.md#listenerscollectorproxy)\<`Context`, `Kinds`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:140](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L140)
+Defined in: [lib/@empirica/core/src/admin/events.ts:140](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L140)
 
 ###### Inherited from
 
@@ -624,7 +624,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:140](https://github.com/empi
 > callback?: [`EvtCtxCallback`](modules.md#evtctxcallback)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > uniqueCall?: `boolean`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:204](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L204)
+Defined in: [lib/@empirica/core/src/admin/events.ts:204](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L204)
 
 ###### Parameters
 
@@ -651,7 +651,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:204](https://github.com/empi
 > callback?: [`EvtCtxCallback`](modules.md#evtctxcallback)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > uniqueCall?: `boolean`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:185](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L185)
+Defined in: [lib/@empirica/core/src/admin/events.ts:185](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L185)
 
 ###### Parameters
 
@@ -674,7 +674,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:185](https://github.com/empi
 
 > **flush**(): `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:124](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L124)
+Defined in: [lib/@empirica/core/src/admin/events.ts:124](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L124)
 
 ###### Returns
 
@@ -688,7 +688,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:124](https://github.com/empi
 
 > **flushAfter**(cb: `Function`): `void` \| () => `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:132](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L132)
+Defined in: [lib/@empirica/core/src/admin/events.ts:132](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L132)
 
 ###### Parameters
 
@@ -708,7 +708,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:132](https://github.com/empi
 
 > **on**(kind: "start" \| "ready", callback: `Function`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:146](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L146)
+Defined in: [lib/@empirica/core/src/admin/events.ts:146](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L146)
 
 ###### Parameters
 
@@ -727,7 +727,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:146](https://github.com/empi
 
 > **on**(event: [`TajribaEvent`](modules.md#tajribaevent), callback: [`EvtCtxCallback`](modules.md#evtctxcallback)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:152](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L152)
+Defined in: [lib/@empirica/core/src/admin/events.ts:152](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L152)
 
 ###### Parameters
 
@@ -746,7 +746,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:152](https://github.com/empi
 
 > **on**\<Kind\>(kind: `Kind`, callback: [`EvtCtxCallback`](modules.md#evtctxcallback)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:155](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L155)
+Defined in: [lib/@empirica/core/src/admin/events.ts:155](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L155)
 
 ###### Type parameters
 
@@ -775,7 +775,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:155](https://github.com/empi
 > callback: [`EvtCtxCallback`](modules.md#evtctxcallback)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > uniqueCall?: `boolean`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:161](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L161)
+Defined in: [lib/@empirica/core/src/admin/events.ts:161](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L161)
 
 ###### Type parameters
 
@@ -804,7 +804,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:161](https://github.com/empi
 
 > **onGameEnded**(cb: `Function`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:101](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/proxy.ts#L101)
+Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:101](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/proxy.ts#L101)
 
 ###### Parameters
 
@@ -842,7 +842,7 @@ round.addStage({ name: "Result", duration: 120 });
 game.players.forEach((player) => player.set("score", 0));
 ```
 
-Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:31](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/proxy.ts#L31)
+Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:31](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/proxy.ts#L31)
 
 ###### Parameters
 
@@ -858,7 +858,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:31](https://github.co
 
 > **onRoundEnded**(cb: `Function`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:87](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/proxy.ts#L87)
+Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:87](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/proxy.ts#L87)
 
 ###### Parameters
 
@@ -874,7 +874,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:87](https://github.co
 
 > **onRoundStart**(cb: `Function`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:45](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/proxy.ts#L45)
+Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:45](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/proxy.ts#L45)
 
 ###### Parameters
 
@@ -890,7 +890,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:45](https://github.co
 
 > **onStageEnded**(cb: `Function`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:73](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/proxy.ts#L73)
+Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:73](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/proxy.ts#L73)
 
 ###### Parameters
 
@@ -906,7 +906,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:73](https://github.co
 
 > **onStageStart**(cb: `Function`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:59](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/proxy.ts#L59)
+Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:59](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/proxy.ts#L59)
 
 ###### Parameters
 
@@ -949,7 +949,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/proxy.ts:59](https://github.co
 
 > **new EventContext**\<Context, Kinds\>(): [`EventContext`](modules.md#eventcontext)\<`Context`, `Kinds`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:375](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L375)
+Defined in: [lib/@empirica/core/src/admin/events.ts:375](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L375)
 
 ###### Type parameters
 
@@ -968,7 +968,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:375](https://github.com/empi
 
 > get **globals()**: [`Globals`](modules.md#globals)
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:459](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L459)
+Defined in: [lib/@empirica/core/src/admin/events.ts:459](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L459)
 
 #### Methods
 
@@ -976,7 +976,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:459](https://github.com/empi
 
 > **addGroups**(input: `AddGroupInput`[]): `Promise`\<\{id: `string`;}[]\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:435](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L435)
+Defined in: [lib/@empirica/core/src/admin/events.ts:435](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L435)
 
 ###### Parameters
 
@@ -992,7 +992,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:435](https://github.com/empi
 
 > **addLinks**(input: `LinkInput`[]): `Promise`\<[`AddLinkPayload`](modules.md#addlinkpayload)[]\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:440](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L440)
+Defined in: [lib/@empirica/core/src/admin/events.ts:440](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L440)
 
 ###### Parameters
 
@@ -1008,7 +1008,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:440](https://github.com/empi
 
 > **addScopes**(input: `AddScopeInput`[]): `Promise`\<[`AddScopePayload`](modules.md#addscopepayload)[]\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:430](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L430)
+Defined in: [lib/@empirica/core/src/admin/events.ts:430](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L430)
 
 ###### Parameters
 
@@ -1024,7 +1024,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:430](https://github.com/empi
 
 > **addSteps**(input: `AddStepInput`[]): `Promise`\<[`StepPayload`](modules.md#steppayload)[]\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:445](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L445)
+Defined in: [lib/@empirica/core/src/admin/events.ts:445](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L445)
 
 ###### Parameters
 
@@ -1040,7 +1040,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:445](https://github.com/empi
 
 > **addTransitions**(input: `TransitionInput`[]): `Promise`\<[`AddTransitionPayload`](modules.md#addtransitionpayload)[]\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:450](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L450)
+Defined in: [lib/@empirica/core/src/admin/events.ts:450](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L450)
 
 ###### Parameters
 
@@ -1056,7 +1056,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:450](https://github.com/empi
 
 > **flush**(): `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:386](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L386)
+Defined in: [lib/@empirica/core/src/admin/events.ts:386](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L386)
 
 ###### Returns
 
@@ -1066,7 +1066,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:386](https://github.com/empi
 
 > **flushAfter**(cb: `Function`): `void` \| () => `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:390](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L390)
+Defined in: [lib/@empirica/core/src/admin/events.ts:390](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L390)
 
 ###### Parameters
 
@@ -1082,7 +1082,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:390](https://github.com/empi
 
 > **participantsSub**(): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:420](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L420)
+Defined in: [lib/@empirica/core/src/admin/events.ts:420](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L420)
 
 ###### Returns
 
@@ -1092,7 +1092,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:420](https://github.com/empi
 
 > **scopeSub**(...inputs: `Partial`\<[`ScopeSubscriptionInput`](modules.md#scopesubscriptioninput)\>[]): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:414](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L414)
+Defined in: [lib/@empirica/core/src/admin/events.ts:414](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L414)
 
 ###### Parameters
 
@@ -1108,7 +1108,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:414](https://github.com/empi
 
 > **scopesByKind**\<T\>(kind: _keyof_ `Kinds`): `Map`\<`string`, `T`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:394](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L394)
+Defined in: [lib/@empirica/core/src/admin/events.ts:394](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L394)
 
 ###### Type parameters
 
@@ -1130,7 +1130,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:394](https://github.com/empi
 
 > **scopesByKindID**\<T\>(kind: _keyof_ `Kinds`, id: `string`): `undefined` \| `T`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:398](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L398)
+Defined in: [lib/@empirica/core/src/admin/events.ts:398](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L398)
 
 ###### Type parameters
 
@@ -1156,7 +1156,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:398](https://github.com/empi
 > key: `string`,
 > val: `string`): `T`[]
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:405](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L405)
+Defined in: [lib/@empirica/core/src/admin/events.ts:405](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L405)
 
 ###### Type parameters
 
@@ -1180,7 +1180,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:405](https://github.com/empi
 
 > **transitionsSub**(stepID: `string`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:424](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L424)
+Defined in: [lib/@empirica/core/src/admin/events.ts:424](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L424)
 
 ###### Parameters
 
@@ -1202,7 +1202,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:424](https://github.com/empi
 
 > **new EventProxy**(ctx: [`EventContext`](modules.md#eventcontext)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>): [`EventProxy`](modules.md#eventproxy)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1103](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L1103)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1103](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L1103)
 
 ###### Parameters
 
@@ -1220,19 +1220,19 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1103](https://github
 
 > get **batches()**: [`Batch`](modules.md#batch)[]
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1106](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L1106)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1106](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L1106)
 
 ##### games
 
 > get **games()**: [`Game`](modules.md#game)[]
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1111](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L1111)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1111](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L1111)
 
 ##### players
 
 > get **players()**: [`Player`](modules.md#player)[]
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1116](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L1116)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1116](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L1116)
 
 ---
 
@@ -1252,7 +1252,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1116](https://github
 > scopes: [`Scopes`](modules.md#scopes)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > attributes: [`Attributes`](modules.md#attributes)): [`Game`](modules.md#game)
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L109)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L109)
 
 ###### Parameters
 
@@ -1277,7 +1277,7 @@ BatchOwned.constructor
 
 > get **batch()**: `undefined` \| [`Batch`](modules.md#batch)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L107)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L107)
 
 ###### Inherited from
 
@@ -1287,37 +1287,37 @@ BatchOwned.batch
 
 > get **currentRound()**: `undefined` \| [`Round`](modules.md#round)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:141](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L141)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:141](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L141)
 
 ##### currentStage
 
 > get **currentStage()**: `undefined` \| [`Stage`](modules.md#stage)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:137](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L137)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:137](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L137)
 
 ##### hasEnded
 
 > get **hasEnded()**: `boolean`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:145](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L145)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:145](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L145)
 
 ##### hasNotStarted
 
 > get **hasNotStarted()**: `boolean`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:157](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L157)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:157](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L157)
 
 ##### hasStarted
 
 > get **hasStarted()**: `boolean`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:153](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L153)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:153](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L153)
 
 ##### id
 
 > get **id()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L209)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L209)
 
 ###### Inherited from
 
@@ -1327,31 +1327,31 @@ BatchOwned.id
 
 > get **isRunning()**: `boolean`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:163](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L163)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:163](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L163)
 
 ##### lobbyConfig
 
 > get **lobbyConfig()**: `object`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:167](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L167)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:167](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L167)
 
 ##### players
 
 > get **players()**: [`Player`](modules.md#player)[]
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:133](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L133)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:133](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L133)
 
 ##### rounds
 
 > get **rounds()**: [`Round`](modules.md#round)[]
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:121](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L121)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:121](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L121)
 
 ##### stages
 
 > get **stages()**: [`Stage`](modules.md#stage)[]
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:127](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L127)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:127](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L127)
 
 #### Methods
 
@@ -1359,7 +1359,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:127](https://github.
 
 > **addRound**(attributes: [`AttrInput`](modules.md#attrinput)[] \| \{}): `object`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:380](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L380)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:380](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L380)
 
 ###### Parameters
 
@@ -1440,7 +1440,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:380](https://github.
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L269)
 
 ###### Parameters
 
@@ -1462,7 +1462,7 @@ BatchOwned.append
 
 > **assignPlayer**(player: [`Player`](modules.md#player)): `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:183](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L183)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:183](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L183)
 
 ###### Parameters
 
@@ -1478,7 +1478,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:183](https://github.
 
 > **createPlayerGame**(player: [`Player`](modules.md#player)): `Promise`\<`undefined` \| `string`\>
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:685](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L685)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:685](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L685)
 
 ###### Parameters
 
@@ -1494,7 +1494,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:685](https://github.
 
 > **createPlayerGames**(players: [`Player`](modules.md#player)[]): `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:620](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L620)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:620](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L620)
 
 ###### Parameters
 
@@ -1510,7 +1510,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:620](https://github.
 
 > **end**(status: `string`, reason: `string`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:598](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L598)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:598](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L598)
 
 ###### Parameters
 
@@ -1527,7 +1527,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:598](https://github.
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L221)
 
 ###### Parameters
 
@@ -1547,7 +1547,7 @@ BatchOwned.get
 
 > **getAttribute**(key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L225)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L225)
 
 ###### Parameters
 
@@ -1567,7 +1567,7 @@ BatchOwned.getAttribute
 
 > **inspect**(): `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L278)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L278)
 
 ###### Returns
 
@@ -1581,7 +1581,7 @@ BatchOwned.inspect
 
 > **obs**(key: `string`): `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L229)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L229)
 
 ###### Parameters
 
@@ -1601,7 +1601,7 @@ BatchOwned.obs
 
 > **set**(values: [`AttributeInput`](modules.md#attributeinput)[]): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L233)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L233)
 
 ###### Parameters
 
@@ -1622,7 +1622,7 @@ BatchOwned.set
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L234)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L234)
 
 ###### Parameters
 
@@ -1644,7 +1644,7 @@ BatchOwned.set
 
 > **start**(): `void`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:172](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L172)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:172](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L172)
 
 ###### Returns
 
@@ -1667,7 +1667,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:172](https://github.
 > globalScopeID: `string`,
 > setAttributes: `Function`): [`Globals`](modules.md#globals)
 
-Defined in: [lib/@empirica/core/src/admin/globals.ts:9](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/globals.ts#L9)
+Defined in: [lib/@empirica/core/src/admin/globals.ts:9](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/globals.ts#L9)
 
 ###### Parameters
 
@@ -1691,7 +1691,7 @@ Defined in: [lib/@empirica/core/src/admin/globals.ts:9](https://github.com/empir
 
 > **self**: `BehaviorSubject`\<`undefined` \| [`SharedGlobals`](modules.md#sharedglobals)\>
 
-Defined in: [lib/@empirica/core/src/shared/globals.ts:8](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/globals.ts#L8)
+Defined in: [lib/@empirica/core/src/shared/globals.ts:8](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/globals.ts#L8)
 
 ###### Inherited from
 
@@ -1703,7 +1703,7 @@ Defined in: [lib/@empirica/core/src/shared/globals.ts:8](https://github.com/empi
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/globals.ts:39](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/globals.ts#L39)
+Defined in: [lib/@empirica/core/src/shared/globals.ts:39](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/globals.ts#L39)
 
 ###### Parameters
 
@@ -1723,7 +1723,7 @@ Defined in: [lib/@empirica/core/src/shared/globals.ts:39](https://github.com/emp
 
 > **obs**(key: `string`): `BehaviorSubject`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/globals.ts:48](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/globals.ts#L48)
+Defined in: [lib/@empirica/core/src/shared/globals.ts:48](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/globals.ts#L48)
 
 ###### Parameters
 
@@ -1746,7 +1746,7 @@ Defined in: [lib/@empirica/core/src/shared/globals.ts:48](https://github.com/emp
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/admin/globals.ts:17](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/globals.ts#L17)
+Defined in: [lib/@empirica/core/src/admin/globals.ts:17](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/globals.ts#L17)
 
 ###### Parameters
 
@@ -1799,7 +1799,7 @@ Defined in: [lib/@empirica/core/src/admin/globals.ts:17](https://github.com/empi
 
 > get **unique()**: [`ListenersCollectorProxy`](modules.md#listenerscollectorproxy)\<`Context`, `Kinds`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:140](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L140)
+Defined in: [lib/@empirica/core/src/admin/events.ts:140](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L140)
 
 #### Methods
 
@@ -1811,7 +1811,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:140](https://github.com/empi
 > callback?: [`EvtCtxCallback`](modules.md#evtctxcallback)\<`Context`, `Kinds`\>,
 > uniqueCall?: `boolean`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:204](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L204)
+Defined in: [lib/@empirica/core/src/admin/events.ts:204](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L204)
 
 ###### Parameters
 
@@ -1834,7 +1834,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:204](https://github.com/empi
 > callback?: [`EvtCtxCallback`](modules.md#evtctxcallback)\<`Context`, `Kinds`\>,
 > uniqueCall?: `boolean`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:185](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L185)
+Defined in: [lib/@empirica/core/src/admin/events.ts:185](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L185)
 
 ###### Parameters
 
@@ -1853,7 +1853,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:185](https://github.com/empi
 
 > **flush**(): `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:124](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L124)
+Defined in: [lib/@empirica/core/src/admin/events.ts:124](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L124)
 
 ###### Returns
 
@@ -1863,7 +1863,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:124](https://github.com/empi
 
 > **flushAfter**(cb: `Function`): `void` \| () => `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:132](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L132)
+Defined in: [lib/@empirica/core/src/admin/events.ts:132](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L132)
 
 ###### Parameters
 
@@ -1879,7 +1879,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:132](https://github.com/empi
 
 > **on**(kind: "start" \| "ready", callback: `Function`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:146](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L146)
+Defined in: [lib/@empirica/core/src/admin/events.ts:146](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L146)
 
 ###### Parameters
 
@@ -1894,7 +1894,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:146](https://github.com/empi
 
 > **on**(event: [`TajribaEvent`](modules.md#tajribaevent), callback: [`EvtCtxCallback`](modules.md#evtctxcallback)\<`Context`, `Kinds`\>): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:152](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L152)
+Defined in: [lib/@empirica/core/src/admin/events.ts:152](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L152)
 
 ###### Parameters
 
@@ -1909,7 +1909,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:152](https://github.com/empi
 
 > **on**\<Kind\>(kind: `Kind`, callback: [`EvtCtxCallback`](modules.md#evtctxcallback)\<`Context`, `Kinds`\>): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:155](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L155)
+Defined in: [lib/@empirica/core/src/admin/events.ts:155](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L155)
 
 ###### Type parameters
 
@@ -1934,7 +1934,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:155](https://github.com/empi
 > callback: [`EvtCtxCallback`](modules.md#evtctxcallback)\<`Context`, `Kinds`\>,
 > uniqueCall?: `boolean`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:161](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L161)
+Defined in: [lib/@empirica/core/src/admin/events.ts:161](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L161)
 
 ###### Type parameters
 
@@ -1976,7 +1976,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:161](https://github.com/empi
 
 > **new ListenersCollectorProxy**\<Context, Kinds\>(coll: [`ListenersCollector`](modules.md#listenerscollector)\<`Context`, `Kinds`\>): [`ListenersCollectorProxy`](modules.md#listenerscollectorproxy)\<`Context`, `Kinds`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:319](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L319)
+Defined in: [lib/@empirica/core/src/admin/events.ts:319](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L319)
 
 ###### Type parameters
 
@@ -2005,7 +2005,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:319](https://github.com/empi
 
 > get **unique()**: [`ListenersCollectorProxy`](modules.md#listenerscollectorproxy)\<`Context`, `Kinds`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:140](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L140)
+Defined in: [lib/@empirica/core/src/admin/events.ts:140](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L140)
 
 ###### Inherited from
 
@@ -2021,7 +2021,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:140](https://github.com/empi
 > callback?: [`EvtCtxCallback`](modules.md#evtctxcallback)\<`Context`, `Kinds`\>,
 > uniqueCall?: `boolean`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:204](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L204)
+Defined in: [lib/@empirica/core/src/admin/events.ts:204](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L204)
 
 ###### Parameters
 
@@ -2048,7 +2048,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:204](https://github.com/empi
 > callback?: [`EvtCtxCallback`](modules.md#evtctxcallback)\<`Context`, `Kinds`\>,
 > uniqueCall?: `boolean`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:185](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L185)
+Defined in: [lib/@empirica/core/src/admin/events.ts:185](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L185)
 
 ###### Parameters
 
@@ -2071,7 +2071,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:185](https://github.com/empi
 
 > **flush**(): `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:124](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L124)
+Defined in: [lib/@empirica/core/src/admin/events.ts:124](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L124)
 
 ###### Returns
 
@@ -2085,7 +2085,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:124](https://github.com/empi
 
 > **flushAfter**(cb: `Function`): `void` \| () => `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:132](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L132)
+Defined in: [lib/@empirica/core/src/admin/events.ts:132](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L132)
 
 ###### Parameters
 
@@ -2105,7 +2105,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:132](https://github.com/empi
 
 > **on**(kind: "start" \| "ready", callback: `Function`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:146](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L146)
+Defined in: [lib/@empirica/core/src/admin/events.ts:146](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L146)
 
 ###### Parameters
 
@@ -2124,7 +2124,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:146](https://github.com/empi
 
 > **on**(event: [`TajribaEvent`](modules.md#tajribaevent), callback: [`EvtCtxCallback`](modules.md#evtctxcallback)\<`Context`, `Kinds`\>): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:152](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L152)
+Defined in: [lib/@empirica/core/src/admin/events.ts:152](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L152)
 
 ###### Parameters
 
@@ -2143,7 +2143,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:152](https://github.com/empi
 
 > **on**\<Kind\>(kind: `Kind`, callback: [`EvtCtxCallback`](modules.md#evtctxcallback)\<`Context`, `Kinds`\>): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:155](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L155)
+Defined in: [lib/@empirica/core/src/admin/events.ts:155](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L155)
 
 ###### Type parameters
 
@@ -2172,7 +2172,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:155](https://github.com/empi
 > callback: [`EvtCtxCallback`](modules.md#evtctxcallback)\<`Context`, `Kinds`\>,
 > uniqueCall?: `boolean`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:161](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L161)
+Defined in: [lib/@empirica/core/src/admin/events.ts:161](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L161)
 
 ###### Type parameters
 
@@ -2215,7 +2215,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:161](https://github.com/empi
 > scopes: [`Scopes`](modules.md#scopes)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > attributes: [`Attributes`](modules.md#attributes)): [`Player`](modules.md#player)
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L109)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L109)
 
 ###### Parameters
 
@@ -2240,7 +2240,7 @@ GameOwned.constructor
 
 > `optional` **participantID**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:735](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L735)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:735](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L735)
 
 #### Accessors
 
@@ -2248,7 +2248,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:735](https://github.
 
 > get **batch()**: `undefined` \| [`Batch`](modules.md#batch)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L107)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L107)
 
 ###### Inherited from
 
@@ -2258,7 +2258,7 @@ GameOwned.batch
 
 > get **currentGame()**: `undefined` \| [`Game`](modules.md#game)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L729)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L729)
 
 ###### Inherited from
 
@@ -2268,25 +2268,25 @@ GameOwned.currentGame
 
 > get **currentRound()**: `undefined` \| [`Round`](modules.md#round)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:748](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L748)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:748](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L748)
 
 ##### currentStage
 
 > get **currentStage()**: `undefined` \| [`Stage`](modules.md#stage)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:763](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L763)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:763](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L763)
 
 ##### game
 
 > get **game()**: `undefined` \| [`PlayerGame`](modules.md#playergame)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:737](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L737)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:737](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L737)
 
 ##### id
 
 > get **id()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L209)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L209)
 
 ###### Inherited from
 
@@ -2296,13 +2296,13 @@ GameOwned.id
 
 > get **round()**: `undefined` \| [`PlayerRound`](modules.md#playerround)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:752](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L752)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:752](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L752)
 
 ##### stage
 
 > get **stage()**: `undefined` \| [`PlayerStage`](modules.md#playerstage)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:767](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L767)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:767](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L767)
 
 #### Methods
 
@@ -2313,7 +2313,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:767](https://github.
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L269)
 
 ###### Parameters
 
@@ -2335,7 +2335,7 @@ GameOwned.append
 
 > **exit**(reason: `string`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:778](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L778)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:778](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L778)
 
 ###### Parameters
 
@@ -2351,7 +2351,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:778](https://github.
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L221)
 
 ###### Parameters
 
@@ -2371,7 +2371,7 @@ GameOwned.get
 
 > **getAttribute**(key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L225)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L225)
 
 ###### Parameters
 
@@ -2391,7 +2391,7 @@ GameOwned.getAttribute
 
 > **hasUpdated**(): `boolean`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:786](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L786)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:786](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L786)
 
 ###### Returns
 
@@ -2405,7 +2405,7 @@ GameOwned.hasUpdated
 
 > **inspect**(): `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L278)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L278)
 
 ###### Returns
 
@@ -2419,7 +2419,7 @@ GameOwned.inspect
 
 > **obs**(key: `string`): `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L229)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L229)
 
 ###### Parameters
 
@@ -2439,7 +2439,7 @@ GameOwned.obs
 
 > **set**(values: [`AttributeInput`](modules.md#attributeinput)[]): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L233)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L233)
 
 ###### Parameters
 
@@ -2460,7 +2460,7 @@ GameOwned.set
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L234)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L234)
 
 ###### Parameters
 
@@ -2496,7 +2496,7 @@ GameOwned.set
 > scopes: [`Scopes`](modules.md#scopes)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > attributes: [`Attributes`](modules.md#attributes)): [`PlayerGame`](modules.md#playergame)
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L109)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L109)
 
 ###### Parameters
 
@@ -2521,7 +2521,7 @@ GameOwned.constructor
 
 > get **batch()**: `undefined` \| [`Batch`](modules.md#batch)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L107)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L107)
 
 ###### Inherited from
 
@@ -2531,7 +2531,7 @@ GameOwned.batch
 
 > get **currentGame()**: `undefined` \| [`Game`](modules.md#game)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L729)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L729)
 
 ###### Inherited from
 
@@ -2541,7 +2541,7 @@ GameOwned.currentGame
 
 > get **id()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L209)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L209)
 
 ###### Inherited from
 
@@ -2556,7 +2556,7 @@ GameOwned.id
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L269)
 
 ###### Parameters
 
@@ -2578,7 +2578,7 @@ GameOwned.append
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L221)
 
 ###### Parameters
 
@@ -2598,7 +2598,7 @@ GameOwned.get
 
 > **getAttribute**(key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L225)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L225)
 
 ###### Parameters
 
@@ -2618,7 +2618,7 @@ GameOwned.getAttribute
 
 > **inspect**(): `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L278)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L278)
 
 ###### Returns
 
@@ -2632,7 +2632,7 @@ GameOwned.inspect
 
 > **obs**(key: `string`): `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L229)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L229)
 
 ###### Parameters
 
@@ -2652,7 +2652,7 @@ GameOwned.obs
 
 > **set**(values: [`AttributeInput`](modules.md#attributeinput)[]): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L233)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L233)
 
 ###### Parameters
 
@@ -2673,7 +2673,7 @@ GameOwned.set
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L234)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L234)
 
 ###### Parameters
 
@@ -2709,7 +2709,7 @@ GameOwned.set
 > scopes: [`Scopes`](modules.md#scopes)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > attributes: [`Attributes`](modules.md#attributes)): [`PlayerRound`](modules.md#playerround)
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L109)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L109)
 
 ###### Parameters
 
@@ -2734,7 +2734,7 @@ GameOwned.constructor
 
 > get **batch()**: `undefined` \| [`Batch`](modules.md#batch)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L107)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L107)
 
 ###### Inherited from
 
@@ -2744,7 +2744,7 @@ GameOwned.batch
 
 > get **currentGame()**: `undefined` \| [`Game`](modules.md#game)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L729)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L729)
 
 ###### Inherited from
 
@@ -2754,7 +2754,7 @@ GameOwned.currentGame
 
 > get **id()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L209)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L209)
 
 ###### Inherited from
 
@@ -2769,7 +2769,7 @@ GameOwned.id
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L269)
 
 ###### Parameters
 
@@ -2791,7 +2791,7 @@ GameOwned.append
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L221)
 
 ###### Parameters
 
@@ -2811,7 +2811,7 @@ GameOwned.get
 
 > **getAttribute**(key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L225)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L225)
 
 ###### Parameters
 
@@ -2831,7 +2831,7 @@ GameOwned.getAttribute
 
 > **inspect**(): `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L278)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L278)
 
 ###### Returns
 
@@ -2845,7 +2845,7 @@ GameOwned.inspect
 
 > **obs**(key: `string`): `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L229)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L229)
 
 ###### Parameters
 
@@ -2865,7 +2865,7 @@ GameOwned.obs
 
 > **set**(values: [`AttributeInput`](modules.md#attributeinput)[]): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L233)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L233)
 
 ###### Parameters
 
@@ -2886,7 +2886,7 @@ GameOwned.set
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L234)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L234)
 
 ###### Parameters
 
@@ -2922,7 +2922,7 @@ GameOwned.set
 > scopes: [`Scopes`](modules.md#scopes)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > attributes: [`Attributes`](modules.md#attributes)): [`PlayerStage`](modules.md#playerstage)
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L109)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L109)
 
 ###### Parameters
 
@@ -2947,7 +2947,7 @@ GameOwned.constructor
 
 > get **batch()**: `undefined` \| [`Batch`](modules.md#batch)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L107)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L107)
 
 ###### Inherited from
 
@@ -2957,7 +2957,7 @@ GameOwned.batch
 
 > get **currentGame()**: `undefined` \| [`Game`](modules.md#game)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L729)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L729)
 
 ###### Inherited from
 
@@ -2967,7 +2967,7 @@ GameOwned.currentGame
 
 > get **id()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L209)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L209)
 
 ###### Inherited from
 
@@ -2977,13 +2977,13 @@ GameOwned.id
 
 > get **player()**: `undefined` \| [`Player`](modules.md#player)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:808](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L808)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:808](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L808)
 
 ##### stage
 
 > get **stage()**: `undefined` \| [`Stage`](modules.md#stage)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:804](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L804)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:804](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L804)
 
 #### Methods
 
@@ -2994,7 +2994,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:804](https://github.
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L269)
 
 ###### Parameters
 
@@ -3016,7 +3016,7 @@ GameOwned.append
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L221)
 
 ###### Parameters
 
@@ -3036,7 +3036,7 @@ GameOwned.get
 
 > **getAttribute**(key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L225)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L225)
 
 ###### Parameters
 
@@ -3056,7 +3056,7 @@ GameOwned.getAttribute
 
 > **inspect**(): `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L278)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L278)
 
 ###### Returns
 
@@ -3070,7 +3070,7 @@ GameOwned.inspect
 
 > **obs**(key: `string`): `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L229)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L229)
 
 ###### Parameters
 
@@ -3090,7 +3090,7 @@ GameOwned.obs
 
 > **set**(values: [`AttributeInput`](modules.md#attributeinput)[]): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L233)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L233)
 
 ###### Parameters
 
@@ -3111,7 +3111,7 @@ GameOwned.set
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L234)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L234)
 
 ###### Parameters
 
@@ -3147,7 +3147,7 @@ GameOwned.set
 > scopes: [`Scopes`](modules.md#scopes)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > attributes: [`Attributes`](modules.md#attributes)): [`Round`](modules.md#round)
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L109)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L109)
 
 ###### Parameters
 
@@ -3172,7 +3172,7 @@ GameOwned.constructor
 
 > get **batch()**: `undefined` \| [`Batch`](modules.md#batch)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L107)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L107)
 
 ###### Inherited from
 
@@ -3182,7 +3182,7 @@ GameOwned.batch
 
 > get **currentGame()**: `undefined` \| [`Game`](modules.md#game)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L729)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L729)
 
 ###### Inherited from
 
@@ -3192,7 +3192,7 @@ GameOwned.currentGame
 
 > get **id()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L209)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L209)
 
 ###### Inherited from
 
@@ -3202,7 +3202,7 @@ GameOwned.id
 
 > get **stages()**: [`Stage`](modules.md#stage)[]
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:824](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L824)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:824](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L824)
 
 #### Methods
 
@@ -3210,7 +3210,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:824](https://github.
 
 > **addStage**(attributes: [`AttrInput`](modules.md#attrinput)[] \| \{}): `object`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:834](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L834)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:834](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L834)
 
 ###### Parameters
 
@@ -3252,7 +3252,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:834](https://github.
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L269)
 
 ###### Parameters
 
@@ -3274,7 +3274,7 @@ GameOwned.append
 
 > **createPlayerRound**(player: [`Player`](modules.md#player)): `Promise`\<`undefined` \| `string`\>
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:941](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L941)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:941](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L941)
 
 ###### Parameters
 
@@ -3290,7 +3290,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:941](https://github.
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L221)
 
 ###### Parameters
 
@@ -3310,7 +3310,7 @@ GameOwned.get
 
 > **getAttribute**(key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L225)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L225)
 
 ###### Parameters
 
@@ -3330,7 +3330,7 @@ GameOwned.getAttribute
 
 > **inspect**(): `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L278)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L278)
 
 ###### Returns
 
@@ -3344,7 +3344,7 @@ GameOwned.inspect
 
 > **obs**(key: `string`): `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L229)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L229)
 
 ###### Parameters
 
@@ -3364,7 +3364,7 @@ GameOwned.obs
 
 > **set**(values: [`AttributeInput`](modules.md#attributeinput)[]): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L233)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L233)
 
 ###### Parameters
 
@@ -3385,7 +3385,7 @@ GameOwned.set
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L234)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L234)
 
 ###### Parameters
 
@@ -3428,7 +3428,7 @@ GameOwned.set
 > scopes: [`Scopes`](modules.md#scopes)\<`Context`, `Kinds`\>,
 > attributes: [`Attributes`](modules.md#attributes)): [`Scope`](modules.md#scope)\<`Context`, `Kinds`\>
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L109)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L109)
 
 ###### Type parameters
 
@@ -3460,7 +3460,7 @@ Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empi
 
 > get **id()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L209)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L209)
 
 ###### Inherited from
 
@@ -3475,7 +3475,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/emp
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L269)
 
 ###### Parameters
 
@@ -3497,7 +3497,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/emp
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L221)
 
 ###### Parameters
 
@@ -3517,7 +3517,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/emp
 
 > **getAttribute**(key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L225)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L225)
 
 ###### Parameters
 
@@ -3537,7 +3537,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/emp
 
 > **inspect**(): `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L278)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L278)
 
 ###### Returns
 
@@ -3551,7 +3551,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/emp
 
 > **obs**(key: `string`): `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L229)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L229)
 
 ###### Parameters
 
@@ -3571,7 +3571,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/emp
 
 > **set**(values: [`AttributeInput`](modules.md#attributeinput)[]): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L233)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L233)
 
 ###### Parameters
 
@@ -3592,7 +3592,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/emp
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L234)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L234)
 
 ###### Parameters
 
@@ -3637,7 +3637,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/emp
 > attributes: [`Attributes`](modules.md#attributes),
 > taj: [`TajribaAdminAccess`](modules.md#tajribaadminaccess)): [`Scopes`](modules.md#scopes)\<`Context`, `Kinds`\>
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:36](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L36)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:36](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L36)
 
 ###### Type parameters
 
@@ -3671,7 +3671,7 @@ SharedScopes\<Context, Kinds, Scope\<Context, Kinds\>\>.constructor
 
 > `readonly` **taj**: [`TajribaAdminAccess`](modules.md#tajribaadminaccess)
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:42](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L42)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:42](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L42)
 
 #### Methods
 
@@ -3679,7 +3679,7 @@ Defined in: [lib/@empirica/core/src/admin/scopes.ts:42](https://github.com/empir
 
 > **byKind**\<T\>(kind: _keyof_ `Kinds`): `Map`\<`string`, `T`\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:72](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L72)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:72](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L72)
 
 ###### Type parameters
 
@@ -3705,7 +3705,7 @@ SharedScopes.byKind
 
 > **kindWasUpdated**(kind: _keyof_ `Kinds`): `boolean`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:82](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L82)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:82](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L82)
 
 ###### Parameters
 
@@ -3725,7 +3725,7 @@ SharedScopes.kindWasUpdated
 
 > **scope**(id: `string`): `undefined` \| [`Scope`](modules.md#scope)\<`Context`, `Kinds`\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:64](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L64)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:64](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L64)
 
 ###### Parameters
 
@@ -3745,7 +3745,7 @@ SharedScopes.scope
 
 > **scopeObs**(id: `string`): `undefined` \| `Observable`\<[`Scope`](modules.md#scope)\<`Context`, `Kinds`\>\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:68](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L68)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:68](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L68)
 
 ###### Parameters
 
@@ -3774,7 +3774,7 @@ SharedScopes.scopeObs
 > scopeID: `string`,
 > key: `string`): [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:241](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L241)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:241](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L241)
 
 ###### Parameters
 
@@ -3794,13 +3794,13 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:241](https://github.com
 
 > `readonly` **key**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:244](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L244)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:244](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L244)
 
 ##### scopeID
 
 > `readonly` **scopeID**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:243](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L243)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:243](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L243)
 
 #### Accessors
 
@@ -3808,37 +3808,37 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:243](https://github.com
 
 > get **createdAt()**: `null` \| `Date`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:251](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L251)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:251](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L251)
 
 ##### id
 
 > get **id()**: `undefined` \| `string`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:247](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L247)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:247](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L247)
 
 ##### items
 
 > get **items()**: `null` \| [`SharedAttribute`](modules.md#sharedattribute)[]
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L269)
 
 ##### nodeID
 
 > get **nodeID()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:263](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L263)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:263](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L263)
 
 ##### obs
 
 > get **obs()**: `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:255](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L255)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:255](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L255)
 
 ##### value
 
 > get **value()**: `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:259](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L259)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:259](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L259)
 
 #### Methods
 
@@ -3849,7 +3849,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:259](https://github.com
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>,
 > item?: `boolean`): `undefined` \| `SetAttributeInput`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:287](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L287)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:287](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L287)
 
 ###### Parameters
 
@@ -3867,7 +3867,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:287](https://github.com
 
 > **\_update**(attr?: [`AttributeChange`](modules.md#attributechange), item?: `boolean`): `void`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:366](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L366)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:366](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L366)
 
 ###### Parameters
 
@@ -3884,7 +3884,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:366](https://github.com
 
 > **set**(value: [`JsonValue`](modules.md#jsonvalue), ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:277](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L277)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:277](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L277)
 
 ###### Parameters
 
@@ -3914,7 +3914,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:277](https://github.com
 > donesObs: `Observable`\<`string`[]\>,
 > setAttributes: `Function`): [`SharedAttributes`](modules.md#sharedattributes)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:49](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L49)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:49](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L49)
 
 ###### Parameters
 
@@ -3934,7 +3934,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:49](https://github.com/
 
 > `readonly` **setAttributes**: `Function`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:52](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L52)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:52](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L52)
 
 ###### Type declaration
 
@@ -3956,7 +3956,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:52](https://github.com/
 
 > **attribute**(scopeID: `string`, key: `string`): [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:67](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L67)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:67](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L67)
 
 ###### Parameters
 
@@ -3973,7 +3973,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:67](https://github.com/
 
 > **attributePeek**(scopeID: `string`, key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:93](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L93)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:93](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L93)
 
 ###### Parameters
 
@@ -3990,7 +3990,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:93](https://github.com/
 
 > **attributes**(scopeID: `string`): [`SharedAttribute`](modules.md#sharedattribute)[]
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:83](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L83)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:83](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L83)
 
 ###### Parameters
 
@@ -4006,7 +4006,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:83](https://github.com/
 
 > **nextAttributeValue**(scopeID: `string`, key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:129](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L129)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:129](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L129)
 
 ###### Parameters
 
@@ -4023,7 +4023,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:129](https://github.com
 
 > **scopeWasUpdated**(scopeID?: `string`): `boolean`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:165](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L165)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:165](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L165)
 
 ###### Parameters
 
@@ -4049,7 +4049,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:165](https://github.com
 
 > **new SharedGlobals**(globals: `Observable`\<`SubAttributesPayload`\>): [`SharedGlobals`](modules.md#sharedglobals)
 
-Defined in: [lib/@empirica/core/src/shared/globals.ts:10](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/globals.ts#L10)
+Defined in: [lib/@empirica/core/src/shared/globals.ts:10](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/globals.ts#L10)
 
 ###### Parameters
 
@@ -4067,7 +4067,7 @@ Defined in: [lib/@empirica/core/src/shared/globals.ts:10](https://github.com/emp
 
 > **self**: `BehaviorSubject`\<`undefined` \| [`SharedGlobals`](modules.md#sharedglobals)\>
 
-Defined in: [lib/@empirica/core/src/shared/globals.ts:8](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/globals.ts#L8)
+Defined in: [lib/@empirica/core/src/shared/globals.ts:8](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/globals.ts#L8)
 
 #### Methods
 
@@ -4075,7 +4075,7 @@ Defined in: [lib/@empirica/core/src/shared/globals.ts:8](https://github.com/empi
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/globals.ts:39](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/globals.ts#L39)
+Defined in: [lib/@empirica/core/src/shared/globals.ts:39](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/globals.ts#L39)
 
 ###### Parameters
 
@@ -4091,7 +4091,7 @@ Defined in: [lib/@empirica/core/src/shared/globals.ts:39](https://github.com/emp
 
 > **obs**(key: `string`): `BehaviorSubject`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/globals.ts:48](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/globals.ts#L48)
+Defined in: [lib/@empirica/core/src/shared/globals.ts:48](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/globals.ts#L48)
 
 ###### Parameters
 
@@ -4124,7 +4124,7 @@ Defined in: [lib/@empirica/core/src/shared/globals.ts:48](https://github.com/emp
 
 > **new SharedScope**\<Context, Kinds\>(): [`SharedScope`](modules.md#sharedscope)\<`Context`, `Kinds`\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:194](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L194)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:194](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L194)
 
 ###### Type parameters
 
@@ -4143,7 +4143,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:194](https://github.com/emp
 
 > get **id()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L209)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L209)
 
 #### Methods
 
@@ -4154,7 +4154,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/emp
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L269)
 
 ###### Parameters
 
@@ -4172,7 +4172,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/emp
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L221)
 
 ###### Parameters
 
@@ -4188,7 +4188,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/emp
 
 > **getAttribute**(key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L225)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L225)
 
 ###### Parameters
 
@@ -4204,7 +4204,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/emp
 
 > **inspect**(): `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L278)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L278)
 
 ###### Returns
 
@@ -4214,7 +4214,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/emp
 
 > **obs**(key: `string`): `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L229)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L229)
 
 ###### Parameters
 
@@ -4230,7 +4230,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/emp
 
 > **set**(values: [`AttributeInput`](modules.md#attributeinput)[]): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L233)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L233)
 
 ###### Parameters
 
@@ -4247,7 +4247,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/emp
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L234)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L234)
 
 ###### Parameters
 
@@ -4279,7 +4279,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/emp
 > scopes: [`Scopes`](modules.md#scopes)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>,
 > attributes: [`Attributes`](modules.md#attributes)): [`Stage`](modules.md#stage)
 
-Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/scopes.ts#L109)
+Defined in: [lib/@empirica/core/src/admin/scopes.ts:109](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/scopes.ts#L109)
 
 ###### Parameters
 
@@ -4304,7 +4304,7 @@ GameOwned.constructor
 
 > get **batch()**: `undefined` \| [`Batch`](modules.md#batch)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L107)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:107](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L107)
 
 ###### Inherited from
 
@@ -4314,7 +4314,7 @@ GameOwned.batch
 
 > get **currentGame()**: `undefined` \| [`Game`](modules.md#game)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L729)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:729](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L729)
 
 ###### Inherited from
 
@@ -4324,7 +4324,7 @@ GameOwned.currentGame
 
 > get **id()**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L209)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:209](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L209)
 
 ###### Inherited from
 
@@ -4334,7 +4334,7 @@ GameOwned.id
 
 > get **round()**: `undefined` \| [`Round`](modules.md#round)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:991](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L991)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:991](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L991)
 
 #### Methods
 
@@ -4345,7 +4345,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:991](https://github.
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L269)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:269](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L269)
 
 ###### Parameters
 
@@ -4367,7 +4367,7 @@ GameOwned.append
 
 > **createPlayerStage**(player: [`Player`](modules.md#player)): `Promise`\<`undefined` \| `string`\>
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1023](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L1023)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1023](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L1023)
 
 ###### Parameters
 
@@ -4383,7 +4383,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1023](https://github
 
 > **end**(status: `string`, reason: `string`): `void`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:999](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L999)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:999](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L999)
 
 ###### Parameters
 
@@ -4400,7 +4400,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:999](https://github.
 
 > **get**(key: `string`): `undefined` \| [`JsonValue`](modules.md#jsonvalue)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L221)
 
 ###### Parameters
 
@@ -4420,7 +4420,7 @@ GameOwned.get
 
 > **getAttribute**(key: `string`): `undefined` \| [`SharedAttribute`](modules.md#sharedattribute)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L225)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L225)
 
 ###### Parameters
 
@@ -4440,7 +4440,7 @@ GameOwned.getAttribute
 
 > **inspect**(): `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L278)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:278](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L278)
 
 ###### Returns
 
@@ -4454,7 +4454,7 @@ GameOwned.inspect
 
 > **isCurrent**(): `boolean`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:995](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L995)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:995](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L995)
 
 ###### Returns
 
@@ -4464,7 +4464,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:995](https://github.
 
 > **obs**(key: `string`): `Observable`\<`undefined` \| [`JsonValue`](modules.md#jsonvalue)\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L229)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L229)
 
 ###### Parameters
 
@@ -4484,7 +4484,7 @@ GameOwned.obs
 
 > **set**(values: [`AttributeInput`](modules.md#attributeinput)[]): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L233)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:233](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L233)
 
 ###### Parameters
 
@@ -4505,7 +4505,7 @@ GameOwned.set
 > value: [`JsonValue`](modules.md#jsonvalue),
 > ao?: `Partial`\<[`AttributeOptions`](modules.md#attributeoptions)\>): `void`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L234)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L234)
 
 ###### Parameters
 
@@ -4540,7 +4540,7 @@ GameOwned.set
 > addTransitions: `Function`,
 > globals: [`Globals`](modules.md#globals)): [`TajribaAdminAccess`](modules.md#tajribaadminaccess)
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:225](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L225)
+Defined in: [lib/@empirica/core/src/admin/context.ts:225](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L225)
 
 ###### Parameters
 
@@ -4564,7 +4564,7 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:225](https://github.com/emp
 
 > `readonly` **addFinalizer**: `Function`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:226](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L226)
+Defined in: [lib/@empirica/core/src/admin/context.ts:226](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L226)
 
 ###### Type declaration
 
@@ -4584,7 +4584,7 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:226](https://github.com/emp
 
 > `readonly` **addGroups**: `Function`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:228](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L228)
+Defined in: [lib/@empirica/core/src/admin/context.ts:228](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L228)
 
 ###### Type declaration
 
@@ -4604,7 +4604,7 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:228](https://github.com/emp
 
 > `readonly` **addLinks**: `Function`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:229](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L229)
+Defined in: [lib/@empirica/core/src/admin/context.ts:229](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L229)
 
 ###### Type declaration
 
@@ -4624,7 +4624,7 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:229](https://github.com/emp
 
 > `readonly` **addScopes**: `Function`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:227](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L227)
+Defined in: [lib/@empirica/core/src/admin/context.ts:227](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L227)
 
 ###### Type declaration
 
@@ -4644,7 +4644,7 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:227](https://github.com/emp
 
 > `readonly` **addSteps**: `Function`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:230](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L230)
+Defined in: [lib/@empirica/core/src/admin/context.ts:230](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L230)
 
 ###### Type declaration
 
@@ -4664,7 +4664,7 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:230](https://github.com/emp
 
 > `readonly` **addTransitions**: `Function`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:231](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L231)
+Defined in: [lib/@empirica/core/src/admin/context.ts:231](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L231)
 
 ###### Type declaration
 
@@ -4684,7 +4684,7 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:231](https://github.com/emp
 
 > `readonly` **globals**: [`Globals`](modules.md#globals)
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:234](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L234)
+Defined in: [lib/@empirica/core/src/admin/context.ts:234](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L234)
 
 ---
 
@@ -4698,13 +4698,13 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:234](https://github.com/emp
 
 > **nodes**: \{id: `string`;}[]
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:193](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L193)
+Defined in: [lib/@empirica/core/src/admin/context.ts:193](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L193)
 
 ##### participants
 
 > **participants**: \{id: `string`;}[]
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:194](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L194)
+Defined in: [lib/@empirica/core/src/admin/context.ts:194](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L194)
 
 ---
 
@@ -4716,7 +4716,7 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:194](https://github.com/emp
 
 > **attributes**: `object`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:207](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L207)
+Defined in: [lib/@empirica/core/src/admin/context.ts:207](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L207)
 
 ###### Type declaration
 
@@ -4732,19 +4732,19 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:207](https://github.com/emp
 
 > **id**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:204](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L204)
+Defined in: [lib/@empirica/core/src/admin/context.ts:204](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L204)
 
 ##### kind
 
 > `optional` **kind**: `null` \| `string`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:206](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L206)
+Defined in: [lib/@empirica/core/src/admin/context.ts:206](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L206)
 
 ##### name
 
 > `optional` **name**: `null` \| `string`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:205](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L205)
+Defined in: [lib/@empirica/core/src/admin/context.ts:205](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L205)
 
 ---
 
@@ -4756,19 +4756,19 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:205](https://github.com/emp
 
 > **from**: `State`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:199](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L199)
+Defined in: [lib/@empirica/core/src/admin/context.ts:199](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L199)
 
 ##### id
 
 > **id**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:198](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L198)
+Defined in: [lib/@empirica/core/src/admin/context.ts:198](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L198)
 
 ##### to
 
 > **to**: `State`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:200](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L200)
+Defined in: [lib/@empirica/core/src/admin/context.ts:200](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L200)
 
 ---
 
@@ -4783,7 +4783,7 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:200](https://github.com/emp
 createdAt is the time the Attribute was created. int64 Date + Time
 value given in Epoch with ns precision
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:14](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L14)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:14](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L14)
 
 ##### deleted
 
@@ -4791,7 +4791,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:14](https://github.com/
 
 deleted is true with the attribute was deleted.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:8](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L8)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:8](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L8)
 
 ##### deletedAt
 
@@ -4800,7 +4800,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:8](https://github.com/e
 deletedAt is the time when the Attribute was deleted. int64 Date + Time
 value given in Epoch with ns precision
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:11](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L11)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:11](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L11)
 
 ##### id
 
@@ -4808,7 +4808,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:11](https://github.com/
 
 id is the identifier for the Attribute.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:16](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L16)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:16](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L16)
 
 ##### index
 
@@ -4816,7 +4816,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:16](https://github.com/
 
 index is the index of the attribute if the value is a vector.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:18](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L18)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:18](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L18)
 
 ##### isNew
 
@@ -4824,7 +4824,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:18](https://github.com/
 
 isNew is true if the Attribute was just created.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:20](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L20)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:20](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L20)
 
 ##### key
 
@@ -4832,7 +4832,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:20](https://github.com/
 
 key is the attribute key being updated.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:22](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L22)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:22](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L22)
 
 ##### node
 
@@ -4840,7 +4840,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:22](https://github.com/
 
 node is the Attribute's Node.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:26](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L26)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:26](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L26)
 
 ###### Type declaration
 
@@ -4858,7 +4858,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:26](https://github.com/
 
 nodeID is the identifier for the Attribute's Node.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:24](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L24)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:24](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L24)
 
 ##### val
 
@@ -4866,7 +4866,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:24](https://github.com/
 
 value is the value of the updated attribute.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:33](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L33)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:33](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L33)
 
 ##### vector
 
@@ -4874,7 +4874,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:33](https://github.com/
 
 vector indicates whether the value is a vector.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:35](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L35)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:35](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L35)
 
 ##### version
 
@@ -4882,7 +4882,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:35](https://github.com/
 
 version is the version number of this Attribute, starting at 1.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:37](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L37)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:37](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L37)
 
 ---
 
@@ -4897,7 +4897,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:37](https://github.com/
 Append, only used if the Attribute is a vector, indicates to append the
 attribute to the vector.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:231](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L231)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:231](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L231)
 
 ##### immutable
 
@@ -4905,7 +4905,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:231](https://github.com
 
 Immutable creates an Attribute that cannot be updated.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:221](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L221)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:221](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L221)
 
 ##### index
 
@@ -4914,7 +4914,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:221](https://github.com
 Index, only used if the Attribute is a vector, indicates which index to
 update the value at.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:226](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L226)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:226](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L226)
 
 ##### private
 
@@ -4922,7 +4922,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:226](https://github.com
 
 Private indicates the attribute will not be visible to other Participants.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:214](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L214)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:214](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L214)
 
 ##### protected
 
@@ -4931,7 +4931,7 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:214](https://github.com
 Protected indicates the attribute will not be updatable by other
 Participants.
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:219](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L219)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:219](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L219)
 
 ---
 
@@ -4943,13 +4943,13 @@ Defined in: [lib/@empirica/core/src/shared/attributes.ts:219](https://github.com
 
 > **attribute**: [`AttributeChange`](modules.md#attributechange)
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:41](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L41)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:41](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L41)
 
 ##### removed
 
 > **removed**: `boolean`
 
-Defined in: [lib/@empirica/core/src/shared/attributes.ts:42](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/attributes.ts#L42)
+Defined in: [lib/@empirica/core/src/shared/attributes.ts:42](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/attributes.ts#L42)
 
 ---
 
@@ -5976,13 +5976,13 @@ Array.values
 
 > **id**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:19](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L19)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:19](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L19)
 
 ##### kind
 
 > **kind**: `string`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:20](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L20)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:20](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L20)
 
 ---
 
@@ -5996,7 +5996,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:20](https://github.com/empi
 
 ids of the matching Scopes.
 
-Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:14](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/subscriptions.ts#L14)
+Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:14](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/subscriptions.ts#L14)
 
 ##### keys
 
@@ -6004,7 +6004,7 @@ Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:14](https://github.co
 
 keys to Attributes in matching Scope.
 
-Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:18](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/subscriptions.ts#L18)
+Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:18](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/subscriptions.ts#L18)
 
 ##### kinds
 
@@ -6012,7 +6012,7 @@ Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:18](https://github.co
 
 kinds of the matching Scopes.
 
-Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:16](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/subscriptions.ts#L16)
+Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:16](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/subscriptions.ts#L16)
 
 ##### kvs
 
@@ -6020,7 +6020,7 @@ Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:16](https://github.co
 
 kvs to Attributes in matching Scope.
 
-Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:20](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/subscriptions.ts#L20)
+Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:20](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/subscriptions.ts#L20)
 
 ##### names
 
@@ -6028,7 +6028,7 @@ Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:20](https://github.co
 
 names of the matching Scopes.
 
-Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:22](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/subscriptions.ts#L22)
+Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:22](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/subscriptions.ts#L22)
 
 ---
 
@@ -6040,13 +6040,13 @@ Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:22](https://github.co
 
 > **removed**: `boolean`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:25](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L25)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:25](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L25)
 
 ##### scope
 
 > **scope**: [`ScopeIdent`](modules.md#scopeident)
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:24](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L24)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:24](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L24)
 
 ---
 
@@ -6058,43 +6058,43 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:24](https://github.com/empi
 
 > `optional` **configFile**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:48](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L48)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:48](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L48)
 
 ##### logLevel
 
 > `optional` **logLevel**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:50](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L50)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:50](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L50)
 
 ##### password
 
 > `optional` **password**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:54](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L54)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:54](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L54)
 
 ##### printLogs
 
 > `optional` **printLogs**: `boolean`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:51](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L51)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:51](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L51)
 
 ##### srtoken
 
 > `optional` **srtoken**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:52](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L52)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:52](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L52)
 
 ##### tajFile
 
 > `optional` **tajFile**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:49](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L49)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:49](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L49)
 
 ##### username
 
 > `optional` **username**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:53](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L53)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:53](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L53)
 
 ---
 
@@ -6106,13 +6106,13 @@ Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:
 
 > **duration**: `number`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:189](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L189)
+Defined in: [lib/@empirica/core/src/admin/context.ts:189](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L189)
 
 ##### id
 
 > **id**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:188](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L188)
+Defined in: [lib/@empirica/core/src/admin/context.ts:188](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L188)
 
 ---
 
@@ -6124,25 +6124,25 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:188](https://github.com/emp
 
 > **password**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:17](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L17)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:17](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L17)
 
 ##### port
 
 > **port**: `number`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:14](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L14)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:14](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L14)
 
 ##### srtoken
 
 > **srtoken**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:18](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L18)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:18](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L18)
 
 ##### stop
 
 > **stop**: `Function`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:13](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L13)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:13](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L13)
 
 ###### Type declaration
 
@@ -6156,13 +6156,13 @@ Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:
 
 > **url**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:15](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L15)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:15](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L15)
 
 ##### username
 
 > **username**: `string`
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:16](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L16)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:16](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L16)
 
 ---
 
@@ -6172,7 +6172,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:
 
 > **AttrInput**: `object`
 
-Defined in: [lib/@empirica/core/src/admin/classic/helpers.ts:59](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/helpers.ts#L59)
+Defined in: [lib/@empirica/core/src/admin/classic/helpers.ts:59](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/helpers.ts#L59)
 
 #### Type declaration
 
@@ -6200,7 +6200,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/helpers.ts:59](https://github.
 
 > **Attributable**: `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:7](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L7)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:7](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L7)
 
 #### Type declaration
 
@@ -6284,7 +6284,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:7](https://github.com/empir
 
 > **AttributeInput**: `object`
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:174](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L174)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:174](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L174)
 
 #### Type declaration
 
@@ -6300,7 +6300,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:174](https://github.com/emp
 
 > **AttributeMsg**: `object`
 
-Defined in: [lib/@empirica/core/src/admin/attributes.ts:9](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/attributes.ts#L9)
+Defined in: [lib/@empirica/core/src/admin/attributes.ts:9](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/attributes.ts#L9)
 
 #### Type declaration
 
@@ -6314,7 +6314,7 @@ Defined in: [lib/@empirica/core/src/admin/attributes.ts:9](https://github.com/em
 
 > **ClassicConfig**: `object`
 
-Defined in: [lib/@empirica/core/src/admin/classic/classic.ts:30](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/classic.ts#L30)
+Defined in: [lib/@empirica/core/src/admin/classic/classic.ts:30](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/classic.ts#L30)
 
 #### Type declaration
 
@@ -6332,7 +6332,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/classic.ts:30](https://github.
 
 > **ClassicKinds**: `object`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1080](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L1080)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1080](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L1080)
 
 #### Type declaration
 
@@ -6358,7 +6358,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1080](https://github
 
 > **Constructor**: \<`T`\> `Function`
 
-Defined in: [lib/@empirica/core/src/shared/helpers.ts:1](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/helpers.ts#L1)
+Defined in: [lib/@empirica/core/src/shared/helpers.ts:1](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/helpers.ts#L1)
 
 #### Type parameters
 
@@ -6386,7 +6386,7 @@ Defined in: [lib/@empirica/core/src/shared/helpers.ts:1](https://github.com/empi
 
 > **EvtCtxCallback**: \<`Context`, `Kinds`\> `Function`
 
-Defined in: [lib/@empirica/core/src/admin/events.ts:67](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/events.ts#L67)
+Defined in: [lib/@empirica/core/src/admin/events.ts:67](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/events.ts#L67)
 
 #### Type parameters
 
@@ -6416,7 +6416,7 @@ Defined in: [lib/@empirica/core/src/admin/events.ts:67](https://github.com/empir
 
 > **Finalizer**: `Function`
 
-Defined in: [lib/@empirica/core/src/admin/context.ts:222](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/context.ts#L222)
+Defined in: [lib/@empirica/core/src/admin/context.ts:222](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/context.ts#L222)
 
 #### Type declaration
 
@@ -6432,7 +6432,7 @@ Defined in: [lib/@empirica/core/src/admin/context.ts:222](https://github.com/emp
 
 > **JsonValue**: `string` \| `number` \| `boolean` \| `Date` \| [`Json`](modules.md#json) \| [`JsonArray`](modules.md#jsonarray) \| `null`
 
-Defined in: [lib/@empirica/core/src/utils/json.ts:1](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/utils/json.ts#L1)
+Defined in: [lib/@empirica/core/src/utils/json.ts:1](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/utils/json.ts#L1)
 
 ---
 
@@ -6440,7 +6440,7 @@ Defined in: [lib/@empirica/core/src/utils/json.ts:1](https://github.com/empirica
 
 > **KV**: `object`
 
-Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:3](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/subscriptions.ts#L3)
+Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:3](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/subscriptions.ts#L3)
 
 #### Type declaration
 
@@ -6454,7 +6454,7 @@ Defined in: [lib/@empirica/core/src/admin/subscriptions.ts:3](https://github.com
 
 > **LobbyConfig**: `object`
 
-Defined in: [lib/@empirica/core/src/admin/classic/lobby.ts:17](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/lobby.ts#L17)
+Defined in: [lib/@empirica/core/src/admin/classic/lobby.ts:17](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/lobby.ts#L17)
 
 #### Type declaration
 
@@ -6464,7 +6464,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/lobby.ts:17](https://github.co
 
 > **ScopeConstructor**: \<`Context`, `Kinds`\> [`Constructor`](modules.md#constructor)\<[`SharedScope`](modules.md#sharedscope)\<`Context`, `Kinds`\>\>
 
-Defined in: [lib/@empirica/core/src/shared/scopes.ts:28](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/shared/scopes.ts#L28)
+Defined in: [lib/@empirica/core/src/shared/scopes.ts:28](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/shared/scopes.ts#L28)
 
 #### Type parameters
 
@@ -6481,7 +6481,7 @@ Defined in: [lib/@empirica/core/src/shared/scopes.ts:28](https://github.com/empi
 
 > `const` **classicKinds**: `object`
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1091](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L1091)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1091](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L1091)
 
 #### Type declaration
 
@@ -6509,7 +6509,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1091](https://github
 
 > **Classic**(\_\_namedParameters: [`ClassicConfig`](modules.md#classicconfig) = `{}`): `Function`
 
-Defined in: [lib/@empirica/core/src/admin/classic/classic.ts:54](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/classic.ts#L54)
+Defined in: [lib/@empirica/core/src/admin/classic/classic.ts:54](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/classic.ts#L54)
 
 #### Parameters
 
@@ -6541,7 +6541,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/classic.ts:54](https://github.
 
 ClassicLoader loads.
 
-Defined in: [lib/@empirica/core/src/admin/classic/loader.ts:8](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/loader.ts#L8)
+Defined in: [lib/@empirica/core/src/admin/classic/loader.ts:8](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/loader.ts#L8)
 
 #### Parameters
 
@@ -6559,7 +6559,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/loader.ts:8](https://github.co
 
 > **Lobby**(\_: [`LobbyConfig`](modules.md#lobbyconfig) = `{}`): `Function`
 
-Defined in: [lib/@empirica/core/src/admin/classic/lobby.ts:19](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/lobby.ts#L19)
+Defined in: [lib/@empirica/core/src/admin/classic/lobby.ts:19](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/lobby.ts#L19)
 
 #### Parameters
 
@@ -6589,7 +6589,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/lobby.ts:19](https://github.co
 
 > **evt**(ctx: [`EventContext`](modules.md#eventcontext)\<[`Context`](modules.md#context), [`ClassicKinds`](modules.md#classickinds)\>): [`EventProxy`](modules.md#eventproxy)
 
-Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1121](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/models.ts#L1121)
+Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1121](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/models.ts#L1121)
 
 #### Parameters
 
@@ -6612,7 +6612,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/models.ts:1121](https://github
 > format: [`ExportFormat`](modules.md#exportformat),
 > output: `string`): `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/classic/export/export.ts:13](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/export/export.ts#L13)
+Defined in: [lib/@empirica/core/src/admin/classic/export/export.ts:13](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/export/export.ts#L13)
 
 #### Parameters
 
@@ -6634,7 +6634,7 @@ Defined in: [lib/@empirica/core/src/admin/classic/export/export.ts:13](https://g
 
 > **withTajriba**(fn: `Function`, options: [`StartTajribaOptions`](modules.md#starttajribaoptions) = `{}`): `Promise`\<`void`\>
 
-Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:168](https://github.com/empiricaly/empirica/blob/1eb6b17/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L168)
+Defined in: [lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts:168](https://github.com/empiricaly/empirica/blob/cbccdb7/lib/@empirica/core/src/admin/classic/api/connection_test_helper.ts#L168)
 
 #### Parameters
 
