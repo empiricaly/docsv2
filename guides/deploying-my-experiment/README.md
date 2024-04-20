@@ -4,11 +4,15 @@ description: How to deploy your experiment.
 
 # Deploying Your Experiment
 
-{% hint style="warning" %}
-This tutorial does require some knowledge of Linux and servers. We are working on a simpler experience for deployment. Meanwhile, if it's too much, talk to us in [Slack](https://join.slack.com/t/empirica-ly/shared\_invite/zt-1fb34yq47-YlgYUJmXJAdv7QmHsa\_fdw).
+{% hint style="info" %}
+This page describes deployment in a general way. For a full tutorial from A to Z go to: [ubuntu-tutorial.md](ubuntu-tutorial.md "mention").&#x20;
 {% endhint %}
 
-This tutorial describes how to deploy Empirica using any server or VM provider. Empirica is a single command and uses an embedded database, so there is only one executable to install.
+{% hint style="warning" %}
+Deploying requires some knowledge of Linux and servers.
+{% endhint %}
+
+This page describes how to deploy Empirica using any server or VM provider. Empirica is a single command and uses an embedded database, so there is only one executable to install.
 
 First, you need a server. There are thousands of different options on how to get running here. One quick and easy service we can recommend is [Digital Ocean's Droplets](https://docs.digitalocean.com/products/droplets/quickstart/).
 
