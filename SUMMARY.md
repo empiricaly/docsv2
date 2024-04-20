@@ -27,6 +27,7 @@
 * [Special Empirica Components](guides/special-empirica-components.md)
 * [The Admin Panel](guides/the-admin-panel.md)
 * [Deploying Your Experiment](guides/deploying-my-experiment/README.md)
+  * [Ubuntu tutorial](guides/deploying-my-experiment/ubuntu-tutorial.md)
 
 ## Tutorials
 
