@@ -13,11 +13,21 @@ That's it, you're done! Proceed to create your experiment:
 {% endcontent-ref %}
 
 {% hint style="info" %}
+#### Running an older version?
+
 If you are running on an older version and are encountering version issues, try running the curl command above again. It should reset your local install.
 {% endhint %}
 
 {% hint style="success" %}
+#### Upgrading
+
 To upgrade the empirica command globally on your machine, you can either run `empirica upgrade --global` outside of any projects, or run the curl command above again.
+{% endhint %}
+
+{% hint style="warning" %}
+#### Volta error
+
+Some users have been seeing a Volta error that prevents empirica from properly managing node (here: [https://github.com/volta-cli/volta/issues/1744](https://github.com/volta-cli/volta/issues/1744)). It can be resolved it by installing the right versions of node manually and removing the `volta` lines from `client/package.json` and `server/package.json`.
 {% endhint %}
 
 ### **A note about Windows Setup**
