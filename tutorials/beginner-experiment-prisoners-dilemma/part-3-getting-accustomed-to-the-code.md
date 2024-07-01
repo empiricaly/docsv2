@@ -1,8 +1,8 @@
 # Part 3: Getting Accustomed to the Code
 
-To get a glimpse of the actual code that runs Empirica, open Visual Studio Code to the `deliberation-empirica` folder.&#x20;
+To get a glimpse of the actual code that runs Empirica, open Visual Studio Code to the `prisoners-dilemma` folder.&#x20;
 
-> You can either do this manually, by going to `File > Open Folder` and selecting the `deliberation-empirica` folder, or by typing in your terminal `code .` within the `deliberation-empirica` directory.
+> You can either do this manually, by going to `File > Open Folder` and selecting the `prisoners-dilemma` folder, or by typing in your terminal `code .` within the `prisoners-dilemma` directory.
 
 The template experiment includes three subdirectories:
 
