@@ -25,3 +25,35 @@ When you create a Batch, you can create multiple games within it, and these game
 The assignment of players to games is done in batches sequentially and within each batch players will be randomly assigned to one game. Therefore, when you have 1 batch with multiple games, players will be assigned randomly to each of the X games according to the assignment method. This means it's possible that none of the games fill up even though enough players join for at least one game to proceed past the lobby as the players are distributed across various games. This would not happen if each batch has only one game: the first game will fill up with the first players who move past the lobby and the remaining players will transition to the game in the second batch.
 
 If you want to ensure the maximum possible number of players get assigned to a game, a good strategy would be to start batches each with 1 game per each treatment condition. For example, if you have two treatment conditions of 8 players each, your batches should contain 1 game of each treatment. This way you can be sure if 16 players join, all 16 will be randomized between only 2 games and you don't lose any of your players in games that never fill up. **This approach however has a drawback as it does not randomize between players with different arrival time or completion time of instructions.**
+
+## Overriding default assignment
+
+The default assignment algorithm privileges randomness for better experimental results, but this results in what we call "overbooking", in other terms, assigning more players than a game is deisgned for. This can lead to some games getting "underbooked", and to not being able to overflow players from an overbooked game into another game if the treatments do not match up (we do not overflow overbooked players between games with different treatment since the intro steps the players go through might be different between treatments).
+
+We have added a couple options to modify the behavior of the assignment that reduces the randomness and increases assignment percentage:
+
+* The `preferUnderassignedGames` option will try to assign players to games that are underassigned, before assigning to games that are already full, resuming the assignment process as usual if no underassigned games are available, in the current batch (this option does not try to prefer games that are underassigned across batches).
+* The `neverOverbookGames` option will never assign players to games that are\
+  already full. This will push players into the next batches, if no games are available in the current batch. If no games are available in the next batches, the player will be sent to exit. This option is a bit more strict than `preferUnderassignedGames` and it can result in longer waiting times for players, and potentially game that never start if a player never finishes the intro steps.
+
+Given the strict nature of the `neverOverbookGames` option, it is generally recommended to use `preferUnderassignedGames` option if you do not want the normal behavior of the assignment algorithm. If you use a single batch, `preferUnderassignedGames` should fill optimally.
+
+Note that `neverOverbookGames` takes precedence over `preferUnderassignedGames`, meaning that if both options are set to `true`, `preferUnderassignedGames` will be ignored.
+
+To apply these options, in `server/src/index.js`, you can add the following options to the `Classic` function:
+
+```js
+ctx.register(
+  Classic({
+    preferUnderassignedGames: true,
+  })
+);
+```
+
+```js
+ctx.register(
+  Classic({
+    neverOverbookGames: true,
+  })
+);
+```
