@@ -48,7 +48,7 @@
 
 > **logs**: [`LogLine`](modules.md#logline)[] = `[]`
 
-Defined in: [console.ts:23](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L23)
+Defined in: [console.ts:23](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L23)
 
 #### Methods
 
@@ -56,7 +56,7 @@ Defined in: [console.ts:23](https://github.com/empiricaly/empirica/blob/69b40d9/
 
 > **clear**(): `void`
 
-Defined in: [console.ts:29](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L29)
+Defined in: [console.ts:29](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L29)
 
 ###### Returns
 
@@ -66,7 +66,7 @@ Defined in: [console.ts:29](https://github.com/empiricaly/empirica/blob/69b40d9/
 
 > **log**(line: [`LogLine`](modules.md#logline)): `void`
 
-Defined in: [console.ts:25](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L25)
+Defined in: [console.ts:25](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L25)
 
 ###### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [console.ts:25](https://github.com/empiricaly/empirica/blob/69b40d9/
 
 > **LogLine**: `object`
 
-Defined in: [console.ts:21](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L21)
+Defined in: [console.ts:21](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L21)
 
 #### Type declaration
 
@@ -102,7 +102,7 @@ Defined in: [console.ts:21](https://github.com/empiricaly/empirica/blob/69b40d9/
 
 > `const` **levels**: `object`
 
-Defined in: [console.ts:80](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L80)
+Defined in: [console.ts:80](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L80)
 
 #### Index signature
 
@@ -118,7 +118,7 @@ Defined in: [console.ts:80](https://github.com/empiricaly/empirica/blob/69b40d9/
 
 > **captureLogs**(cb: `Function`): [`LogLine`](modules.md#logline)[]
 
-Defined in: [console.ts:35](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L35)
+Defined in: [console.ts:35](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L35)
 
 #### Parameters
 
@@ -136,7 +136,7 @@ Defined in: [console.ts:35](https://github.com/empiricaly/empirica/blob/69b40d9/
 
 > **captureLogsAsync**(cb: `Function`): `Promise`\<[`LogLine`](modules.md#logline)[]\>
 
-Defined in: [console.ts:44](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L44)
+Defined in: [console.ts:44](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L44)
 
 #### Parameters
 
@@ -154,7 +154,7 @@ Defined in: [console.ts:44](https://github.com/empiricaly/empirica/blob/69b40d9/
 
 > **debug**(...args: `any`[]): `void`
 
-Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L129)
+Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L129)
 
 #### Parameters
 
@@ -172,7 +172,7 @@ Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9
 
 > **error**(...args: `any`[]): `void`
 
-Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L129)
+Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L129)
 
 #### Parameters
 
@@ -190,7 +190,7 @@ Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9
 
 > **info**(...args: `any`[]): `void`
 
-Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L129)
+Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L129)
 
 #### Parameters
 
@@ -208,7 +208,7 @@ Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9
 
 > **log**(...args: `any`[]): `void`
 
-Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L129)
+Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L129)
 
 #### Parameters
 
@@ -226,7 +226,7 @@ Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9
 
 > **mockLogging**(): [`LogsMock`](modules.md#logsmock)
 
-Defined in: [console.ts:55](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L55)
+Defined in: [console.ts:55](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L55)
 
 #### Returns
 
@@ -238,7 +238,7 @@ Defined in: [console.ts:55](https://github.com/empiricaly/empirica/blob/69b40d9/
 
 > **setLogLevel**(level: `string` \| `number`): `void`
 
-Defined in: [console.ts:96](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L96)
+Defined in: [console.ts:96](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L96)
 
 #### Parameters
 
@@ -256,7 +256,7 @@ Defined in: [console.ts:96](https://github.com/empiricaly/empirica/blob/69b40d9/
 
 > **stopMockLogging**(): `void`
 
-Defined in: [console.ts:63](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L63)
+Defined in: [console.ts:63](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L63)
 
 #### Returns
 
@@ -268,7 +268,7 @@ Defined in: [console.ts:63](https://github.com/empiricaly/empirica/blob/69b40d9/
 
 > **trace**(...args: `any`[]): `void`
 
-Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L129)
+Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L129)
 
 #### Parameters
 
@@ -286,7 +286,7 @@ Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9
 
 > **warn**(...args: `any`[]): `void`
 
-Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/69b40d9/lib/@empirica/core/src/utils/console.ts#L129)
+Defined in: [console.ts:129](https://github.com/empiricaly/empirica/blob/152f8e3/lib/@empirica/core/src/utils/console.ts#L129)
 
 #### Parameters
 
