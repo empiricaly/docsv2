@@ -14,7 +14,7 @@ export default function App() {
       <EmpiricaContext noGames={MyNoGames}>
         <Game />
       </EmpiricaContext>
-    </EmpiricaContext>
+    </EmpiricaParticipant>
   )
 }
 ```
@@ -35,7 +35,7 @@ export default function App() {
       <EmpiricaContext consent={MyConsent}>
         <Game />
       </EmpiricaContext>
-    </EmpiricaContext>
+    </EmpiricaParticipant>
   )
 }
 ```
@@ -146,7 +146,7 @@ export default function App() {
       <EmpiricaContext playerCreate={MyPlayerForm}>
         <Game />
       </EmpiricaContext>
-    </EmpiricaContext>
+    </EmpiricaParticipant>
   )
 }
 ```
@@ -165,7 +165,7 @@ export default function App() {
       <EmpiricaContext lobby={MyLobby}>
         <Game />
       </EmpiricaContext>
-    </EmpiricaContext>
+    </EmpiricaParticipant>
   )
 }
 ```
@@ -216,7 +216,7 @@ export default function App() {
       >
         <Game />
       </EmpiricaContext>
-    </EmpiricaContext>
+    </EmpiricaParticipant>
   )
 }
 ```
