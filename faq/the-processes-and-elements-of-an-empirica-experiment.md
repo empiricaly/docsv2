@@ -1,8 +1,7 @@
 # The Processes and Elements of an Empirica Experiment
 
 {% hint style="danger" %}
-We are currently updating documentation for Empirica v2. Some information on
-this page is incorrect.
+We are currently updating documentation for Empirica v2. Some information on this page is incorrect.
 {% endhint %}
 
 ### What is a React.js component?
@@ -13,10 +12,10 @@ In Empirica, we assign certain components for the Intro Steps, the Round, the Ex
 
 A component is composed of:
 
-- **states** that affect what is rendered for the user, but that can also be changed by the user interacting with the rendered elements of the app.
-- **props** provided from other components that can be used to determine what is rendered for the user.
-- **other components** that it imports and builds into what it renders for the user.
-- a **render function** that determines what is shown to the user with a mix of HTML (with `<> tags`) and JavaScript (with `{}`).
+* **states** that affect what is rendered for the user, but that can also be changed by the user interacting with the rendered elements of the app.
+* **props** provided from other components that can be used to determine what is rendered for the user.
+* **other components** that it imports and builds into what it renders for the user.
+* a **render function** that determines what is shown to the user with a mix of HTML (with `<> tags`) and JavaScript (with `{}`).
 
 Each component is generally made into one `.jsx` file. Components can be imported into each other to build more complex components. Usually, the type of components used in Empirica are **class-based**.
 
@@ -76,11 +75,11 @@ meteor npm install react-device-detect
 
 react-device-detect has different Booleans that you can import and use in one of your components to detect whether the player is using a certain browser.
 
-- isMobile for whether they are using a mobile device
-- isChrome for whether they are using Chrome
-- isFirefox for whether they are using Firefox
-- isSafari for whether they are using Safari
-- ...
+* isMobile for whether they are using a mobile device
+* isChrome for whether they are using Chrome
+* isFirefox for whether they are using Firefox
+* isSafari for whether they are using Safari
+* ...
 
 And others than you can find out about [here](https://www.npmjs.com/package/react-device-detect).
 
@@ -102,11 +101,7 @@ return !isMobile && isChrome ? (
 
 ### How can I show a different Exit Step to players depending on whether they have finished the game or if the game was cancelled/had a problem?
 
-In the `client/src/App.jsx` you set which components form the **Exit Steps** with
-the `exitSteps` prop on `EmpiricaContext`. You can use the
-`player.get("exitStatus")` to separate out whether they have finished the game
-or if they were sent to the exit steps because the game was cancelled/had an
-issue and send them to different Exit Steps.
+In the `client/src/App.jsx` you set which components form the **Exit Steps** with the `exitSteps` prop on `EmpiricaContext`. You can use the `player.get("exitStatus")` to separate out whether they have finished the game or if they were sent to the exit steps because the game was cancelled/had an issue and send them to different Exit Steps.
 
 For example:
 
@@ -116,7 +111,7 @@ export default function App() {
   return (
     <EmpiricaParticipant>
       <EmpiricaContext
-        existSteps={({ game, player }) =>  player.get("ended") === "finished" ? [PostSurvey, Thanks] : [Sorry]}>
+        exitSteps={({ game, player }) =>  player.get("ended") === "finished" ? [PostSurvey, Thanks] : [Sorry]}>
         <Game />
       </EmpiricaContext>
     </EmpiricaContext>
@@ -147,27 +142,3 @@ player.set("ended", "reason")
 ```
 
 where the string is the name of the exit stage you want to send them to.
-
-<!--
-### How can I use bots?
-
-In the `server/bots.js` you can create bots for them to participate in your games.
-
-See [this part](../guides/tutorial-your-first-experiment/part-3-adding-bots.md) of the tutorial for more details.
-
-```jsx
-Empirica.bot("bob", {
-  // // NOT SUPPORTED Called at the beginning of each stage (after onRoundStart/onStageStart)
-  // onStageStart(bot, game, round, stage, players) {},
-
-  // Called during each stage at tick interval (~1s at the moment)
-  onStageTick(bot, game, round, stage, secondsRemaining) {},
-
-  // // NOT SUPPORTED A player has changed a value
-  // // This might happen a lot!
-  // onStagePlayerChange(bot, game, round, stage, players, player) {}
-
-  // // NOT SUPPORTED Called at the end of the stage (after it finished, before onStageEnd/onRoundEnd is called)
-  // onStageEnd(bot, game, round, stage, players) {}
-});
-``` -->
